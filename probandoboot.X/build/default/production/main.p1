@@ -4847,122 +4847,122 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic18.h: 147: extern __nonreentrant void _delay(unsigned long);
 [; ;pic18.h: 149: extern __nonreentrant void _delaywdt(unsigned long);
 [; ;pic18.h: 151: extern __nonreentrant void _delay3(unsigned char);
-"11 main.c
+"24 confbits.h
 [p x PLLDIV=5 ]
-"12
-[p x CPUDIV=OSC1_PLL2 ]
-"13
-[p x USBDIV=2 ]
-"14
-[p x FOSC=HSPLL_HS ]
-"15
-[p x FCMEN=OFF ]
-"16
-[p x IESO=OFF ]
-"17
-[p x PWRT=OFF ]
-"18
-[p x BOR=ON ]
-"19
-[p x BORV=3 ]
-"20
-[p x VREGEN=ON ]
-"21
-[p x WDT=OFF ]
-"22
-[p x WDTPS=32768 ]
-"23
-[p x MCLRE=ON ]
-"24
-[p x LPT1OSC=OFF ]
 "25
-[p x PBADEN=OFF ]
+[p x CPUDIV=OSC1_PLL2 ]
+"26
+[p x USBDIV=2 ]
+"27
+[p x FOSC=HSPLL_HS ]
+"28
+[p x FCMEN=OFF ]
+"29
+[p x IESO=OFF ]
+"30
+[p x PWRT=OFF ]
+"31
+[p x BOR=ON ]
+"32
+[p x BORV=3 ]
 "33
-[p x STVREN=ON ]
+[p x VREGEN=ON ]
 "34
-[p x LVP=OFF ]
+[p x WDT=OFF ]
+"35
+[p x WDTPS=32768 ]
 "36
-[p x XINST=OFF ]
+[p x MCLRE=ON ]
 "37
-[p x CP0=OFF ]
+[p x LPT1OSC=OFF ]
 "38
-[p x CP1=OFF ]
-"41
-[p x CPB=OFF ]
-"43
-[p x WRT0=OFF ]
-"44
-[p x WRT1=OFF ]
+[p x PBADEN=OFF ]
+"46
+[p x STVREN=ON ]
 "47
-[p x WRTB=OFF ]
-"48
-[p x WRTC=OFF ]
+[p x LVP=OFF ]
+"49
+[p x XINST=OFF ]
 "50
-[p x EBTR0=OFF ]
+[p x CP0=OFF ]
 "51
-[p x EBTR1=OFF ]
+[p x CP1=OFF ]
 "54
-[p x EBTRB=OFF ]
+[p x CPB=OFF ]
 "56
+[p x WRT0=OFF ]
+"57
+[p x WRT1=OFF ]
+"60
+[p x WRTB=OFF ]
+"61
+[p x WRTC=OFF ]
+"63
+[p x EBTR0=OFF ]
+"64
+[p x EBTR1=OFF ]
+"67
+[p x EBTRB=OFF ]
+"14 main.c
 [v _main `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 56: void main(void) {
+[; ;main.c: 14: void main(void) {
 [e :U _main ]
 [f ]
-"57
+"15
 [v _flag `uc ~T0 @X0 1 a ]
-[; ;main.c: 57: unsigned char flag = 0;
+[; ;main.c: 15: unsigned char flag = 0;
 [e = _flag -> -> 0 `i `uc ]
-[; ;main.c: 58: TRISB = 0xFF;
-"58
+[; ;main.c: 16: TRISB = 0xFF;
+"16
 [e = _TRISB -> -> 255 `i `uc ]
-[; ;main.c: 60: TRISDbits.RD0 = 0;
-"60
+[; ;main.c: 18: TRISDbits.RD0 = 0;
+"18
 [e = . . _TRISDbits 1 0 -> -> 0 `i `uc ]
-[; ;main.c: 61: LATDbits.LATD0 = 1;
-"61
+[; ;main.c: 19: LATDbits.LATD0 = 1;
+"19
 [e = . . _LATDbits 0 0 -> -> 1 `i `uc ]
-[; ;main.c: 62: while(1){
-"62
+[; ;main.c: 20: while(1){
+"20
 [e :U 595 ]
 {
-[; ;main.c: 63: if (PORTBbits.RB4 == 0 && flag == 0){
-"63
+[; ;main.c: 21: if (PORTBbits.RB4 == 0 && flag == 0){
+"21
 [e $ ! && == -> . . _PORTBbits 0 4 `i -> 0 `i == -> _flag `i -> 0 `i 597  ]
 {
-[; ;main.c: 64: if(LATDbits.LATD0 == 1)LATDbits.LATD0 = 0;
-"64
+[; ;main.c: 22: if(LATDbits.LATD0 == 1)LATDbits.LATD0 = 0;
+"22
 [e $ ! == -> . . _LATDbits 0 0 `i -> 1 `i 598  ]
 [e = . . _LATDbits 0 0 -> -> 0 `i `uc ]
 [e $U 599  ]
-"65
+"23
 [e :U 598 ]
-[; ;main.c: 65: else LATDbits.LATD0 = 1;
+[; ;main.c: 23: else LATDbits.LATD0 = 1;
 [e = . . _LATDbits 0 0 -> -> 1 `i `uc ]
 [e :U 599 ]
-[; ;main.c: 66: flag =1;
-"66
+[; ;main.c: 24: flag =1;
+"24
 [e = _flag -> -> 1 `i `uc ]
-"67
+"25
 }
 [e :U 597 ]
-[; ;main.c: 67: }
-[; ;main.c: 68: if (PORTBbits.RB4 && flag == 1)flag = 0;
-"68
+[; ;main.c: 25: }
+[; ;main.c: 26: if (PORTBbits.RB4 && flag == 1)flag = 0;
+"26
 [e $ ! && != -> . . _PORTBbits 0 4 `i -> -> -> 0 `i `Vuc `i == -> _flag `i -> 1 `i 600  ]
 [e = _flag -> -> 0 `i `uc ]
 [e :U 600 ]
-"70
+"28
 }
 [e :U 594 ]
-"62
+"20
 [e $U 595  ]
 [e :U 596 ]
-[; ;main.c: 70: }
-[; ;main.c: 72: return;
-"72
+[; ;main.c: 28: }
+[; ;main.c: 30: return;
+"30
 [e $UE 593  ]
-[; ;main.c: 73: }
-"73
+[; ;main.c: 31: }
+"31
 [e :UE 593 ]
 }

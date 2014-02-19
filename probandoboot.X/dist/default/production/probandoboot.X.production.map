@@ -5,7 +5,7 @@ Linker command line:
 --edf=C:\Archivos de programa\Microchip\xc8\v1.30\dat\en_msgs.txt -cs \
   -h+dist/default/production\probandoboot.X.production.sym \
   --cmf=dist/default/production\probandoboot.X.production.cmf -z -Q18F4550 \
-  -oC:\Windows\Temp\s1ko.6 \
+  -oC:\Windows\Temp\s2lk.6 \
   -Mdist/default/production/probandoboot.X.production.map -E1 -ver=XC8 \
   -ASTACK=060h-07ffh -pstack=STACK \
   -ACODE=02000h-02005h,02008h-02015h,02018h-07FFFh \
@@ -25,7 +25,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE \
-  C:\Windows\Temp\s1ko.obj \
+  C:\Windows\Temp\s2lk.obj \
   dist/default/production\probandoboot.X.production.obj 
 
 Object code version is 3.11
@@ -38,7 +38,7 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Windows\Temp\s1ko.obj
+C:\Windows\Temp\s2lk.obj
                 end_init                           2000     2000        4     1000       0
                 idloc                            200000   200000        8   200000       0
                 config                           300000   300000        E   300000       0
@@ -324,7 +324,7 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 56 in file "main.c"
+		line 14 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type

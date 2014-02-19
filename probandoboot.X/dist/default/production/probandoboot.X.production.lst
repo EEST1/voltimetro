@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC18 LITE Macro Assembler V1.30 build 55553 
-                                                                                               Wed Feb 19 18:27:07 2014
+                                                                                               Wed Feb 19 19:06:38 2014
 
 Microchip Technology Omniscient Code Generator (Lite mode) build 55553
      1                           	processor	18F4550
@@ -23,7 +23,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
     17 ;;
     18 ;; *************** function _main *****************
     19 ;; Defined at:
-    20 ;;		line 56 in file "main.c"
+    20 ;;		line 14 in file "main.c"
     21 ;; Parameters:    Size  Location     Type
     22 ;;		None
     23 ;; Auto vars:     Size  Location     Type
@@ -55,7 +55,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
     49  007FC4                     _main:
     50                           	opt stack 31
     51                           
-    52                           ;main.c: 57: unsigned char flag = 0;
+    52                           ;main.c: 15: unsigned char flag = 0;
     53                           
     54                           ;incstack = 0
     55  007FC4  6E01               	movwf	??_main& (0+255),c
@@ -63,42 +63,42 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
     57  007FC8  6E02               	movwf	main@flag,c
     58  007FCA  5001               	movf	??_main& (0+255),w,c
     59                           
-    60                           ;main.c: 58: TRISB = 0xFF;
+    60                           ;main.c: 16: TRISB = 0xFF;
     61  007FCC  6893               	setf	3987,c	;volatile
     62                           
-    63                           ;main.c: 60: TRISDbits.RD0 = 0;
+    63                           ;main.c: 18: TRISDbits.RD0 = 0;
     64  007FCE  9095               	bcf	3989,0,c	;volatile
     65                           
-    66                           ;main.c: 61: LATDbits.LATD0 = 1;
+    66                           ;main.c: 19: LATDbits.LATD0 = 1;
     67  007FD0  808C               	bsf	3980,0,c	;volatile
     68  007FD2                     l602:
     69                           
-    70                           ;main.c: 63: if (PORTBbits.RB4 == 0 && flag == 0){
+    70                           ;main.c: 21: if (PORTBbits.RB4 == 0 && flag == 0){
     71  007FD2  B881               	btfsc	3969,4,c	;volatile
     72  007FD4  D00B               	goto	l612
     73  007FD6  6602               	tstfsz	main@flag,c
     74  007FD8  D009               	goto	l612
     75                           
-    76                           ;main.c: 64: if(LATDbits.LATD0 == 1)LATDbits.LATD0 = 0;
+    76                           ;main.c: 22: if(LATDbits.LATD0 == 1)LATDbits.LATD0 = 0;
     77  007FDA  A08C               	btfss	3980,0,c	;volatile
     78  007FDC  D002               	goto	l13
     79  007FDE  908C               	bcf	3980,0,c	;volatile
     80  007FE0  D001               	goto	l610
     81  007FE2                     l13:
     82                           
-    83                           ;main.c: 65: else LATDbits.LATD0 = 1;
+    83                           ;main.c: 23: else LATDbits.LATD0 = 1;
     84  007FE2  808C               	bsf	3980,0,c	;volatile
     85  007FE4                     l610:
     86                           
-    87                           ;main.c: 66: flag =1;
+    87                           ;main.c: 24: flag =1;
     88  007FE4  6E01               	movwf	??_main& (0+255),c
     89  007FE6  0E01               	movlw	1
     90  007FE8  6E02               	movwf	main@flag,c
     91  007FEA  5001               	movf	??_main& (0+255),w,c
     92  007FEC                     l612:
     93                           
-    94                           ;main.c: 67: }
-    95                           ;main.c: 68: if (PORTBbits.RB4 && flag == 1)flag = 0;
+    94                           ;main.c: 25: }
+    95                           ;main.c: 26: if (PORTBbits.RB4 && flag == 1)flag = 0;
     96  007FEC  A881               	btfss	3969,4,c	;volatile
     97  007FEE  D7F1               	goto	l602
     98  007FF0  0402               	decf	main@flag,w,c
@@ -254,7 +254,7 @@ SFR                  0      0       0      40        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V1.30 build 55553 
-Symbol Table                                                                                   Wed Feb 19 18:27:07 2014
+Symbol Table                                                                                   Wed Feb 19 19:06:38 2014
 
                      l13 7FE2              __CFG_BOR$ON 000000              __CFG_BORV$3 000000  
            __CFG_CP0$OFF 000000             __CFG_CP1$OFF 000000                      l610 7FE4  

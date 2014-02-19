@@ -125,7 +125,7 @@
 [v ___asftsub __asftsub `(f  1 e 3 0 ]
 "4 C:\Archivos de programa\Microchip\xc8\v1.30\sources\pic18\aslmul.c
 [v ___aslmul __aslmul `(ul  1 e 4 0 ]
-"56 D:\Dropbox\MPLABx\probandoboot.X\main.c
+"14 D:\Dropbox\MPLABx\Ap_template\probandoboot.X\main.c
 [v _main main `(v  1 e 0 0 ]
 [s S137 . 1 `uc 1 RB0 1 0 :1:0 
 `uc 1 RB1 1 0 :1:1 
@@ -208,10 +208,10 @@
 ]
 [u S40 . 1 `S22 1 . 1 0 `S31 1 . 1 0 ]
 [v _TRISDbits TRISDbits `VES40  1 e 1 @3989 ]
-"56 D:\Dropbox\MPLABx\probandoboot.X\main.c
+"14 D:\Dropbox\MPLABx\Ap_template\probandoboot.X\main.c
 [v _main main `(v  1 e 0 0 ]
 {
-"57
+"15
 [v main@flag flag `uc  1 a 1 1 ]
-"73
+"31
 } 0

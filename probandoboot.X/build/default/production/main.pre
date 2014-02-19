@@ -6302,7 +6302,7 @@ extern __nonreentrant void _delaywdt(unsigned long);
 extern __nonreentrant void _delay3(unsigned char);
 
 
-# 11 "main.c"
+# 24 "confbits.h"
 #pragma config PLLDIV = 5
 #pragma config CPUDIV = OSC1_PLL2
 #pragma config USBDIV = 2
@@ -6320,7 +6320,7 @@ extern __nonreentrant void _delay3(unsigned char);
 #pragma config PBADEN = OFF
 
 
-# 33
+# 46
 #pragma config STVREN = ON
 #pragma config LVP = OFF
 
@@ -6344,6 +6344,7 @@ extern __nonreentrant void _delay3(unsigned char);
 
 #pragma config EBTRB = OFF
 
+# 14 "main.c"
 void main(void) {
 unsigned char flag = 0;
 TRISB = 0xFF;
