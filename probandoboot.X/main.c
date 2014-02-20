@@ -12,6 +12,11 @@
     
 
 void main(void) {
+    /*
+     * Este es un codigo de ejemplo
+     * Lee el estado del puerto RB4
+     * y complementa la salida PORTD bit 0
+     *
     unsigned char flag = 0;
     TRISB = 0xFF;
 
@@ -27,5 +32,11 @@ while(1){
     
 }
 
-    return;
+    return; */
+
+    /*
+     * 
+     TU PROGRAMA AQUI!!!!!!!!!
+     *
+     */
 }
