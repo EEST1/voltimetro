@@ -45,7 +45,7 @@ extern "C" {
     //#pragma config ICPRT    = OFF       // Dedicated In-Circuit Debug/Programming
     #pragma config XINST    = OFF       // Extended Instruction Set
     #pragma config CP0      = OFF
-    #pragma config CP1      = OFF
+    #pragma config CP1      = OFF
     //#pragma config CP2      = OFF
     //#pragma config CP3      = OFF
     #pragma config CPB      = OFF
