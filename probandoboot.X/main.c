@@ -7,7 +7,7 @@
 
 
 #include <xc.h>
-#include "confbits.h"//archivo pruebaaaaaaaaaa
+#include "confbits.h"
 
     
 
