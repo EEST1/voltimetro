@@ -1,50 +1,8 @@
 Version 3.2 HI-TECH Software Intermediate Code
 [p mainexit ]
-"4168 C:\Archivos de programa\Microchip\xc8\v1.30\include\pic18f4550.h
-[v _TRISB `Vuc ~T0 @X0 0 e@3987 ]
-[s S312 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S312 . TRISD0 TRISD1 TRISD2 TRISD3 TRISD4 TRISD5 TRISD6 TRISD7 ]
-[s S313 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S313 . RD0 RD1 RD2 RD3 RD4 RD5 RD6 RD7 ]
-[u S311 `S312 1 `S313 1 ]
-[n S311 . . . ]
-"4592
-[v _TRISDbits `VS311 ~T0 @X0 0 e@3989 ]
-[s S272 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S272 . LATD0 LATD1 LATD2 LATD3 LATD4 LATD5 LATD6 LATD7 ]
-[s S273 :1 `uc 1 ]
-[n S273 . LD0 ]
-[s S274 :1 `uc 1 :1 `uc 1 ]
-[n S274 . . LD1 ]
-[s S275 :2 `uc 1 :1 `uc 1 ]
-[n S275 . . LD2 ]
-[s S276 :3 `uc 1 :1 `uc 1 ]
-[n S276 . . LD3 ]
-[s S277 :4 `uc 1 :1 `uc 1 ]
-[n S277 . . LD4 ]
-[s S278 :5 `uc 1 :1 `uc 1 ]
-[n S278 . . LD5 ]
-[s S279 :6 `uc 1 :1 `uc 1 ]
-[n S279 . . LD6 ]
-[s S280 :7 `uc 1 :1 `uc 1 ]
-[n S280 . . LD7 ]
-[u S271 `S272 1 `S273 1 `S274 1 `S275 1 `S276 1 `S277 1 `S278 1 `S279 1 `S280 1 ]
-[n S271 . . . . . . . . . . ]
-"3785
-[v _LATDbits `VS271 ~T0 @X0 0 e@3980 ]
-[s S201 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S201 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
-[s S202 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S202 . INT0 INT1 INT2 . PGM PGC PGD ]
-[s S203 :3 `uc 1 :1 `uc 1 ]
-[n S203 . . CCP2_PA2 ]
-[u S200 `S201 1 `S202 1 `S203 1 ]
-[n S200 . . . . ]
-"2752
-[v _PORTBbits `VS200 ~T0 @X0 0 e@3969 ]
 [; ;htc.h: 22: extern void __builtin_software_breakpoint(void);
 [; ;pic18f4550.h: 44: extern volatile unsigned char SPPDATA @ 0xF62;
-"46 C:\Archivos de programa\Microchip\xc8\v1.30\include\pic18f4550.h
+"46 /opt/microchip/xc8/v1.30/include/pic18f4550.h
 [; ;pic18f4550.h: 46: asm("SPPDATA equ 0F62h");
 [; <" SPPDATA equ 0F62h ;# ">
 [; ;pic18f4550.h: 49: typedef union {
@@ -4847,61 +4805,61 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic18.h: 147: extern __nonreentrant void _delay(unsigned long);
 [; ;pic18.h: 149: extern __nonreentrant void _delaywdt(unsigned long);
 [; ;pic18.h: 151: extern __nonreentrant void _delay3(unsigned char);
-"24 confbits.h
+"21 confbits.h
 [p x PLLDIV=5 ]
-"25
+"22
 [p x CPUDIV=OSC1_PLL2 ]
-"26
+"23
 [p x USBDIV=2 ]
-"27
+"24
 [p x FOSC=HSPLL_HS ]
-"28
+"25
 [p x FCMEN=OFF ]
-"29
+"26
 [p x IESO=OFF ]
-"30
+"27
 [p x PWRT=OFF ]
-"31
+"28
 [p x BOR=ON ]
-"32
+"29
 [p x BORV=3 ]
-"33
+"30
 [p x VREGEN=ON ]
-"34
+"31
 [p x WDT=OFF ]
-"35
+"32
 [p x WDTPS=32768 ]
-"36
+"33
 [p x MCLRE=ON ]
-"37
+"34
 [p x LPT1OSC=OFF ]
-"38
+"35
 [p x PBADEN=OFF ]
-"46
+"43
 [p x STVREN=ON ]
-"47
+"44
 [p x LVP=OFF ]
-"49
+"46
 [p x XINST=OFF ]
-"50
+"47
 [p x CP0=OFF ]
-"51
+"48
 [p x CP1=OFF ]
-"54
+"51
 [p x CPB=OFF ]
-"56
+"53
 [p x WRT0=OFF ]
-"57
+"54
 [p x WRT1=OFF ]
-"60
+"57
 [p x WRTB=OFF ]
-"61
+"58
 [p x WRTC=OFF ]
-"63
+"60
 [p x EBTR0=OFF ]
-"64
+"61
 [p x EBTR1=OFF ]
-"67
+"64
 [p x EBTRB=OFF ]
 "14 main.c
 [v _main `(v ~T0 @X0 1 ef ]
@@ -4909,60 +4867,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 14: void main(void) {
 [e :U _main ]
 [f ]
-"15
-[v _flag `uc ~T0 @X0 1 a ]
-[; ;main.c: 15: unsigned char flag = 0;
-[e = _flag -> -> 0 `i `uc ]
-[; ;main.c: 16: TRISB = 0xFF;
-"16
-[e = _TRISB -> -> 255 `i `uc ]
-[; ;main.c: 18: TRISDbits.RD0 = 0;
-"18
-[e = . . _TRISDbits 1 0 -> -> 0 `i `uc ]
-[; ;main.c: 19: LATDbits.LATD0 = 1;
-"19
-[e = . . _LATDbits 0 0 -> -> 1 `i `uc ]
-[; ;main.c: 20: while(1){
-"20
-[e :U 595 ]
-{
-[; ;main.c: 21: if (PORTBbits.RB4 == 0 && flag == 0){
-"21
-[e $ ! && == -> . . _PORTBbits 0 4 `i -> 0 `i == -> _flag `i -> 0 `i 597  ]
-{
-[; ;main.c: 22: if(LATDbits.LATD0 == 1)LATDbits.LATD0 = 0;
-"22
-[e $ ! == -> . . _LATDbits 0 0 `i -> 1 `i 598  ]
-[e = . . _LATDbits 0 0 -> -> 0 `i `uc ]
-[e $U 599  ]
-"23
-[e :U 598 ]
-[; ;main.c: 23: else LATDbits.LATD0 = 1;
-[e = . . _LATDbits 0 0 -> -> 1 `i `uc ]
-[e :U 599 ]
-[; ;main.c: 24: flag =1;
-"24
-[e = _flag -> -> 1 `i `uc ]
-"25
-}
-[e :U 597 ]
-[; ;main.c: 25: }
-[; ;main.c: 26: if (PORTBbits.RB4 && flag == 1)flag = 0;
-"26
-[e $ ! && != -> . . _PORTBbits 0 4 `i -> -> -> 0 `i `Vuc `i == -> _flag `i -> 1 `i 600  ]
-[e = _flag -> -> 0 `i `uc ]
-[e :U 600 ]
-"28
-}
-[e :U 594 ]
-"20
-[e $U 595  ]
-[e :U 596 ]
-[; ;main.c: 28: }
-[; ;main.c: 30: return;
-"30
-[e $UE 593  ]
-[; ;main.c: 31: }
-"31
+[; ;main.c: 42: }
+"42
 [e :UE 593 ]
 }

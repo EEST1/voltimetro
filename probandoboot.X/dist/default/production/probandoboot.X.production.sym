@@ -1,16 +1,14 @@
 __CFG_XINST$OFF 0 0 ABS 0
 __S0 30000E 0 ABS 0
-__S1 3 0 ABS 0
+__S1 0 0 ABS 0
 __S2 0 0 ABS 0
 __Hintentry 0 0 ABS 0
 __CFG_PWRT$OFF 0 0 ABS 0
 __Lintentry 0 0 ABS 0
 __CFG_PLLDIV$5 0 0 ABS 0
-_main 7FC4 0 CODE 0
+_main 200E 0 CODE 0
 ___sp 0 0 STACK 2
 start 2000 0 CODE 0
-main@flag 2 0 COMRAM 1
-_TRISB F93 0 ABS 0
 __Hirdata 0 0 CODE 0
 __Lirdata 0 0 CODE 0
 __HRAM 0 0 ABS 0
@@ -35,7 +33,6 @@ __Hnvrram 0 0 COMRAM 1
 __Lnvrram 0 0 COMRAM 1
 __Heeprom_data 0 0 EEDATA 0
 __Leeprom_data 0 0 EEDATA 0
-_LATDbits F8C 0 ABS 0
 __Hintsave_regs 0 0 BIGRAM 1
 __Lintsave_regs 0 0 BIGRAM 1
 __Hbigbss 0 0 BIGRAM 1
@@ -78,13 +75,11 @@ __Linit 2000 0 CODE 0
 __Hintcodelo 2000 0 CODE 0
 __Lintcodelo 2000 0 CODE 0
 __Hrbss 0 0 COMRAM 1
-__end_of_main 8000 0 CODE 0
+__end_of_main 2012 0 CODE 0
 __Lrbss 0 0 COMRAM 1
 __Htext 0 0 ABS 0
 __Ltext 0 0 ABS 0
 end_of_initialization 2008 0 CODE 0
-_TRISDbits F95 0 ABS 0
-_PORTBbits F81 0 ABS 0
 __Hibigdata 0 0 CODE 0
 __Libigdata 0 0 CODE 0
 __Hifardata 0 0 CODE 0
@@ -109,7 +104,7 @@ __Hbank7 0 0 ABS 0
 __Lbank7 0 0 ABS 0
 __Htext0 0 0 ABS 0
 __Ltext0 0 0 ABS 0
-__ptext0 7FC4 0 CODE 0
+__ptext0 200E 0 CODE 0
 __Hclrtext 0 0 ABS 0
 __Lclrtext 0 0 ABS 0
 __end_of__initialization 2008 0 CODE 0
@@ -126,7 +121,7 @@ __Hparam 0 0 ABS 0
 __Lparam 0 0 ABS 0
 __HcstackCOMRAM 0 0 ABS 0
 __LcstackCOMRAM 0 0 ABS 0
-__pcstackCOMRAM 1 0 COMRAM 1
+__pcstackCOMRAM 0 0 COMRAM 1
 __Hsmallconst 0 0 SMALLCONST 0
 __Lsmallconst 0 0 SMALLCONST 0
 __Hnvbit 0 0 COMRAM 1
@@ -177,30 +172,18 @@ __CFG_LVP$OFF 0 0 ABS 0
 reset_vec 2000 2003 CODE 2000 0
 config 300000 30000D CONFIG 300000 0
 idloc 200000 200007 IDLOC 200000 0
-cstackCOMRAM 1 2 COMRAM 1 1
-text0 7FC4 7FFF CODE 7FC4 0
-cinit 2008 200D CODE 2008 0
+cinit 2008 2011 CODE 2008 0
 %locals
-dist/default/production\probandoboot.X.production.obj
-C:\Archivos de programa\Microchip\xc8\v1.30\include\pic18f4550.h
-C:\Archivos de programa\Microchip\xc8\v1.30\include\pic18f4550.h
-4592 7FC4 0 CODE 0
+dist/default/production/probandoboot.X.production.obj
+/opt/microchip/xc8/v1.30/include/pic18f4550.h
 main.c
-14 7FC4 0 CODE 0
-15 7FC4 0 CODE 0
-16 7FCC 0 CODE 0
-18 7FCE 0 CODE 0
-19 7FD0 0 CODE 0
-21 7FD2 0 CODE 0
-22 7FDA 0 CODE 0
-23 7FE2 0 CODE 0
-24 7FE4 0 CODE 0
-26 7FEC 0 CODE 0
-31 8000 0 CODE 0
-C:\Windows\Temp\s2lk.
-562 2008 0 CODE 0
-564 2008 0 CODE 0
-567 2008 0 CODE 0
-573 2008 0 CODE 0
-574 2008 0 CODE 0
-575 200A 0 CODE 0
+42 200E 0 CODE 0
+14 200E 0 CODE 0
+42 200E 0 CODE 0
+/tmp/cgtW4isT1
+554 2008 0 CODE 0
+556 2008 0 CODE 0
+559 2008 0 CODE 0
+565 2008 0 CODE 0
+566 2008 0 CODE 0
+567 200A 0 CODE 0
