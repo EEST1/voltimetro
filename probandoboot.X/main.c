@@ -2,6 +2,7 @@
  * File:   main.c
  * Author: Esteban Lemos
  * Created on 5 de febrero de 2014, 20:49
+ * En caso de necesitar el proyecto completo ingresar en https://github.com/EEST1/Ap_template/tree/inicializado
  */
 /*
  *Los LEDS  del shield están designados de izquierda a derechacomo LED1, LED2,
@@ -28,7 +29,11 @@ void main(void) {
     pic_ini();          //inicializa las entradas y salidas del shield
 
     while(1){
-                        //escriba el código aqui
+        //código de prueba
+        LED1 = ~LED1;
+        for(unsigned char i=0;i<100;i++) __delay_ms(10);
+        
+        //escriba el código aqui
 
     }
 }
