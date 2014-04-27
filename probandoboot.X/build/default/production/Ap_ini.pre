@@ -1,5 +1,5 @@
 
-# 1 "main.c"
+# 1 "Ap_ini.c"
 
 
 # 21 "C:\Archivos de programa\Microchip\xc8\v1.30\include\htc.h"
@@ -6301,59 +6301,76 @@ extern __nonreentrant void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __nonreentrant void _delay3(unsigned char);
 
-
-# 21 "confbits.h"
-#pragma config PLLDIV = 5
-#pragma config CPUDIV = OSC1_PLL2
-#pragma config USBDIV = 2
-#pragma config FOSC = HSPLL_HS
-#pragma config FCMEN = OFF
-#pragma config IESO = OFF
-#pragma config PWRT = OFF
-#pragma config BOR = ON
-#pragma config BORV = 3
-#pragma config VREGEN = ON
-#pragma config WDT = OFF
-#pragma config WDTPS = 32768
-#pragma config MCLRE = ON
-#pragma config LPT1OSC = OFF
-#pragma config PBADEN = OFF
-
-
-# 43
-#pragma config STVREN = ON
-#pragma config LVP = OFF
-
-#pragma config XINST = OFF
-#pragma config CP0 = OFF
-#pragma config CP1 = OFF
-
-
-#pragma config CPB = OFF
-
-#pragma config WRT0 = OFF
-#pragma config WRT1 = OFF
-
-
-#pragma config WRTB = OFF
-#pragma config WRTC = OFF
-
-#pragma config EBTR0 = OFF
-#pragma config EBTR1 = OFF
-
-
-#pragma config EBTRB = OFF
-
 # 39 "Ap_Puertos.h"
 void pic_ini(void);
 void Send_Disp(unsigned char NroDisp,unsigned char Dato);
 
-# 27 "main.c"
-void main(void) {
-pic_ini();
-
-while(1){
+# 5 "Ap_ini.c"
+void pic_ini(void){
 
 
+LATA = 0x00;
+LATB = 0x00;
+LATC = 0x00;
+LATD = 0x00;
+LATE = 0x00;
+
+PORTA = 0x00;
+PORTB = 0x00;
+PORTC = 0x00;
+PORTD = 0x00;
+PORTE = 0x00;
+
+
+
+TRISD = 0xF0;
+TRISCbits.RC6 = 0;
+TRISCbits.RC7 = 0;
+
+
+
+CMCON = 0x07;
+ADCON1 = 0x0F;
+TRISA = 0xC0;
+TRISE = 0x00;
 }
+void Send_Disp(unsigned char NroDisp,unsigned char Dato){
+
+LATA = 0;
+
+switch(NroDisp){
+case 1:{
+PORTAbits.RA4 = 1;
+PORTAbits.RA5 = 0;
+PORTEbits.RE0 = 0;
+PORTEbits.RE1 = 0;
+}break;
+case 2: {
+PORTAbits.RA4 = 0;
+PORTAbits.RA5 = 1;
+PORTEbits.RE0 = 0;
+PORTEbits.RE1 = 0;
+}break;
+case 3: {
+PORTAbits.RA4 = 0;
+PORTAbits.RA5 = 0;
+PORTEbits.RE0 = 1;
+PORTEbits.RE1 = 0;
+}break;
+case 4: {
+PORTAbits.RA4 = 0;
+PORTAbits.RA5 = 0;
+PORTEbits.RE0 = 0;
+PORTEbits.RE1 = 1;
+}break;
+default :{
+PORTAbits.RA4 = 1;
+PORTAbits.RA5 = 0;
+PORTEbits.RE0 = 0;
+PORTEbits.RE1 = 0;
+}break;
+}
+Dato &= 0x0F;
+LATA &= 0xF0;
+LATA |= Dato;
 }
