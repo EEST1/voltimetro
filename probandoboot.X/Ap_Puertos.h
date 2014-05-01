@@ -35,7 +35,16 @@ extern "C" {
 #define DISP3   PORTEbits.RE0
 #define DISP4   PORTEbits.RE1
 #define DOT     PORTEbits.RE2
+#define MUX_SET 10;          //multiplicador de mux_tout
+#define BOT_REL 100;         //multiplicador de BOT_REL
 
-void pic_ini(void);
+void pic_ini13(void);
+void timer_ini13(void);
 void Send_Disp(unsigned char NroDisp,unsigned char Dato);
+void Send_4Disp(unsigned char Umil,unsigned char Cent,unsigned char Dec,unsigned char Uni);
+void leds(unsigned int velocidad);
+void tic_timer0(void);
 
+
+unsigned char mux_tout,bot_tout;
+unsigned int    led_tout;

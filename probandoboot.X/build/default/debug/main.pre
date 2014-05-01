@@ -6344,86 +6344,71 @@ extern __nonreentrant void _delay3(unsigned char);
 
 #pragma config EBTRB = OFF
 
-# 41 "Ap_Puertos.h"
-void pic_ini13(void);
-void timer_ini13(void);
+# 39 "Ap_Puertos.h"
+void pic_ini(void);
 void Send_Disp(unsigned char NroDisp,unsigned char Dato);
 void Send_4Disp(unsigned char Umil,unsigned char Cent,unsigned char Dec,unsigned char Uni);
-void leds(unsigned int velocidad);
 void tic_timer0(void);
 
-
-unsigned char mux_tout,bot_tout;
-unsigned int led_tout;
-
-# 27 "main.c"
+# 26 "main.c"
 unsigned char mux_tout = 0;
+
 
 
 void main(void) {
 
-unsigned char a=0,b=1;
-unsigned char faon=0,faoff=0;
-unsigned char fbon=0,fvel=0;
-unsigned int velocidad = 100;
-pic_ini13();
-timer_ini13();
+unsigned char a=1,b=0;
 
 
-
-
+pic_ini();
 INTCONbits.GIE = 1;
-(INTCONbits.GIE = 1);
-T0CONbits.TMR0ON = 1;
+
+
+
+INTCONbits.TMR0IE = 1;
+TMR0L = 39;
+TMR0H = 0;
+T0CON = 0xC6;
 
 while(1){
 
-# 56
-Send_4Disp(a,b,3,4);
-
-
-if(!PORTDbits.RD4 && a < 9 && faon ==0 && !bot_tout){
+if(!b){
+switch(a){
+case 1: {
+if(!mux_tout){
+Send_Disp(1,1);
 a++;
-faon = 1;
-bot_tout = 100;;
+mux_tout = 10;
 }
-if(PORTDbits.RD4 && faon == 1 && !bot_tout){
-faon=0;
-bot_tout = 100;;
 }
-if(!PORTDbits.RD5 && a > 0 && faoff ==0 && !bot_tout){
-a--;
-faoff = 1;
-bot_tout = 100;;
+break;
+case 2: {
+if(!mux_tout){
+Send_Disp(2,2);
+a++;
+mux_tout = 10;
 }
-if(PORTDbits.RD5 && faoff == 1 && !bot_tout){
-faoff=0;
-bot_tout = 100;;
 }
-
-if(!PORTDbits.RD6 && fbon ==0 && !bot_tout){
-b = ~b&(0x01);
-fbon = 1;
-bot_tout = 100;;
+break;
+case 3: {
+if(!mux_tout){
+Send_Disp(3,3);
+a++;
+mux_tout = 10;
 }
-if(PORTDbits.RD6 && fbon == 1 && !bot_tout){
-
-fbon=0;
-bot_tout = 100;;
 }
-if(!PORTDbits.RD7 && fvel ==0 && !bot_tout){
-velocidad = velocidad + 100;
-fvel = 1;
-bot_tout = 100;;
-}
-if(PORTDbits.RD7 && fvel == 1 && !bot_tout){
-
-fvel=0;
-bot_tout = 100;;
+break;
+case 4: {
+if(!mux_tout){
+Send_Disp(4,4);
+a = 1;
+mux_tout = 10;
 }
 
-if(b == 0x01) leds(velocidad);
-
+}
+break;
+}
+}
 
 
 
@@ -6432,13 +6417,11 @@ if(b == 0x01) leds(velocidad);
 
 void __interrupt myISR(void){
 
-# 115
-if(TMR0IF){
-INTCONbits.TMR0IF = 0;
-TMR0L = 0xD9;
-TMR0H = 0xFF;
+# 97
 tic_timer0();
-}
+INTCONbits.TMR0IF = 0;
+
+
 return;
 }
 
