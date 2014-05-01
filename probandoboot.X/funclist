@@ -1,4 +1,10 @@
-_pic_ini: CODE, 32702 0 66
-_main: CODE, 32696 0 6
-__initialization: CODE, 8200 0 0
-Total: 72
+_tic_timer0: CODE, 31776 0 28
+_pic_ini13: CODE, 31846 0 66
+_myISR: CODE, 8200 0 24026
+_main: CODE, 32382 0 386
+_Send_Disp: CODE, 31912 0 82
+_Send_4Disp: CODE, 32226 0 156
+_timer_ini13: CODE, 31752 0 24
+__initialization: CODE, 31804 0 32
+_leds: CODE, 31994 0 108
+Total: 24908
