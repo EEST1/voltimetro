@@ -65,102 +65,96 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S547 . . . . . . ]
 "9206
 [v _INTCONbits `VS547 ~T0 @X0 0 e@4082 ]
-[s S213 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S213 . RD0 RD1 RD2 RD3 RD4 RD5 RD6 RD7 ]
-[s S214 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S214 . SPP0 SPP1 SPP2 SPP3 SPP4 SPP5 SPP6 SPP7 ]
-[s S215 :7 `uc 1 :1 `uc 1 ]
-[n S215 . . SS2 ]
-[u S212 `S213 1 `S214 1 `S215 1 ]
-[n S212 . . . . ]
-"3015
-[v _PORTDbits `VS212 ~T0 @X0 0 e@3971 ]
-[s S205 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S205 . RC0 RC1 RC2 . RC4 RC5 RC6 RC7 ]
-[s S206 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S206 . T1OSO T1OSI CCP1 . TX RX ]
-[s S207 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S207 . T13CKI . P1A . CK DT ]
-[s S208 :1 `uc 1 :1 `uc 1 ]
-[n S208 . . CCP2 ]
-[s S209 :2 `uc 1 :1 `uc 1 ]
-[n S209 . . PA1 ]
-[s S210 :1 `uc 1 :1 `uc 1 ]
-[n S210 . . PA2 ]
-[s S211 :3 `uc 1 :1 `uc 1 ]
-[n S211 . . RC3 ]
-[u S204 `S205 1 `S206 1 `S207 1 `S208 1 `S209 1 `S210 1 `S211 1 ]
-[n S204 . . . . . . . . ]
-"2880
-[v _PORTCbits `VS204 ~T0 @X0 0 e@3970 ]
-[s S193 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S193 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 ]
-[s S194 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S194 . AN0 AN1 AN2 AN3 T0CKI AN4 OSC2 ]
-[s S195 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S195 . . VREFM VREFP . LVDIN ]
-[s S196 :5 `uc 1 :1 `uc 1 ]
-[n S196 . . HLVDIN ]
-[s S197 :7 `uc 1 :1 `uc 1 ]
-[n S197 . . RA7 ]
-[s S198 :7 `uc 1 :1 `uc 1 ]
-[n S198 . . RJPU ]
-[s S199 :1 `uc 1 ]
-[n S199 . ULPWUIN ]
-[u S192 `S193 1 `S194 1 `S195 1 `S196 1 `S197 1 `S198 1 `S199 1 ]
-[n S192 . . . . . . . . ]
-"2613
-[v _PORTAbits `VS192 ~T0 @X0 0 e@3968 ]
-[s S217 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 ]
-[n S217 . RE0 RE1 RE2 RE3 . RDPU ]
-[s S218 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S218 . CK1SPP CK2SPP OESPP ]
-[s S219 :2 `uc 1 :1 `uc 1 ]
-[n S219 . . CCP10 ]
-[s S220 :7 `uc 1 :1 `uc 1 ]
-[n S220 . . CCP2E ]
-[s S221 :6 `uc 1 :1 `uc 1 ]
-[n S221 . . CCP6E ]
-[s S222 :5 `uc 1 :1 `uc 1 ]
-[n S222 . . CCP7E ]
-[s S223 :4 `uc 1 :1 `uc 1 ]
-[n S223 . . CCP8E ]
-[s S224 :3 `uc 1 :1 `uc 1 ]
-[n S224 . . CCP9E ]
-[s S225 :2 `uc 1 :1 `uc 1 ]
-[n S225 . . CS ]
-[s S226 :7 `uc 1 :1 `uc 1 ]
-[n S226 . . PA2E ]
-[s S227 :6 `uc 1 :1 `uc 1 ]
-[n S227 . . PB1E ]
-[s S228 :2 `uc 1 :1 `uc 1 ]
-[n S228 . . PB2 ]
-[s S229 :4 `uc 1 :1 `uc 1 ]
-[n S229 . . PB3E ]
-[s S230 :5 `uc 1 :1 `uc 1 ]
-[n S230 . . PC1E ]
-[s S231 :1 `uc 1 :1 `uc 1 ]
-[n S231 . . PC2 ]
-[s S232 :3 `uc 1 :1 `uc 1 ]
-[n S232 . . PC3E ]
-[s S233 :1 `uc 1 ]
-[n S233 . PD2 ]
-[s S234 :1 `uc 1 ]
-[n S234 . RDE ]
-[s S235 :4 `uc 1 :1 `uc 1 ]
-[n S235 . . RE4 ]
-[s S236 :5 `uc 1 :1 `uc 1 ]
-[n S236 . . RE5 ]
-[s S237 :6 `uc 1 :1 `uc 1 ]
-[n S237 . . RE6 ]
-[s S238 :7 `uc 1 :1 `uc 1 ]
-[n S238 . . RE7 ]
-[s S239 :1 `uc 1 :1 `uc 1 ]
-[n S239 . . WRE ]
-[u S216 `S217 1 `S218 1 `S219 1 `S220 1 `S221 1 `S222 1 `S223 1 `S224 1 `S225 1 `S226 1 `S227 1 `S228 1 `S229 1 `S230 1 `S231 1 `S232 1 `S233 1 `S234 1 `S235 1 `S236 1 `S237 1 `S238 1 `S239 1 ]
-[n S216 . . . . . . . . . . . . . . . . . . . . . . . . ]
-"3206
-[v _PORTEbits `VS216 ~T0 @X0 0 e@3972 ]
+[s S272 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S272 . LATD0 LATD1 LATD2 LATD3 LATD4 LATD5 LATD6 LATD7 ]
+[s S273 :1 `uc 1 ]
+[n S273 . LD0 ]
+[s S274 :1 `uc 1 :1 `uc 1 ]
+[n S274 . . LD1 ]
+[s S275 :2 `uc 1 :1 `uc 1 ]
+[n S275 . . LD2 ]
+[s S276 :3 `uc 1 :1 `uc 1 ]
+[n S276 . . LD3 ]
+[s S277 :4 `uc 1 :1 `uc 1 ]
+[n S277 . . LD4 ]
+[s S278 :5 `uc 1 :1 `uc 1 ]
+[n S278 . . LD5 ]
+[s S279 :6 `uc 1 :1 `uc 1 ]
+[n S279 . . LD6 ]
+[s S280 :7 `uc 1 :1 `uc 1 ]
+[n S280 . . LD7 ]
+[u S271 `S272 1 `S273 1 `S274 1 `S275 1 `S276 1 `S277 1 `S278 1 `S279 1 `S280 1 ]
+[n S271 . . . . . . . . . . ]
+"3785
+[v _LATDbits `VS271 ~T0 @X0 0 e@3980 ]
+[s S262 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S262 . LATC0 LATC1 LATC2 . LATC6 LATC7 ]
+[s S263 :1 `uc 1 ]
+[n S263 . LC0 ]
+[s S264 :1 `uc 1 :1 `uc 1 ]
+[n S264 . . LC1 ]
+[s S265 :2 `uc 1 :1 `uc 1 ]
+[n S265 . . LC2 ]
+[s S266 :3 `uc 1 :1 `uc 1 ]
+[n S266 . . LC3 ]
+[s S267 :4 `uc 1 :1 `uc 1 ]
+[n S267 . . LC4 ]
+[s S268 :5 `uc 1 :1 `uc 1 ]
+[n S268 . . LC5 ]
+[s S269 :6 `uc 1 :1 `uc 1 ]
+[n S269 . . LC6 ]
+[s S270 :7 `uc 1 :1 `uc 1 ]
+[n S270 . . LC7 ]
+[u S261 `S262 1 `S263 1 `S264 1 `S265 1 `S266 1 `S267 1 `S268 1 `S269 1 `S270 1 ]
+[n S261 . . . . . . . . . . ]
+"3668
+[v _LATCbits `VS261 ~T0 @X0 0 e@3979 ]
+[s S241 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S241 . LATA0 LATA1 LATA2 LATA3 LATA4 LATA5 LATA6 ]
+[s S242 :1 `uc 1 ]
+[n S242 . LA0 ]
+[s S243 :1 `uc 1 :1 `uc 1 ]
+[n S243 . . LA1 ]
+[s S244 :2 `uc 1 :1 `uc 1 ]
+[n S244 . . LA2 ]
+[s S245 :3 `uc 1 :1 `uc 1 ]
+[n S245 . . LA3 ]
+[s S246 :4 `uc 1 :1 `uc 1 ]
+[n S246 . . LA4 ]
+[s S247 :5 `uc 1 :1 `uc 1 ]
+[n S247 . . LA5 ]
+[s S248 :6 `uc 1 :1 `uc 1 ]
+[n S248 . . LA6 ]
+[s S249 :7 `uc 1 :1 `uc 1 ]
+[n S249 . . LA7 ]
+[s S250 :7 `uc 1 :1 `uc 1 ]
+[n S250 . . LATA7 ]
+[u S240 `S241 1 `S242 1 `S243 1 `S244 1 `S245 1 `S246 1 `S247 1 `S248 1 `S249 1 `S250 1 ]
+[n S240 . . . . . . . . . . . ]
+"3406
+[v _LATAbits `VS240 ~T0 @X0 0 e@3977 ]
+[s S282 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S282 . LATE0 LATE1 LATE2 ]
+[s S283 :1 `uc 1 ]
+[n S283 . LE0 ]
+[s S284 :1 `uc 1 :1 `uc 1 ]
+[n S284 . . LE1 ]
+[s S285 :2 `uc 1 :1 `uc 1 ]
+[n S285 . . LE2 ]
+[s S286 :3 `uc 1 :1 `uc 1 ]
+[n S286 . . LE3 ]
+[s S287 :4 `uc 1 :1 `uc 1 ]
+[n S287 . . LE4 ]
+[s S288 :5 `uc 1 :1 `uc 1 ]
+[n S288 . . LE5 ]
+[s S289 :6 `uc 1 :1 `uc 1 ]
+[n S289 . . LE6 ]
+[s S290 :7 `uc 1 :1 `uc 1 ]
+[n S290 . . LE7 ]
+[u S281 `S282 1 `S283 1 `S284 1 `S285 1 `S286 1 `S287 1 `S288 1 `S289 1 `S290 1 ]
+[n S281 . . . . . . . . . . ]
+"3912
+[v _LATEbits `VS281 ~T0 @X0 0 e@3981 ]
 [; ;htc.h: 22: extern void __builtin_software_breakpoint(void);
 [; ;pic18f4550.h: 44: extern volatile unsigned char SPPDATA @ 0xF62;
 "46 C:\Archivos de programa\Microchip\xc8\v1.30\include\pic18f4550.h
@@ -5067,9 +5061,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;Ap_ini.c: 41: T0CONbits.T0PS2 = 1;
 "41
 [e = . . _T0CONbits 1 2 -> -> 1 `i `uc ]
-[; ;Ap_ini.c: 42: TMR0L = 0xD9;
+[; ;Ap_ini.c: 42: TMR0L = 0xD8;
 "42
-[e = _TMR0L -> -> 217 `i `uc ]
+[e = _TMR0L -> -> 216 `i `uc ]
 [; ;Ap_ini.c: 43: TMR0H = 0xFF;
 "43
 [e = _TMR0H -> -> 255 `i `uc ]
@@ -5102,9 +5096,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 598 ]
 [e $ ! ! != _led_tout -> -> 0 `i `ui 599  ]
 {
-[; ;Ap_ini.c: 52: PORTDbits.RD2=~PORTDbits.RD2;
+[; ;Ap_ini.c: 52: LATDbits.LD2=~LATDbits.LD2;
 "52
-[e = . . _PORTDbits 0 2 -> ~ -> . . _PORTDbits 0 2 `i `uc ]
+[e = . . _LATDbits 3 1 -> ~ -> . . _LATDbits 3 1 `i `uc ]
 [; ;Ap_ini.c: 53: led_tout = velocidad;
 "53
 [e = _led_tout _velocidad ]
@@ -5123,9 +5117,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 600 ]
 [e $ ! ! != _led_tout -> -> 0 `i `ui 601  ]
 {
-[; ;Ap_ini.c: 58: PORTDbits.RD3=~PORTDbits.RD3;
+[; ;Ap_ini.c: 58: LATDbits.LD3=~LATDbits.LD3;
 "58
-[e = . . _PORTDbits 0 3 -> ~ -> . . _PORTDbits 0 3 `i `uc ]
+[e = . . _LATDbits 4 1 -> ~ -> . . _LATDbits 4 1 `i `uc ]
 [; ;Ap_ini.c: 59: led_tout = velocidad;
 "59
 [e = _led_tout _velocidad ]
@@ -5144,9 +5138,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 602 ]
 [e $ ! ! != _led_tout -> -> 0 `i `ui 603  ]
 {
-[; ;Ap_ini.c: 64: PORTCbits.RC6=~PORTCbits.RC6;
+[; ;Ap_ini.c: 64: LATCbits.LC6=~LATCbits.LC6;
 "64
-[e = . . _PORTCbits 0 6 -> ~ -> . . _PORTCbits 0 6 `i `uc ]
+[e = . . _LATCbits 7 1 -> ~ -> . . _LATCbits 7 1 `i `uc ]
 [; ;Ap_ini.c: 65: led_tout = velocidad;
 "65
 [e = _led_tout _velocidad ]
@@ -5165,9 +5159,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 604 ]
 [e $ ! ! != _led_tout -> -> 0 `i `ui 605  ]
 {
-[; ;Ap_ini.c: 70: PORTCbits.RC7=~PORTCbits.RC7;
+[; ;Ap_ini.c: 70: LATCbits.LC7=~LATCbits.LC7;
 "70
-[e = . . _PORTCbits 0 7 -> ~ -> . . _PORTCbits 0 7 `i `uc ]
+[e = . . _LATCbits 8 1 -> ~ -> . . _LATCbits 8 1 `i `uc ]
 [; ;Ap_ini.c: 71: led_tout = velocidad;
 "71
 [e = _led_tout _velocidad ]
@@ -5222,18 +5216,18 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;Ap_ini.c: 85: LATA = 0;
 "85
 [e = _LATA -> -> 0 `i `uc ]
-[; ;Ap_ini.c: 87: PORTAbits.RA4 = 0;
+[; ;Ap_ini.c: 87: LATAbits.LA4 = 0;
 "87
-[e = . . _PORTAbits 0 4 -> -> 0 `i `uc ]
-[; ;Ap_ini.c: 88: PORTAbits.RA5 = 0;
+[e = . . _LATAbits 5 1 -> -> 0 `i `uc ]
+[; ;Ap_ini.c: 88: LATAbits.LA5 = 0;
 "88
-[e = . . _PORTAbits 0 5 -> -> 0 `i `uc ]
-[; ;Ap_ini.c: 89: PORTEbits.RE0 = 0;
+[e = . . _LATAbits 6 1 -> -> 0 `i `uc ]
+[; ;Ap_ini.c: 89: LATEbits.LATE0 = 0;
 "89
-[e = . . _PORTEbits 0 0 -> -> 0 `i `uc ]
-[; ;Ap_ini.c: 90: PORTEbits.RE1 = 0;
+[e = . . _LATEbits 0 0 -> -> 0 `i `uc ]
+[; ;Ap_ini.c: 90: LATEbits.LATE1 = 0;
 "90
-[e = . . _PORTEbits 0 1 -> -> 0 `i `uc ]
+[e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
 [; ;Ap_ini.c: 92: switch(NroDisp){
 "92
 [e $U 609  ]
@@ -5242,9 +5236,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 "93
 [e :U 610 ]
 {
-[; ;Ap_ini.c: 94: PORTAbits.RA4 = 1;
+[; ;Ap_ini.c: 94: LATAbits.LA4 = 1;
 "94
-[e = . . _PORTAbits 0 4 -> -> 1 `i `uc ]
+[e = . . _LATAbits 5 1 -> -> 1 `i `uc ]
 "95
 }
 [; ;Ap_ini.c: 95: }break;
@@ -5253,9 +5247,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 "96
 [e :U 611 ]
 {
-[; ;Ap_ini.c: 97: PORTAbits.RA5 = 1;
+[; ;Ap_ini.c: 97: LATAbits.LA5 = 1;
 "97
-[e = . . _PORTAbits 0 5 -> -> 1 `i `uc ]
+[e = . . _LATAbits 6 1 -> -> 1 `i `uc ]
 "98
 }
 [; ;Ap_ini.c: 98: }break;
@@ -5264,9 +5258,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 "99
 [e :U 612 ]
 {
-[; ;Ap_ini.c: 100: PORTEbits.RE0 = 1;
+[; ;Ap_ini.c: 100: LATEbits.LATE0 = 1;
 "100
-[e = . . _PORTEbits 0 0 -> -> 1 `i `uc ]
+[e = . . _LATEbits 0 0 -> -> 1 `i `uc ]
 "101
 }
 [; ;Ap_ini.c: 101: }break;
@@ -5275,9 +5269,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 "102
 [e :U 613 ]
 {
-[; ;Ap_ini.c: 103: PORTEbits.RE1 = 1;
+[; ;Ap_ini.c: 103: LATEbits.LATE1 = 1;
 "103
-[e = . . _PORTEbits 0 1 -> -> 1 `i `uc ]
+[e = . . _LATEbits 0 1 -> -> 1 `i `uc ]
 "104
 }
 [; ;Ap_ini.c: 104: }break;
@@ -5286,9 +5280,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 "105
 [e :U 614 ]
 {
-[; ;Ap_ini.c: 106: PORTAbits.RA4 = 1;
+[; ;Ap_ini.c: 106: LATAbits.LA4 = 1;
 "106
-[e = . . _PORTAbits 0 4 -> -> 1 `i `uc ]
+[e = . . _LATAbits 5 1 -> -> 1 `i `uc ]
 "107
 }
 [; ;Ap_ini.c: 107: }break;

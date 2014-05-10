@@ -4978,177 +4978,177 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 56: Send_4Disp(a,b,3,4);
 "56
 [e ( _Send_4Disp (4 , , , _a _b -> -> 3 `i `uc -> -> 4 `i `uc ]
-[; ;main.c: 59: if(!PORTDbits.RD4 && a < 9 && faon ==0 && !bot_tout){
-"59
+[; ;main.c: 62: if(!PORTDbits.RD4 && a < 9 && faon ==0 && !bot_tout){
+"62
 [e $ ! && && && ! != -> . . _PORTDbits 0 4 `i -> -> -> 0 `i `Vuc `i < -> _a `i -> 9 `i == -> _faon `i -> 0 `i ! != -> _bot_tout `i -> -> -> 0 `i `uc `i 597  ]
 {
-[; ;main.c: 60: a++;
-"60
-[e ++ _a -> -> 1 `i `uc ]
-[; ;main.c: 61: faon = 1;
-"61
-[e = _faon -> -> 1 `i `uc ]
-[; ;main.c: 62: bot_tout = 100;;
-"62
-[e = _bot_tout -> -> 100 `i `uc ]
+[; ;main.c: 63: a++;
 "63
+[e ++ _a -> -> 1 `i `uc ]
+[; ;main.c: 64: faon = 1;
+"64
+[e = _faon -> -> 1 `i `uc ]
+[; ;main.c: 65: bot_tout = 100;;
+"65
+[e = _bot_tout -> -> 100 `i `uc ]
+"66
 }
 [e :U 597 ]
-[; ;main.c: 63: }
-[; ;main.c: 64: if(PORTDbits.RD4 && faon == 1 && !bot_tout){
-"64
+[; ;main.c: 66: }
+[; ;main.c: 67: if(PORTDbits.RD4 && faon == 1 && !bot_tout){
+"67
 [e $ ! && && != -> . . _PORTDbits 0 4 `i -> -> -> 0 `i `Vuc `i == -> _faon `i -> 1 `i ! != -> _bot_tout `i -> -> -> 0 `i `uc `i 598  ]
 {
-[; ;main.c: 65: faon=0;
-"65
+[; ;main.c: 68: faon=0;
+"68
 [e = _faon -> -> 0 `i `uc ]
-[; ;main.c: 66: bot_tout = 100;;
-"66
+[; ;main.c: 69: bot_tout = 100;;
+"69
 [e = _bot_tout -> -> 100 `i `uc ]
-"67
+"70
 }
 [e :U 598 ]
-[; ;main.c: 67: }
-[; ;main.c: 68: if(!PORTDbits.RD5 && a > 0 && faoff ==0 && !bot_tout){
-"68
+[; ;main.c: 70: }
+[; ;main.c: 71: if(!PORTDbits.RD5 && a > 0 && faoff ==0 && !bot_tout){
+"71
 [e $ ! && && && ! != -> . . _PORTDbits 0 5 `i -> -> -> 0 `i `Vuc `i > -> _a `i -> 0 `i == -> _faoff `i -> 0 `i ! != -> _bot_tout `i -> -> -> 0 `i `uc `i 599  ]
 {
-[; ;main.c: 69: a--;
-"69
-[e -- _a -> -> 1 `i `uc ]
-[; ;main.c: 70: faoff = 1;
-"70
-[e = _faoff -> -> 1 `i `uc ]
-[; ;main.c: 71: bot_tout = 100;;
-"71
-[e = _bot_tout -> -> 100 `i `uc ]
+[; ;main.c: 72: a--;
 "72
+[e -- _a -> -> 1 `i `uc ]
+[; ;main.c: 73: faoff = 1;
+"73
+[e = _faoff -> -> 1 `i `uc ]
+[; ;main.c: 74: bot_tout = 100;;
+"74
+[e = _bot_tout -> -> 100 `i `uc ]
+"75
 }
 [e :U 599 ]
-[; ;main.c: 72: }
-[; ;main.c: 73: if(PORTDbits.RD5 && faoff == 1 && !bot_tout){
-"73
+[; ;main.c: 75: }
+[; ;main.c: 76: if(PORTDbits.RD5 && faoff == 1 && !bot_tout){
+"76
 [e $ ! && && != -> . . _PORTDbits 0 5 `i -> -> -> 0 `i `Vuc `i == -> _faoff `i -> 1 `i ! != -> _bot_tout `i -> -> -> 0 `i `uc `i 600  ]
 {
-[; ;main.c: 74: faoff=0;
-"74
+[; ;main.c: 77: faoff=0;
+"77
 [e = _faoff -> -> 0 `i `uc ]
-[; ;main.c: 75: bot_tout = 100;;
-"75
+[; ;main.c: 78: bot_tout = 100;;
+"78
 [e = _bot_tout -> -> 100 `i `uc ]
-"76
+"79
 }
 [e :U 600 ]
-[; ;main.c: 76: }
-[; ;main.c: 78: if(!PORTDbits.RD6 && fbon ==0 && !bot_tout){
-"78
+[; ;main.c: 79: }
+[; ;main.c: 81: if(!PORTDbits.RD6 && fbon ==0 && !bot_tout){
+"81
 [e $ ! && && ! != -> . . _PORTDbits 0 6 `i -> -> -> 0 `i `Vuc `i == -> _fbon `i -> 0 `i ! != -> _bot_tout `i -> -> -> 0 `i `uc `i 601  ]
 {
-[; ;main.c: 79: b = ~b&(0x01);
-"79
-[e = _b -> & ~ -> _b `i -> 1 `i `uc ]
-[; ;main.c: 80: fbon = 1;
-"80
-[e = _fbon -> -> 1 `i `uc ]
-[; ;main.c: 81: bot_tout = 100;;
-"81
-[e = _bot_tout -> -> 100 `i `uc ]
+[; ;main.c: 82: b = ~b&(0x01);
 "82
+[e = _b -> & ~ -> _b `i -> 1 `i `uc ]
+[; ;main.c: 83: fbon = 1;
+"83
+[e = _fbon -> -> 1 `i `uc ]
+[; ;main.c: 84: bot_tout = 100;;
+"84
+[e = _bot_tout -> -> 100 `i `uc ]
+"85
 }
 [e :U 601 ]
-[; ;main.c: 82: }
-[; ;main.c: 83: if(PORTDbits.RD6 && fbon == 1 && !bot_tout){
-"83
+[; ;main.c: 85: }
+[; ;main.c: 86: if(PORTDbits.RD6 && fbon == 1 && !bot_tout){
+"86
 [e $ ! && && != -> . . _PORTDbits 0 6 `i -> -> -> 0 `i `Vuc `i == -> _fbon `i -> 1 `i ! != -> _bot_tout `i -> -> -> 0 `i `uc `i 602  ]
 {
-[; ;main.c: 85: fbon=0;
-"85
+[; ;main.c: 88: fbon=0;
+"88
 [e = _fbon -> -> 0 `i `uc ]
-[; ;main.c: 86: bot_tout = 100;;
-"86
+[; ;main.c: 89: bot_tout = 100;;
+"89
 [e = _bot_tout -> -> 100 `i `uc ]
-"87
+"90
 }
 [e :U 602 ]
-[; ;main.c: 87: }
-[; ;main.c: 88: if(!PORTDbits.RD7 && fvel ==0 && !bot_tout){
-"88
+[; ;main.c: 90: }
+[; ;main.c: 91: if(!PORTDbits.RD7 && fvel ==0 && !bot_tout){
+"91
 [e $ ! && && ! != -> . . _PORTDbits 0 7 `i -> -> -> 0 `i `Vuc `i == -> _fvel `i -> 0 `i ! != -> _bot_tout `i -> -> -> 0 `i `uc `i 603  ]
 {
-[; ;main.c: 89: velocidad = velocidad + 100;
-"89
-[e = _velocidad + _velocidad -> -> 100 `i `ui ]
-[; ;main.c: 90: fvel = 1;
-"90
-[e = _fvel -> -> 1 `i `uc ]
-[; ;main.c: 91: bot_tout = 100;;
-"91
-[e = _bot_tout -> -> 100 `i `uc ]
+[; ;main.c: 92: velocidad = velocidad + 100;
 "92
+[e = _velocidad + _velocidad -> -> 100 `i `ui ]
+[; ;main.c: 93: fvel = 1;
+"93
+[e = _fvel -> -> 1 `i `uc ]
+[; ;main.c: 94: bot_tout = 100;;
+"94
+[e = _bot_tout -> -> 100 `i `uc ]
+"95
 }
 [e :U 603 ]
-[; ;main.c: 92: }
-[; ;main.c: 93: if(PORTDbits.RD7 && fvel == 1 && !bot_tout){
-"93
+[; ;main.c: 95: }
+[; ;main.c: 96: if(PORTDbits.RD7 && fvel == 1 && !bot_tout){
+"96
 [e $ ! && && != -> . . _PORTDbits 0 7 `i -> -> -> 0 `i `Vuc `i == -> _fvel `i -> 1 `i ! != -> _bot_tout `i -> -> -> 0 `i `uc `i 604  ]
 {
-[; ;main.c: 95: fvel=0;
-"95
+[; ;main.c: 98: fvel=0;
+"98
 [e = _fvel -> -> 0 `i `uc ]
-[; ;main.c: 96: bot_tout = 100;;
-"96
+[; ;main.c: 99: bot_tout = 100;;
+"99
 [e = _bot_tout -> -> 100 `i `uc ]
-"97
+"100
 }
 [e :U 604 ]
-[; ;main.c: 97: }
-[; ;main.c: 99: if(b == 0x01) leds(velocidad);
-"99
+[; ;main.c: 100: }
+[; ;main.c: 102: if(b == 0x01) leds(velocidad);
+"102
 [e $ ! == -> _b `i -> 1 `i 605  ]
 [e ( _leds (1 _velocidad ]
 [e :U 605 ]
-"104
+"107
 }
 [e :U 594 ]
 "46
 [e $U 595  ]
 [e :U 596 ]
-[; ;main.c: 104: }
-[; ;main.c: 105: }
-"105
+[; ;main.c: 107: }
+[; ;main.c: 108: }
+"108
 [e :UE 593 ]
 }
 [v F5285 `(v ~T0 @X0 1 tf ]
-"107
+"110
 [v _myISR `IF5285 ~T0 @X0 1 e ]
 {
-[; ;main.c: 107: void __interrupt myISR(void){
+[; ;main.c: 110: void __interrupt myISR(void){
 [e :U _myISR ]
 [f ]
-[; ;main.c: 115: if(TMR0IF){
-"115
+[; ;main.c: 118: if(TMR0IF){
+"118
 [e $ ! _TMR0IF 607  ]
 {
-[; ;main.c: 116: INTCONbits.TMR0IF = 0;
-"116
-[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 117: TMR0L = 0xD9;
-"117
-[e = _TMR0L -> -> 217 `i `uc ]
-[; ;main.c: 118: TMR0H = 0xFF;
-"118
-[e = _TMR0H -> -> 255 `i `uc ]
-[; ;main.c: 119: tic_timer0();
+[; ;main.c: 119: INTCONbits.TMR0IF = 0;
 "119
-[e ( _tic_timer0 ..  ]
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+[; ;main.c: 120: TMR0L = 0xD9;
 "120
+[e = _TMR0L -> -> 217 `i `uc ]
+[; ;main.c: 121: TMR0H = 0xFF;
+"121
+[e = _TMR0H -> -> 255 `i `uc ]
+[; ;main.c: 122: tic_timer0();
+"122
+[e ( _tic_timer0 ..  ]
+"123
 }
 [e :U 607 ]
-[; ;main.c: 120: }
-[; ;main.c: 121: return;
-"121
+[; ;main.c: 123: }
+[; ;main.c: 124: return;
+"124
 [e $UE 606  ]
-[; ;main.c: 122: }
-"122
+[; ;main.c: 125: }
+"125
 [e :UE 606 ]
 }

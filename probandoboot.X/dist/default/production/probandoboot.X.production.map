@@ -5,7 +5,7 @@ Linker command line:
 --edf=C:\Archivos de programa\Microchip\xc8\v1.30\dat\en_msgs.txt -cs \
   -h+dist/default/production\probandoboot.X.production.sym \
   --cmf=dist/default/production\probandoboot.X.production.cmf -z -Q18F4550 \
-  -oC:\Windows\Temp\sa4.6 \
+  -oC:\Windows\Temp\sfhk.6 \
   -Mdist/default/production/probandoboot.X.production.map -E1 -ver=XC8 \
   -ASTACK=060h-07ffh -pstack=STACK \
   -ACODE=02000h-02005h,02008h-02015h,02018h-07FFFh \
@@ -25,7 +25,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE \
-  C:\Windows\Temp\sa4.obj \
+  C:\Windows\Temp\sfhk.obj \
   dist/default/production\probandoboot.X.production.obj 
 
 Object code version is 3.11
@@ -38,7 +38,7 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Windows\Temp\sa4.obj
+C:\Windows\Temp\sfhk.obj
                 end_init                           2014     2014        4     1004       0
                 reset_vec                          2000     2000        4     1000       0
                 idloc                            200000   200000        8   200000       0
@@ -178,19 +178,20 @@ _ADCON1                  (abs)        000FC1
 _CMCON                   (abs)        000FB4
 _INTCONbits              (abs)        000FF2
 _LATA                    (abs)        000F89
+_LATAbits                (abs)        000F89
 _LATB                    (abs)        000F8A
 _LATC                    (abs)        000F8B
+_LATCbits                (abs)        000F8B
 _LATD                    (abs)        000F8C
+_LATDbits                (abs)        000F8C
 _LATE                    (abs)        000F8D
+_LATEbits                (abs)        000F8D
 _PORTA                   (abs)        000F80
-_PORTAbits               (abs)        000F80
 _PORTB                   (abs)        000F81
 _PORTC                   (abs)        000F82
-_PORTCbits               (abs)        000F82
 _PORTD                   (abs)        000F83
 _PORTDbits               (abs)        000F83
 _PORTE                   (abs)        000F84
-_PORTEbits               (abs)        000F84
 _Send_4Disp              text4        007DE2
 _Send_Disp               text5        007CA8
 _T0CONbits               (abs)        000FD5
@@ -630,7 +631,7 @@ Total ram usage:        2 bytes
 
  *************** function _myISR *****************
  Defined at:
-		line 107 in file "main.c"
+		line 110 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type

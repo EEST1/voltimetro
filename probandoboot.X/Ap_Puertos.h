@@ -18,23 +18,23 @@ extern "C" {
 
 #endif	/* AP_PUERTOS_H */
 
-#define LED5    PORTDbits.RD0
-#define LED6    PORTDbits.RD1
-#define LED1    PORTDbits.RD2
-#define LED2    PORTDbits.RD3
-#define LED3    PORTCbits.RC6
-#define LED4    PORTCbits.RC7
+#define LED5    LATDbits.LD0
+#define LED6    LATDbits.LD1
+#define LED1    LATDbits.LD2
+#define LED2    LATDbits.LD3
+#define LED3    LATCbits.LC6
+#define LED4    LATCbits.LC7
 
 #define BOT1    PORTDbits.RD4
 #define BOT2    PORTDbits.RD5
 #define BOT3    PORTDbits.RD6
 #define BOT4    PORTDbits.RD7
 
-#define DISP1   PORTAbits.RA4
-#define DISP2   PORTAbits.RA5
-#define DISP3   PORTEbits.RE0
-#define DISP4   PORTEbits.RE1
-#define DOT     PORTEbits.RE2
+#define DISP1   LATAbits.LA4
+#define DISP2   LATAbits.LA5
+#define DISP3   LATEbits.LATE0
+#define DISP4   LATEbits.LATE1
+#define DOT     LATEbits.LATE2
 #define MUX_SET 10;          //multiplicador de mux_tout
 #define BOT_REL 100;         //multiplicador de BOT_REL
 

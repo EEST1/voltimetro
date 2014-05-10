@@ -35,11 +35,11 @@ void timer_ini13(){
     T0CONbits.TMR0ON = 0;   //apago el timer
     T0CONbits.T08BIT = 1;   //selecciono el timer en 8 bits
     T0CONbits.T0CS = 0;     //el timer cuenta fosc/4
-    T0CONbits.PSA = 0;      //habilito el preescales
-    T0CONbits.T0PS0 = 0;    //cargo el preescales con 128
+    T0CONbits.PSA = 0;      //habilito el preescaler
+    T0CONbits.T0PS0 = 0;    //cargo el preescaler con 128
     T0CONbits.T0PS1 = 1;
     T0CONbits.T0PS2 = 1;
-    TMR0L = 0xD9;           //el timer contará 39 fosc/4 * 128 = 4992 * 0,2us
+    TMR0L = 0xD8;           //el timer contará 39 fosc/4 * 128 = 4992 * 0,2us
     TMR0H = 0xFF;           //en total aprox 0.9984ms  casi 1ms
     INTCONbits.TMR0IE = 1;  //Habilita la interrupción de timer 0
 }

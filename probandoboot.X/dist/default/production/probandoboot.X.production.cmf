@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Windows\Temp\sa4.obj
+$C:\Windows\Temp\sfhk.obj
 end_init CODE 0 2014 2014 4 1
 reset_vec CODE 0 2000 2000 4 1
 idloc IDLOC 0 200000 200000 8 1
@@ -71,7 +71,7 @@ STACK 000060-0007FF 1
 %LINETAB
 $dist/default/production\probandoboot.X.production.obj
 "D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":112 2008 intcode CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":107 2008 intcode CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":110 2008 intcode CODE
 "D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":34 7C08 text1 CODE
 "D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":35 7C08 text1 CODE
 "D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":36 7C0A text1 CODE
@@ -89,29 +89,29 @@ $dist/default/production\probandoboot.X.production.obj
 "D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":159 7C26 text7 CODE
 "D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":160 7C2C text7 CODE
 "D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":161 7C3A text7 CODE
-"C:\Windows\Temp\sa4.":965 7C3C cinit CODE
-"C:\Windows\Temp\sa4.":967 7C3C cinit CODE
-"C:\Windows\Temp\sa4.":970 7C3C cinit CODE
-"C:\Windows\Temp\sa4.":1000 7C3C cinit CODE
-"C:\Windows\Temp\sa4.":1001 7C3E cinit CODE
-"C:\Windows\Temp\sa4.":1002 7C40 cinit CODE
-"C:\Windows\Temp\sa4.":1003 7C42 cinit CODE
-"C:\Windows\Temp\sa4.":1008 7C44 cinit CODE
-"C:\Windows\Temp\sa4.":1009 7C46 cinit CODE
-"C:\Windows\Temp\sa4.":1010 7C48 cinit CODE
-"C:\Windows\Temp\sa4.":1011 7C4A cinit CODE
-"C:\Windows\Temp\sa4.":1012 7C4C cinit CODE
-"C:\Windows\Temp\sa4.":1013 7C4E cinit CODE
-"C:\Windows\Temp\sa4.":1014 7C50 cinit CODE
-"C:\Windows\Temp\sa4.":1015 7C52 cinit CODE
-"C:\Windows\Temp\sa4.":1016 7C56 cinit CODE
-"C:\Windows\Temp\sa4.":1017 7C58 cinit CODE
-"C:\Windows\Temp\sa4.":1023 7C5C cinit CODE
-"C:\Windows\Temp\sa4.":1024 7C5C cinit CODE
-"C:\Windows\Temp\sa4.":1025 7C5C cinit CODE
-"C:\Windows\Temp\sa4.":1026 7C5E cinit CODE
-"C:\Windows\Temp\sa4.":1027 7C60 cinit CODE
-"C:\Windows\Temp\sa4.":1028 7C62 cinit CODE
+"C:\Windows\Temp\sfhk.":967 7C3C cinit CODE
+"C:\Windows\Temp\sfhk.":969 7C3C cinit CODE
+"C:\Windows\Temp\sfhk.":972 7C3C cinit CODE
+"C:\Windows\Temp\sfhk.":1002 7C3C cinit CODE
+"C:\Windows\Temp\sfhk.":1003 7C3E cinit CODE
+"C:\Windows\Temp\sfhk.":1004 7C40 cinit CODE
+"C:\Windows\Temp\sfhk.":1005 7C42 cinit CODE
+"C:\Windows\Temp\sfhk.":1010 7C44 cinit CODE
+"C:\Windows\Temp\sfhk.":1011 7C46 cinit CODE
+"C:\Windows\Temp\sfhk.":1012 7C48 cinit CODE
+"C:\Windows\Temp\sfhk.":1013 7C4A cinit CODE
+"C:\Windows\Temp\sfhk.":1014 7C4C cinit CODE
+"C:\Windows\Temp\sfhk.":1015 7C4E cinit CODE
+"C:\Windows\Temp\sfhk.":1016 7C50 cinit CODE
+"C:\Windows\Temp\sfhk.":1017 7C52 cinit CODE
+"C:\Windows\Temp\sfhk.":1018 7C56 cinit CODE
+"C:\Windows\Temp\sfhk.":1019 7C58 cinit CODE
+"C:\Windows\Temp\sfhk.":1025 7C5C cinit CODE
+"C:\Windows\Temp\sfhk.":1026 7C5C cinit CODE
+"C:\Windows\Temp\sfhk.":1027 7C5C cinit CODE
+"C:\Windows\Temp\sfhk.":1028 7C5E cinit CODE
+"C:\Windows\Temp\sfhk.":1029 7C60 cinit CODE
+"C:\Windows\Temp\sfhk.":1030 7C62 cinit CODE
 "D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":5 7C66 text2 CODE
 "D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":8 7C66 text2 CODE
 "D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":9 7C6A text2 CODE
@@ -172,13 +172,13 @@ $dist/default/production\probandoboot.X.production.obj
 "D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":80 7D46 text3 CODE
 "D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":50 7D48 text3 CODE
 "D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":82 7D64 text3 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":107 7D66 intcode_body CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":115 7D98 intcode_body CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":116 7D9C intcode_body CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":117 7D9E intcode_body CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":118 7DA2 intcode_body CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":119 7DA4 intcode_body CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":122 7DA8 intcode_body CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":110 7D66 intcode_body CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":118 7D98 intcode_body CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":119 7D9C intcode_body CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":120 7D9E intcode_body CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":121 7DA2 intcode_body CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":122 7DA4 intcode_body CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":125 7DA8 intcode_body CODE
 "D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":114 7DE2 text4 CODE
 "D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":118 7DE6 text4 CODE
 "D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":119 7DE8 text4 CODE
@@ -215,36 +215,36 @@ $dist/default/production\probandoboot.X.production.obj
 "D:\GIT\Ap_template\probandoboot.X\main.c":43 7EC0 text0 CODE
 "D:\GIT\Ap_template\probandoboot.X\main.c":44 7EC2 text0 CODE
 "D:\GIT\Ap_template\probandoboot.X\main.c":56 7EC4 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":59 7EDE text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":60 7EF2 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":61 7EF4 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":62 7EFC text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":64 7F04 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":65 7F12 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":66 7F1A text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":68 7F22 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":69 7F34 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":70 7F36 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":71 7F3E text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":73 7F46 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":74 7F54 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":75 7F5C text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":78 7F64 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":79 7F70 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":80 7F78 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":81 7F80 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":83 7F88 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":85 7F96 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":86 7F9E text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":88 7FA6 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":89 7FB2 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":90 7FBE text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":91 7FC6 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":93 7FCE text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":95 7FDC text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":96 7FE4 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":99 7FEC text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":105 8000 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":62 7EDE text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":63 7EF2 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":64 7EF4 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":65 7EFC text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":67 7F04 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":68 7F12 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":69 7F1A text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":71 7F22 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":72 7F34 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":73 7F36 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":74 7F3E text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":76 7F46 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":77 7F54 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":78 7F5C text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":81 7F64 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":82 7F70 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":83 7F78 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":84 7F80 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":86 7F88 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":88 7F96 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":89 7F9E text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":91 7FA6 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":92 7FB2 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":93 7FBE text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":94 7FC6 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":96 7FCE text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":98 7FDC text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":99 7FE4 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":102 7FEC text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":108 8000 text0 CODE
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -274,8 +274,8 @@ Send_4Disp@Cent 11 0 COMRAM 1 cstackCOMRAM dist/default/production\probandoboot.
 __end_of_tic_timer0 7C3C 0 CODE 0 text7 dist/default/production\probandoboot.X.production.obj
 _main 7E7E 0 CODE 0 text0 dist/default/production\probandoboot.X.production.obj
 _leds 7CFA 0 CODE 0 text3 dist/default/production\probandoboot.X.production.obj
-___sp 0 0 STACK 2 stack C:\Windows\Temp\sa4.obj
-start 2014 0 CODE 0 init C:\Windows\Temp\sa4.obj
+___sp 0 0 STACK 2 stack C:\Windows\Temp\sfhk.obj
+start 2014 0 CODE 0 init C:\Windows\Temp\sfhk.obj
 _TMR0H FD7 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __end_of_pic_ini13 7CA8 0 CODE 0 text2 dist/default/production\probandoboot.X.production.obj
 _TMR0L FD6 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
@@ -322,7 +322,11 @@ _ADCON1 FC1 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\probandoboot.X.production.obj
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\probandoboot.X.production.obj
 __size_of_leds 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
+_LATAbits F89 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
+_LATCbits F8B 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
+_LATDbits F8C 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\probandoboot.X.production.obj
+_LATEbits F8D 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\probandoboot.X.production.obj
 _TMR0IF 7F92 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\probandoboot.X.production.obj
@@ -358,11 +362,11 @@ _mux_tout 23 0 COMRAM 1 bssCOMRAM dist/default/production\probandoboot.X.product
 __CFG_PBADEN$OFF 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __Hdata 0 0 ABS 0 data dist/default/production\probandoboot.X.production.obj
 __Ldata 0 0 ABS 0 data dist/default/production\probandoboot.X.production.obj
-stackhi 7FF 0 ABS 0 - C:\Windows\Temp\sa4.obj
+stackhi 7FF 0 ABS 0 - C:\Windows\Temp\sfhk.obj
 __CFG_CPUDIV$OSC1_PLL2 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __Htemp 0 0 COMRAM 1 temp dist/default/production\probandoboot.X.production.obj
 __Ltemp 0 0 COMRAM 1 temp dist/default/production\probandoboot.X.production.obj
-stacklo 60 0 ABS 0 - C:\Windows\Temp\sa4.obj
+stacklo 60 0 ABS 0 - C:\Windows\Temp\sfhk.obj
 __Hrbit 0 0 COMRAM 1 rbit dist/default/production\probandoboot.X.production.obj
 __Lrbit 0 0 COMRAM 1 rbit dist/default/production\probandoboot.X.production.obj
 __CFG_BOR$ON 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
@@ -381,11 +385,8 @@ main@velocidad 18 0 COMRAM 1 cstackCOMRAM dist/default/production\probandoboot.X
 leds@velocidad F 0 COMRAM 1 cstackCOMRAM dist/default/production\probandoboot.X.production.obj
 _Send_Disp 7CA8 0 CODE 0 text5 dist/default/production\probandoboot.X.production.obj
 _TRISCbits F94 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
-_PORTAbits F80 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
-_PORTCbits F82 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 _PORTDbits F83 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 _T0CONbits FD5 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
-_PORTEbits F84 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 _pic_ini13 7C66 0 CODE 0 text2 dist/default/production\probandoboot.X.production.obj
 _tic_timer0 7C20 0 CODE 0 text7 dist/default/production\probandoboot.X.production.obj
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\probandoboot.X.production.obj
@@ -472,8 +473,8 @@ _Send_4Disp 7DE2 0 CODE 0 text4 dist/default/production\probandoboot.X.productio
 __Lcinit 0 0 ABS 0 cinit dist/default/production\probandoboot.X.production.obj
 __pcinit 7C3C 0 CODE 0 cinit dist/default/production\probandoboot.X.production.obj
 __CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
-__ramtop 800 0 RAM 0 ramtop C:\Windows\Temp\sa4.obj
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Windows\Temp\sa4.obj
+__ramtop 800 0 RAM 0 ramtop C:\Windows\Temp\sfhk.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Windows\Temp\sfhk.obj
 __size_of_main 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __Hconst 0 0 CODE 0 const dist/default/production\probandoboot.X.production.obj
 __Lconst 0 0 CODE 0 const dist/default/production\probandoboot.X.production.obj
@@ -481,9 +482,9 @@ __CFG_WRT0$OFF 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __CFG_WRT1$OFF 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __size_of_pic_ini13 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
-___inthi_sp 0 0 STACK 2 stack C:\Windows\Temp\sa4.obj
+___inthi_sp 0 0 STACK 2 stack C:\Windows\Temp\sfhk.obj
 __CFG_BORV$3 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
-___intlo_sp 0 0 STACK 2 stack C:\Windows\Temp\sa4.obj
+___intlo_sp 0 0 STACK 2 stack C:\Windows\Temp\sfhk.obj
 _INTCONbits FF2 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __Hend_init 2018 0 CODE 0 end_init dist/default/production\probandoboot.X.production.obj
 __Lend_init 2014 0 CODE 0 end_init dist/default/production\probandoboot.X.production.obj
@@ -491,21 +492,21 @@ __HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\probandoboot.X.prod
 __LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\probandoboot.X.production.obj
 __pidataCOMRAM 2004 0 CODE 0 idataCOMRAM dist/default/production\probandoboot.X.production.obj
 __CFG_CP0$OFF 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Windows\Temp\sa4.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Windows\Temp\sfhk.obj
 __CFG_FOSC$HSPLL_HS 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __CFG_CP1$OFF 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __Hreset_vec 2004 0 CODE 0 reset_vec dist/default/production\probandoboot.X.production.obj
 __Lreset_vec 2000 0 CODE 0 reset_vec dist/default/production\probandoboot.X.production.obj
-__accesstop 60 0 ABS 0 - C:\Windows\Temp\sa4.obj
+__accesstop 60 0 ABS 0 - C:\Windows\Temp\sfhk.obj
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\probandoboot.X.production.obj
 __Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\probandoboot.X.production.obj
 __pintcode_body 7D66 0 CODE 0 intcode_body dist/default/production\probandoboot.X.production.obj
-intlevel0 0 0 CODE 0 text C:\Windows\Temp\sa4.obj
-intlevel1 0 0 CODE 0 text C:\Windows\Temp\sa4.obj
+intlevel0 0 0 CODE 0 text C:\Windows\Temp\sfhk.obj
+intlevel1 0 0 CODE 0 text C:\Windows\Temp\sfhk.obj
 __CFG_WRTB$OFF 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
-intlevel2 0 0 CODE 0 text C:\Windows\Temp\sa4.obj
+intlevel2 0 0 CODE 0 text C:\Windows\Temp\sfhk.obj
 Send_4Disp@Uni 13 0 COMRAM 1 cstackCOMRAM dist/default/production\probandoboot.X.production.obj
-intlevel3 0 0 CODE 0 text C:\Windows\Temp\sa4.obj
+intlevel3 0 0 CODE 0 text C:\Windows\Temp\sfhk.obj
 __CFG_WRTC$OFF 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\probandoboot.X.production.obj
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\probandoboot.X.production.obj

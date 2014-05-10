@@ -55,6 +55,9 @@ void main(void) {
      * */
         Send_4Disp(a,b,3,4);    //envía los cuatro números al display
 
+        // el método utilizado por Send_4Disp(a,b,c,d) requiere que la función
+        //sea llamada antes de que se termine el mux_tout
+
      //lo siguiente es una prueba de botones 1 y 2
         if(!BOT1 && a < 9 && faon ==0 && !bot_tout){
             a++;
