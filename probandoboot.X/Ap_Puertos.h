@@ -35,7 +35,7 @@ extern "C" {
 #define DISP3   LATEbits.LATE0
 #define DISP4   LATEbits.LATE1
 #define DOT     LATEbits.LATE2
-#define MUX_SET 10;          //multiplicador de mux_tout
+#define MUX_SET 4;          //multiplicador de mux_tout
 #define BOT_REL 100;         //multiplicador de BOT_REL
 
 void pic_ini13(void);

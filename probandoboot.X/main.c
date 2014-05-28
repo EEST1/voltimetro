@@ -100,6 +100,8 @@ void main(void) {
         }
 
         if(b == 0x01) leds(velocidad);
+
+        if(PORTBbits.RB4 == 0) velocidad =100;
         
         
         //escriba el código aqui
@@ -117,7 +119,7 @@ void __interrupt myISR(void){
     //el siguiente código verifica que el flag de TIMER0 esté habilitado
     if(TMR0IF){
         INTCONbits.TMR0IF = 0;  //borra el flag de la interrupción de timer
-        TMR0L = 0xD9;           //reinicia el time
+        TMR0L = 209;           //reinicia el time
         TMR0H = 0xFF;
         tic_timer0();           //llama a la función tic_timer
     }

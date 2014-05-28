@@ -40,7 +40,17 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _PORTDbits `VS212 ~T0 @X0 0 e@3971 ]
 "45 Ap_Puertos.h
 [v _leds `(v ~T0 @X0 0 ef1`ui ]
-"10796 C:\Archivos de programa\Microchip\xc8\v1.30\include\pic18f4550.h
+[s S201 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S201 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+[s S202 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S202 . INT0 INT1 INT2 . PGM PGC PGD ]
+[s S203 :3 `uc 1 :1 `uc 1 ]
+[n S203 . . CCP2_PA2 ]
+[u S200 `S201 1 `S202 1 `S203 1 ]
+[n S200 . . . . ]
+"2752 C:\Archivos de programa\Microchip\xc8\v1.30\include\pic18f4550.h
+[v _PORTBbits `VS200 ~T0 @X0 0 e@3969 ]
+"10796
 [v _TMR0IF `Vb ~T0 @X0 0 e@32658 ]
 "8741
 [v _TMR0L `Vuc ~T0 @X0 0 e@4054 ]
@@ -5107,48 +5117,53 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e $ ! == -> _b `i -> 1 `i 605  ]
 [e ( _leds (1 _velocidad ]
 [e :U 605 ]
-"107
+[; ;main.c: 104: if(PORTBbits.RB4 == 0) velocidad =100;
+"104
+[e $ ! == -> . . _PORTBbits 0 4 `i -> 0 `i 606  ]
+[e = _velocidad -> -> 100 `i `ui ]
+[e :U 606 ]
+"109
 }
 [e :U 594 ]
 "46
 [e $U 595  ]
 [e :U 596 ]
-[; ;main.c: 107: }
-[; ;main.c: 108: }
-"108
+[; ;main.c: 109: }
+[; ;main.c: 110: }
+"110
 [e :UE 593 ]
 }
 [v F5285 `(v ~T0 @X0 1 tf ]
-"110
+"112
 [v _myISR `IF5285 ~T0 @X0 1 e ]
 {
-[; ;main.c: 110: void __interrupt myISR(void){
+[; ;main.c: 112: void __interrupt myISR(void){
 [e :U _myISR ]
 [f ]
-[; ;main.c: 118: if(TMR0IF){
-"118
-[e $ ! _TMR0IF 607  ]
-{
-[; ;main.c: 119: INTCONbits.TMR0IF = 0;
-"119
-[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 120: TMR0L = 0xD9;
+[; ;main.c: 120: if(TMR0IF){
 "120
-[e = _TMR0L -> -> 217 `i `uc ]
-[; ;main.c: 121: TMR0H = 0xFF;
+[e $ ! _TMR0IF 608  ]
+{
+[; ;main.c: 121: INTCONbits.TMR0IF = 0;
 "121
-[e = _TMR0H -> -> 255 `i `uc ]
-[; ;main.c: 122: tic_timer0();
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+[; ;main.c: 122: TMR0L = 209;
 "122
-[e ( _tic_timer0 ..  ]
+[e = _TMR0L -> -> 209 `i `uc ]
+[; ;main.c: 123: TMR0H = 0xFF;
 "123
-}
-[e :U 607 ]
-[; ;main.c: 123: }
-[; ;main.c: 124: return;
+[e = _TMR0H -> -> 255 `i `uc ]
+[; ;main.c: 124: tic_timer0();
 "124
-[e $UE 606  ]
-[; ;main.c: 125: }
+[e ( _tic_timer0 ..  ]
 "125
-[e :UE 606 ]
+}
+[e :U 608 ]
+[; ;main.c: 125: }
+[; ;main.c: 126: return;
+"126
+[e $UE 607  ]
+[; ;main.c: 127: }
+"127
+[e :UE 607 ]
 }
