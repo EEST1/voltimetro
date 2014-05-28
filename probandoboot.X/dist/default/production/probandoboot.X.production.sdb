@@ -5,15 +5,15 @@
 [d frameptr 4065 ]
 "5 D:\GIT\Ap_template\probandoboot.X\Ap_ini.c
 [v _pic_ini13 pic_ini13 `(v  1 e 0 0 ]
-"34
+"39
 [v _timer_ini13 timer_ini13 `(v  1 e 0 0 ]
-"46
+"51
 [v _leds leds `(v  1 e 0 0 ]
-"83
+"88
 [v _Send_Disp Send_Disp `(v  1 e 0 0 ]
-"114
+"119
 [v _Send_4Disp Send_4Disp `(v  1 e 0 0 ]
-"157
+"162
 [v _tic_timer0 tic_timer0 `(v  1 e 0 0 ]
 "4 C:\Archivos de programa\Microchip\xc8\v1.30\sources\common\abdiv.c
 [v ___abdiv __abdiv `(c  1 e 1 0 ]
@@ -139,7 +139,7 @@
 [v ___aslmul __aslmul `(ul  1 e 4 0 ]
 "30 D:\GIT\Ap_template\probandoboot.X\main.c
 [v _main main `(v  1 e 0 0 ]
-"107
+"112
 [v _myISR myISR `II(v  1 e 0 0 ]
 "49 D:\GIT\Ap_template\probandoboot.X\Ap_Puertos.h
 [v _mux_tout mux_tout `uc  1 e 1 0 ]
@@ -148,84 +148,33 @@
 [v _led_tout led_tout `ui  1 e 2 0 ]
 "2566 C:\Archivos de programa\Microchip\xc8\v1.30\include\pic18f4550.h
 [v _PORTA PORTA `VEuc  1 e 1 @3968 ]
-[s S475 . 1 `uc 1 RA0 1 0 :1:0 
-`uc 1 RA1 1 0 :1:1 
-`uc 1 RA2 1 0 :1:2 
-`uc 1 RA3 1 0 :1:3 
-`uc 1 RA4 1 0 :1:4 
-`uc 1 RA5 1 0 :1:5 
-`uc 1 RA6 1 0 :1:6 
-]
-"2613
-[s S483 . 1 `uc 1 AN0 1 0 :1:0 
-`uc 1 AN1 1 0 :1:1 
-`uc 1 AN2 1 0 :1:2 
-`uc 1 AN3 1 0 :1:3 
-`uc 1 T0CKI 1 0 :1:4 
-`uc 1 AN4 1 0 :1:5 
-`uc 1 OSC2 1 0 :1:6 
-]
-[s S491 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 VREFM 1 0 :1:2 
-`uc 1 VREFP 1 0 :1:3 
-`uc 1 . 1 0 :1:4 
-`uc 1 LVDIN 1 0 :1:5 
-]
-[s S497 . 1 `uc 1 . 1 0 :5:0 
-`uc 1 HLVDIN 1 0 :1:5 
-]
-[s S500 . 1 `uc 1 . 1 0 :7:0 
-`uc 1 RA7 1 0 :1:7 
-]
-[s S503 . 1 `uc 1 . 1 0 :7:0 
-`uc 1 RJPU 1 0 :1:7 
-]
-[s S506 . 1 `uc 1 ULPWUIN 1 0 :1:0 
-]
-[u S508 . 1 `S475 1 . 1 0 `S483 1 . 1 0 `S491 1 . 1 0 `S497 1 . 1 0 `S500 1 . 1 0 `S503 1 . 1 0 `S506 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES508  1 e 1 @3968 ]
 "2722
 [v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+[s S202 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"2752
+[s S211 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 PGM 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S219 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S222 . 1 `S202 1 . 1 0 `S211 1 . 1 0 `S219 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES222  1 e 1 @3969 ]
 "2831
 [v _PORTC PORTC `VEuc  1 e 1 @3970 ]
-[s S396 . 1 `uc 1 RC0 1 0 :1:0 
-`uc 1 RC1 1 0 :1:1 
-`uc 1 RC2 1 0 :1:2 
-`uc 1 . 1 0 :1:3 
-`uc 1 RC4 1 0 :1:4 
-`uc 1 RC5 1 0 :1:5 
-`uc 1 RC6 1 0 :1:6 
-`uc 1 RC7 1 0 :1:7 
-]
-"2880
-[s S405 . 1 `uc 1 T1OSO 1 0 :1:0 
-`uc 1 T1OSI 1 0 :1:1 
-`uc 1 CCP1 1 0 :1:2 
-`uc 1 . 1 0 :3:3 
-`uc 1 TX 1 0 :1:6 
-`uc 1 RX 1 0 :1:7 
-]
-[s S412 . 1 `uc 1 T13CKI 1 0 :1:0 
-`uc 1 . 1 0 :1:1 
-`uc 1 P1A 1 0 :1:2 
-`uc 1 . 1 0 :3:3 
-`uc 1 CK 1 0 :1:6 
-`uc 1 DT 1 0 :1:7 
-]
-[s S419 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 CCP2 1 0 :1:1 
-]
-[s S422 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 PA1 1 0 :1:2 
-]
-[s S425 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 PA2 1 0 :1:1 
-]
-[s S428 . 1 `uc 1 . 1 0 :3:0 
-`uc 1 RC3 1 0 :1:3 
-]
-[u S431 . 1 `S396 1 . 1 0 `S405 1 . 1 0 `S412 1 . 1 0 `S419 1 . 1 0 `S422 1 . 1 0 `S425 1 . 1 0 `S428 1 . 1 0 ]
-[v _PORTCbits PORTCbits `VES431  1 e 1 @3970 ]
 "2984
 [v _PORTD PORTD `VEuc  1 e 1 @3971 ]
 [s S150 . 1 `uc 1 RD0 1 0 :1:0 
@@ -254,94 +203,156 @@
 [v _PORTDbits PORTDbits `VES171  1 e 1 @3971 ]
 "3104
 [v _PORTE PORTE `VEuc  1 e 1 @3972 ]
-[s S550 . 1 `uc 1 RE0 1 0 :1:0 
-`uc 1 RE1 1 0 :1:1 
-`uc 1 RE2 1 0 :1:2 
-`uc 1 RE3 1 0 :1:3 
-`uc 1 . 1 0 :3:4 
-`uc 1 RDPU 1 0 :1:7 
-]
-"3206
-[s S557 . 1 `uc 1 CK1SPP 1 0 :1:0 
-`uc 1 CK2SPP 1 0 :1:1 
-`uc 1 OESPP 1 0 :1:2 
-]
-[s S561 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 CCP10 1 0 :1:2 
-]
-[s S564 . 1 `uc 1 . 1 0 :7:0 
-`uc 1 CCP2E 1 0 :1:7 
-]
-[s S567 . 1 `uc 1 . 1 0 :6:0 
-`uc 1 CCP6E 1 0 :1:6 
-]
-[s S570 . 1 `uc 1 . 1 0 :5:0 
-`uc 1 CCP7E 1 0 :1:5 
-]
-[s S573 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 CCP8E 1 0 :1:4 
-]
-[s S576 . 1 `uc 1 . 1 0 :3:0 
-`uc 1 CCP9E 1 0 :1:3 
-]
-[s S579 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 CS 1 0 :1:2 
-]
-[s S582 . 1 `uc 1 . 1 0 :7:0 
-`uc 1 PA2E 1 0 :1:7 
-]
-[s S585 . 1 `uc 1 . 1 0 :6:0 
-`uc 1 PB1E 1 0 :1:6 
-]
-[s S588 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 PB2 1 0 :1:2 
-]
-[s S591 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 PB3E 1 0 :1:4 
-]
-[s S594 . 1 `uc 1 . 1 0 :5:0 
-`uc 1 PC1E 1 0 :1:5 
-]
-[s S597 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 PC2 1 0 :1:1 
-]
-[s S600 . 1 `uc 1 . 1 0 :3:0 
-`uc 1 PC3E 1 0 :1:3 
-]
-[s S603 . 1 `uc 1 PD2 1 0 :1:0 
-]
-[s S605 . 1 `uc 1 RDE 1 0 :1:0 
-]
-[s S607 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 RE4 1 0 :1:4 
-]
-[s S610 . 1 `uc 1 . 1 0 :5:0 
-`uc 1 RE5 1 0 :1:5 
-]
-[s S613 . 1 `uc 1 . 1 0 :6:0 
-`uc 1 RE6 1 0 :1:6 
-]
-[s S616 . 1 `uc 1 . 1 0 :7:0 
-`uc 1 RE7 1 0 :1:7 
-]
-[s S619 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 WRE 1 0 :1:1 
-]
-[u S622 . 1 `S550 1 . 1 0 `S557 1 . 1 0 `S561 1 . 1 0 `S564 1 . 1 0 `S567 1 . 1 0 `S570 1 . 1 0 `S573 1 . 1 0 `S576 1 . 1 0 `S579 1 . 1 0 `S582 1 . 1 0 `S585 1 . 1 0 `S588 1 . 1 0 `S591 1 . 1 0 `S594 1 . 1 0 `S597 1 . 1 0 `S600 1 . 1 0 `S603 1 . 1 0 `S605 1 . 1 0 `S607 1 . 1 0 `S610 1 . 1 0 `S613 1 . 1 0 `S616 1 . 1 0 `S619 1 . 1 0 ]
-[v _PORTEbits PORTEbits `VES622  1 e 1 @3972 ]
 "3355
 [v _LATA LATA `VEuc  1 e 1 @3977 ]
+[s S570 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+]
+"3406
+[s S578 . 1 `uc 1 LA0 1 0 :1:0 
+]
+[s S580 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+]
+[s S583 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LA2 1 0 :1:2 
+]
+[s S586 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 LA3 1 0 :1:3 
+]
+[s S589 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LA4 1 0 :1:4 
+]
+[s S592 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LA5 1 0 :1:5 
+]
+[s S595 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 LA6 1 0 :1:6 
+]
+[s S598 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LA7 1 0 :1:7 
+]
+[s S601 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LATA7 1 0 :1:7 
+]
+[u S604 . 1 `S570 1 . 1 0 `S578 1 . 1 0 `S580 1 . 1 0 `S583 1 . 1 0 `S586 1 . 1 0 `S589 1 . 1 0 `S592 1 . 1 0 `S595 1 . 1 0 `S598 1 . 1 0 `S601 1 . 1 0 ]
+[v _LATAbits LATAbits `VES604  1 e 1 @3977 ]
 "3490
 [v _LATB LATB `VEuc  1 e 1 @3978 ]
 "3622
 [v _LATC LATC `VEuc  1 e 1 @3979 ]
+[s S499 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"3668
+[s S506 . 1 `uc 1 LC0 1 0 :1:0 
+]
+[s S508 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LC1 1 0 :1:1 
+]
+[s S511 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LC2 1 0 :1:2 
+]
+[s S514 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 LC3 1 0 :1:3 
+]
+[s S517 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LC4 1 0 :1:4 
+]
+[s S520 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LC5 1 0 :1:5 
+]
+[s S523 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 LC6 1 0 :1:6 
+]
+[s S526 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LC7 1 0 :1:7 
+]
+[u S529 . 1 `S499 1 . 1 0 `S506 1 . 1 0 `S508 1 . 1 0 `S511 1 . 1 0 `S514 1 . 1 0 `S517 1 . 1 0 `S520 1 . 1 0 `S523 1 . 1 0 `S526 1 . 1 0 ]
+[v _LATCbits LATCbits `VES529  1 e 1 @3979 ]
 "3737
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
+[s S424 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"3785
+[s S433 . 1 `uc 1 LD0 1 0 :1:0 
+]
+[s S435 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LD1 1 0 :1:1 
+]
+[s S438 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LD2 1 0 :1:2 
+]
+[s S441 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 LD3 1 0 :1:3 
+]
+[s S444 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LD4 1 0 :1:4 
+]
+[s S447 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LD5 1 0 :1:5 
+]
+[s S450 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 LD6 1 0 :1:6 
+]
+[s S453 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LD7 1 0 :1:7 
+]
+[u S456 . 1 `S424 1 . 1 0 `S433 1 . 1 0 `S435 1 . 1 0 `S438 1 . 1 0 `S441 1 . 1 0 `S444 1 . 1 0 `S447 1 . 1 0 `S450 1 . 1 0 `S453 1 . 1 0 ]
+[v _LATDbits LATDbits `VES456  1 e 1 @3980 ]
 "3869
 [v _LATE LATE `VEuc  1 e 1 @3981 ]
+[s S650 . 1 `uc 1 LATE0 1 0 :1:0 
+`uc 1 LATE1 1 0 :1:1 
+`uc 1 LATE2 1 0 :1:2 
+]
+"3912
+[s S654 . 1 `uc 1 LE0 1 0 :1:0 
+]
+[s S656 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LE1 1 0 :1:1 
+]
+[s S659 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LE2 1 0 :1:2 
+]
+[s S662 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 LE3 1 0 :1:3 
+]
+[s S665 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LE4 1 0 :1:4 
+]
+[s S668 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LE5 1 0 :1:5 
+]
+[s S671 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 LE6 1 0 :1:6 
+]
+[s S674 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LE7 1 0 :1:7 
+]
+[u S677 . 1 `S650 1 . 1 0 `S654 1 . 1 0 `S656 1 . 1 0 `S659 1 . 1 0 `S662 1 . 1 0 `S665 1 . 1 0 `S668 1 . 1 0 `S671 1 . 1 0 `S674 1 . 1 0 ]
+[v _LATEbits LATEbits `VES677  1 e 1 @3981 ]
 "3971
 [v _TRISA TRISA `VEuc  1 e 1 @3986 ]
-[s S263 . 1 `uc 1 TRISC0 1 0 :1:0 
+"4168
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+[s S316 . 1 `uc 1 TRISC0 1 0 :1:0 
 `uc 1 TRISC1 1 0 :1:1 
 `uc 1 TRISC2 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
@@ -349,18 +360,18 @@
 `uc 1 TRISC7 1 0 :1:7 
 ]
 "4421
-[s S270 . 1 `uc 1 RC0 1 0 :1:0 
+[s S323 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 RC6 1 0 :1:6 
 `uc 1 RC7 1 0 :1:7 
 ]
-[s S277 . 1 `uc 1 . 1 0 :3:0 
+[s S330 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 TRISC3 1 0 :1:3 
 ]
-[u S280 . 1 `S263 1 . 1 0 `S270 1 . 1 0 `S277 1 . 1 0 ]
-[v _TRISCbits TRISCbits `VES280  1 e 1 @3988 ]
+[u S333 . 1 `S316 1 . 1 0 `S323 1 . 1 0 `S330 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES333  1 e 1 @3988 ]
 "4560
 [v _TRISD TRISD `VEuc  1 e 1 @3989 ]
 "4781
@@ -446,27 +457,27 @@
 "33
 [v main@faoff faoff `uc  1 a 1 26 ]
 [v main@faon faon `uc  1 a 1 25 ]
-"105
+"110
 } 0
-"34 D:\GIT\Ap_template\probandoboot.X\Ap_ini.c
+"39 D:\GIT\Ap_template\probandoboot.X\Ap_ini.c
 [v _timer_ini13 timer_ini13 `(v  1 e 0 0 ]
 {
-"45
+"50
 } 0
 "5
 [v _pic_ini13 pic_ini13 `(v  1 e 0 0 ]
 {
-"32
+"37
 } 0
-"46
+"51
 [v _leds leds `(v  1 e 0 0 ]
 {
 [v leds@velocidad velocidad `ui  1 p 2 14 ]
-"47
+"52
 [v leds@i i `uc  1 s 1 i ]
-"82
+"87
 } 0
-"114
+"119
 [v _Send_4Disp Send_4Disp `(v  1 e 0 0 ]
 {
 [v Send_4Disp@Umil Umil `uc  1 a 1 wreg ]
@@ -474,29 +485,29 @@
 [v Send_4Disp@Cent Cent `uc  1 p 1 16 ]
 [v Send_4Disp@Dec Dec `uc  1 p 1 17 ]
 [v Send_4Disp@Uni Uni `uc  1 p 1 18 ]
-"116
+"121
 [v Send_4Disp@Nro_Disp Nro_Disp `uc  1 s 1 Nro_Disp ]
-"114
+"119
 [v Send_4Disp@Umil Umil `uc  1 a 1 20 ]
-"156
+"161
 } 0
-"83
+"88
 [v _Send_Disp Send_Disp `(v  1 e 0 0 ]
 {
 [v Send_Disp@NroDisp NroDisp `uc  1 a 1 wreg ]
 [v Send_Disp@NroDisp NroDisp `uc  1 a 1 wreg ]
 [v Send_Disp@Dato Dato `uc  1 p 1 14 ]
-"85
+"90
 [v Send_Disp@NroDisp NroDisp `uc  1 a 1 15 ]
-"112
+"117
 } 0
-"107 D:\GIT\Ap_template\probandoboot.X\main.c
+"112 D:\GIT\Ap_template\probandoboot.X\main.c
 [v _myISR myISR `II(v  1 e 0 0 ]
 {
-"122
+"127
 } 0
-"157 D:\GIT\Ap_template\probandoboot.X\Ap_ini.c
+"162 D:\GIT\Ap_template\probandoboot.X\Ap_ini.c
 [v _tic_timer0 tic_timer0 `(v  1 e 0 0 ]
 {
-"161
+"166
 } 0

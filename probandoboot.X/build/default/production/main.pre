@@ -6381,7 +6381,7 @@ while(1){
 # 56
 Send_4Disp(a,b,3,4);
 
-
+# 62
 if(!PORTDbits.RD4 && a < 9 && faon ==0 && !bot_tout){
 a++;
 faon = 1;
@@ -6424,6 +6424,8 @@ bot_tout = 100;;
 
 if(b == 0x01) leds(velocidad);
 
+if(PORTBbits.RB4 == 0) velocidad =100;
+
 
 
 
@@ -6432,10 +6434,10 @@ if(b == 0x01) leds(velocidad);
 
 void __interrupt myISR(void){
 
-# 115
+# 120
 if(TMR0IF){
 INTCONbits.TMR0IF = 0;
-TMR0L = 0xD9;
+TMR0L = 209;
 TMR0H = 0xFF;
 tic_timer0();
 }

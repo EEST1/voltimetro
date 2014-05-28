@@ -6341,6 +6341,11 @@ CMCON = 0x07;
 ADCON1 = 0x0F;
 TRISA = 0xC0;
 TRISE = 0x00;
+
+
+
+TRISB = 0xFF;
+
 }
 
 void timer_ini13(){
@@ -6348,10 +6353,10 @@ T0CONbits.TMR0ON = 0;
 T0CONbits.T08BIT = 1;
 T0CONbits.T0CS = 0;
 T0CONbits.PSA = 0;
-T0CONbits.T0PS0 = 0;
+T0CONbits.T0PS0 = 1;
 T0CONbits.T0PS1 = 1;
 T0CONbits.T0PS2 = 1;
-TMR0L = 0xD9;
+TMR0L = 209;
 TMR0H = 0xFF;
 INTCONbits.TMR0IE = 1;
 }
@@ -6361,27 +6366,27 @@ static unsigned char i=1;
 
 switch(i){
 case 1:if(!led_tout){
-PORTDbits.RD2=~PORTDbits.RD2;
+LATDbits.LD2=~LATDbits.LD2;
 led_tout = velocidad;
 i++;
 }
 break;
 case 2:if(!led_tout){
-PORTDbits.RD3=~PORTDbits.RD3;
+LATDbits.LD3=~LATDbits.LD3;
 led_tout = velocidad;
 i++;
 }
 break;
 case 3:if(!led_tout){
-PORTCbits.RC6=~PORTCbits.RC6;
+LATCbits.LC6=~LATCbits.LC6;
 led_tout = velocidad;
 i++;
 }
 break;
 case 4:if(!led_tout){
-PORTCbits.RC7=~PORTCbits.RC7;
+LATCbits.LC7=~LATCbits.LC7;
 led_tout = velocidad;
-i++;
+i=1;
 }
 break;
 default : {
@@ -6396,26 +6401,26 @@ void Send_Disp(unsigned char NroDisp,unsigned char Dato){
 
 LATA = 0;
 
-PORTAbits.RA4 = 0;
-PORTAbits.RA5 = 0;
-PORTEbits.RE0 = 0;
-PORTEbits.RE1 = 0;
+LATAbits.LA4 = 0;
+LATAbits.LA5 = 0;
+LATEbits.LATE0 = 0;
+LATEbits.LATE1 = 0;
 
 switch(NroDisp){
 case 1:{
-PORTAbits.RA4 = 1;
+LATAbits.LA4 = 1;
 }break;
 case 2: {
-PORTAbits.RA5 = 1;
+LATAbits.LA5 = 1;
 }break;
 case 3: {
-PORTEbits.RE0 = 1;
+LATEbits.LATE0 = 1;
 }break;
 case 4: {
-PORTEbits.RE1 = 1;
+LATEbits.LATE1 = 1;
 }break;
 default :{
-PORTAbits.RA4 = 1;
+LATAbits.LA4 = 1;
 }break;
 }
 Dato = Dato & 0x0F;
@@ -6431,7 +6436,7 @@ switch(Nro_Disp){
 case 1:{
 if(!mux_tout){
 Send_Disp(1,Umil);
-mux_tout = 10;;
+mux_tout = 4;;
 Nro_Disp = 2;
 }
 }
@@ -6439,7 +6444,7 @@ break;
 case 2:{
 if(!mux_tout){
 Send_Disp(2,Cent);
-mux_tout = 10;;
+mux_tout = 4;;
 Nro_Disp = 3;
 }
 }
@@ -6447,7 +6452,7 @@ break;
 case 3:{
 if(!mux_tout){
 Send_Disp(3,Dec);
-mux_tout = 10;;
+mux_tout = 4;;
 Nro_Disp = 4;
 }
 }
@@ -6455,13 +6460,13 @@ break;
 case 4:{
 if(!mux_tout){
 Send_Disp(4,Uni);
-mux_tout = 10;;
+mux_tout = 4;;
 Nro_Disp = 1;
 }
 }
 break;
 default :{
-mux_tout = 10;;
+mux_tout = 4;;
 Nro_Disp = 1;
 }
 }
