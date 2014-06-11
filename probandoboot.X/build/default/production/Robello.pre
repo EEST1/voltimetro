@@ -1,5 +1,5 @@
 
-# 1 "main.c"
+# 1 "Robello.c"
 
 
 # 21 "C:\Archivos de programa\Microchip\xc8\v1.30\include\htc.h"
@@ -6301,159 +6301,56 @@ extern __nonreentrant void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __nonreentrant void _delay3(unsigned char);
 
-
-# 21 "confbits.h"
-#pragma config PLLDIV = 5
-#pragma config CPUDIV = OSC1_PLL2
-#pragma config USBDIV = 2
-#pragma config FOSC = HSPLL_HS
-#pragma config FCMEN = OFF
-#pragma config IESO = OFF
-#pragma config PWRT = OFF
-#pragma config BOR = ON
-#pragma config BORV = 3
-#pragma config VREGEN = ON
-#pragma config WDT = OFF
-#pragma config WDTPS = 32768
-#pragma config MCLRE = ON
-#pragma config LPT1OSC = OFF
-#pragma config PBADEN = OFF
-
-
-# 43
-#pragma config STVREN = ON
-#pragma config LVP = OFF
-
-#pragma config XINST = OFF
-#pragma config CP0 = OFF
-#pragma config CP1 = OFF
-
-
-#pragma config CPB = OFF
-
-#pragma config WRT0 = OFF
-#pragma config WRT1 = OFF
-
-
-#pragma config WRTB = OFF
-#pragma config WRTC = OFF
-
-#pragma config EBTR0 = OFF
-#pragma config EBTR1 = OFF
-
-
-#pragma config EBTRB = OFF
-
-# 40 "Ap_ini.h"
-void pic_ini13(void);
-void timer_ini13(void);
-
-# 15 "Lemos.h"
-void Send_Disp(unsigned char NroDisp,unsigned char Dato);
-void Send_4Disp(unsigned char Umil,unsigned char Cent,unsigned char Dec,unsigned char Uni);
-void leds(unsigned int velocidad);
-void tic_timer0(void);
-
-
-unsigned char mux_tout,bot_tout;
-unsigned int led_tout;
-
 # 15 "Robello.h"
 void mux_display(void);
 
 unsigned char UMIL,CENT,DEC,UNI;
 unsigned char MEMDIG;
 
-# 30 "main.c"
-void main(void) {
+# 40 "Ap_ini.h"
+void pic_ini13(void);
+void timer_ini13(void);
 
-unsigned char a=0,b=1;
-unsigned char faon=0,faoff=0;
-unsigned char fbon=0,fvel=0;
-unsigned int velocidad = 100;
-
-pic_ini13();
-timer_ini13();
-
-# 44
-INTCONbits.GIE = 1;
-(INTCONbits.GIE = 1);
-T0CONbits.TMR0ON = 1;
-
-
-while(1){
-
-# 60
-Send_4Disp(a,b,3,4);
-
-
-
-if(!PORTDbits.RD4 && a < 9 && faon ==0 && !bot_tout){
-a++;
-faon = 1;
-bot_tout = 100;;
+# 6 "Robello.c"
+void mux_display(void)
+{static unsigned char contdisp=0;
+unsigned char datoenv;
+if(contdisp==0)
+{
+LATEbits.LATE1=0;
+LATAbits.LA4=1;
+datoenv=UMIL;
 }
-if(PORTDbits.RD4 && faon == 1 && !bot_tout){
-faon=0;
-bot_tout = 100;;
-}
-if(!PORTDbits.RD5 && a > 0 && faoff ==0 && !bot_tout){
-a--;
-faoff = 1;
-bot_tout = 100;;
-}
-if(PORTDbits.RD5 && faoff == 1 && !bot_tout){
-faoff=0;
-bot_tout = 100;;
+if(contdisp==1)
+{
+LATAbits.LA4=0;
+LATAbits.LA5=1;
+datoenv=CENT;
 }
 
-if(!PORTDbits.RD6 && fbon ==0 && !bot_tout){
-b = ~b&(0x01);
-fbon = 1;
-bot_tout = 100;;
-}
-if(PORTDbits.RD6 && fbon == 1 && !bot_tout){
-
-fbon=0;
-bot_tout = 100;;
-}
-if(!PORTDbits.RD7 && fvel ==0 && !bot_tout){
-velocidad = velocidad + 100;
-fvel = 1;
-bot_tout = 100;;
-}
-if(PORTDbits.RD7 && fvel == 1 && !bot_tout){
-
-fvel=0;
-bot_tout = 100;;
+if(contdisp==2)
+{
+LATAbits.LA5=0;
+LATEbits.LATE0=1;
+datoenv=DEC;
 }
 
-if(b == 0x01) leds(velocidad);
 
-if(PORTBbits.RB4 == 0) velocidad =100;
-
-
-}
-}
-
-void __interrupt myISR(void){
-
-# 121
-if(TMR0IF){
-INTCONbits.TMR0IF = 0;
-TMR0L = 209;
-TMR0H = 0xFF;
-
-tic_timer0();
-
+if(contdisp==3)
+{
+LATEbits.LATE0=0;
+LATEbits.LATE1=1;
+datoenv=UNI;
 }
 
-if(MEMDIG == 1)
-mux_display();
-TMR0IF = 0;
-return;
+LATA = (LATA & 0xF0)|(datoenv & 0x0F);
+
+
+contdisp++;
+
+
+contdisp=(contdisp & 3);
 
 
 
 }
-
