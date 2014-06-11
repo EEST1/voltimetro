@@ -1,65 +1,52 @@
 Version 3.2 HI-TECH Software Intermediate Code
-[p mainexit ]
-"40 Ap_ini.h
-[v _pic_ini13 `(v ~T0 @X0 0 ef ]
-"41
-[v _timer_ini13 `(v ~T0 @X0 0 ef ]
-[s S548 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S548 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
-[s S549 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S549 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE GIE ]
-[s S550 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S550 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE GIEL GIEH ]
-[s S551 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S551 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
-[s S552 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S552 . . GIEL GIEH ]
-[u S547 `S548 1 `S549 1 `S550 1 `S551 1 `S552 1 ]
-[n S547 . . . . . . ]
-"9206 C:\Archivos de programa\Microchip\xc8\v1.30\include\pic18f4550.h
-[v _INTCONbits `VS547 ~T0 @X0 0 e@4082 ]
-[s S532 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S532 . T0PS PSA T0SE T0CS T08BIT TMR0ON ]
-[s S533 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S533 . T0PS0 T0PS1 T0PS2 ]
-[u S531 `S532 1 `S533 1 ]
-[n S531 . . . ]
-"8686
-[v _T0CONbits `VS531 ~T0 @X0 0 e@4053 ]
-"16 Lemos.h
-[v _Send_4Disp `(v ~T0 @X0 0 ef4`uc`uc`uc`uc ]
-[s S213 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S213 . RD0 RD1 RD2 RD3 RD4 RD5 RD6 RD7 ]
-[s S214 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S214 . SPP0 SPP1 SPP2 SPP3 SPP4 SPP5 SPP6 SPP7 ]
-[s S215 :7 `uc 1 :1 `uc 1 ]
-[n S215 . . SS2 ]
-[u S212 `S213 1 `S214 1 `S215 1 ]
-[n S212 . . . . ]
-"3015 C:\Archivos de programa\Microchip\xc8\v1.30\include\pic18f4550.h
-[v _PORTDbits `VS212 ~T0 @X0 0 e@3971 ]
-"17 Lemos.h
-[v _leds `(v ~T0 @X0 0 ef1`ui ]
-[s S201 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S201 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
-[s S202 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S202 . INT0 INT1 INT2 . PGM PGC PGD ]
-[s S203 :3 `uc 1 :1 `uc 1 ]
-[n S203 . . CCP2_PA2 ]
-[u S200 `S201 1 `S202 1 `S203 1 ]
-[n S200 . . . . ]
-"2752 C:\Archivos de programa\Microchip\xc8\v1.30\include\pic18f4550.h
-[v _PORTBbits `VS200 ~T0 @X0 0 e@3969 ]
-"10796
-[v _TMR0IF `Vb ~T0 @X0 0 e@32658 ]
-"8741
-[v _TMR0L `Vuc ~T0 @X0 0 e@4054 ]
-"8747
-[v _TMR0H `Vuc ~T0 @X0 0 e@4055 ]
-"18 Lemos.h
-[v _tic_timer0 `(v ~T0 @X0 0 ef ]
-"15 Robello.h
-[v _mux_display `(v ~T0 @X0 0 ef ]
+[s S282 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S282 . LATE0 LATE1 LATE2 ]
+[s S283 :1 `uc 1 ]
+[n S283 . LE0 ]
+[s S284 :1 `uc 1 :1 `uc 1 ]
+[n S284 . . LE1 ]
+[s S285 :2 `uc 1 :1 `uc 1 ]
+[n S285 . . LE2 ]
+[s S286 :3 `uc 1 :1 `uc 1 ]
+[n S286 . . LE3 ]
+[s S287 :4 `uc 1 :1 `uc 1 ]
+[n S287 . . LE4 ]
+[s S288 :5 `uc 1 :1 `uc 1 ]
+[n S288 . . LE5 ]
+[s S289 :6 `uc 1 :1 `uc 1 ]
+[n S289 . . LE6 ]
+[s S290 :7 `uc 1 :1 `uc 1 ]
+[n S290 . . LE7 ]
+[u S281 `S282 1 `S283 1 `S284 1 `S285 1 `S286 1 `S287 1 `S288 1 `S289 1 `S290 1 ]
+[n S281 . . . . . . . . . . ]
+"3912 C:\Archivos de programa\Microchip\xc8\v1.30\include\pic18f4550.h
+[v _LATEbits `VS281 ~T0 @X0 0 e@3981 ]
+[s S241 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S241 . LATA0 LATA1 LATA2 LATA3 LATA4 LATA5 LATA6 ]
+[s S242 :1 `uc 1 ]
+[n S242 . LA0 ]
+[s S243 :1 `uc 1 :1 `uc 1 ]
+[n S243 . . LA1 ]
+[s S244 :2 `uc 1 :1 `uc 1 ]
+[n S244 . . LA2 ]
+[s S245 :3 `uc 1 :1 `uc 1 ]
+[n S245 . . LA3 ]
+[s S246 :4 `uc 1 :1 `uc 1 ]
+[n S246 . . LA4 ]
+[s S247 :5 `uc 1 :1 `uc 1 ]
+[n S247 . . LA5 ]
+[s S248 :6 `uc 1 :1 `uc 1 ]
+[n S248 . . LA6 ]
+[s S249 :7 `uc 1 :1 `uc 1 ]
+[n S249 . . LA7 ]
+[s S250 :7 `uc 1 :1 `uc 1 ]
+[n S250 . . LATA7 ]
+[u S240 `S241 1 `S242 1 `S243 1 `S244 1 `S245 1 `S246 1 `S247 1 `S248 1 `S249 1 `S250 1 ]
+[n S240 . . . . . . . . . . . ]
+"3406
+[v _LATAbits `VS240 ~T0 @X0 0 e@3977 ]
+"3355
+[v _LATA `Vuc ~T0 @X0 0 e@3977 ]
 [; ;htc.h: 22: extern void __builtin_software_breakpoint(void);
 [; ;pic18f4550.h: 44: extern volatile unsigned char SPPDATA @ 0xF62;
 "46 C:\Archivos de programa\Microchip\xc8\v1.30\include\pic18f4550.h
@@ -4865,75 +4852,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic18.h: 147: extern __nonreentrant void _delay(unsigned long);
 [; ;pic18.h: 149: extern __nonreentrant void _delaywdt(unsigned long);
 [; ;pic18.h: 151: extern __nonreentrant void _delay3(unsigned char);
-"21 confbits.h
-[p x PLLDIV=5 ]
-"22
-[p x CPUDIV=OSC1_PLL2 ]
-"23
-[p x USBDIV=2 ]
-"24
-[p x FOSC=HSPLL_HS ]
-"25
-[p x FCMEN=OFF ]
-"26
-[p x IESO=OFF ]
-"27
-[p x PWRT=OFF ]
-"28
-[p x BOR=ON ]
-"29
-[p x BORV=3 ]
-"30
-[p x VREGEN=ON ]
-"31
-[p x WDT=OFF ]
-"32
-[p x WDTPS=32768 ]
-"33
-[p x MCLRE=ON ]
-"34
-[p x LPT1OSC=OFF ]
-"35
-[p x PBADEN=OFF ]
-"43
-[p x STVREN=ON ]
-"44
-[p x LVP=OFF ]
-"46
-[p x XINST=OFF ]
-"47
-[p x CP0=OFF ]
-"48
-[p x CP1=OFF ]
-"51
-[p x CPB=OFF ]
-"53
-[p x WRT0=OFF ]
-"54
-[p x WRT1=OFF ]
-"57
-[p x WRTB=OFF ]
-"58
-[p x WRTC=OFF ]
-"60
-[p x EBTR0=OFF ]
-"61
-[p x EBTR1=OFF ]
-"64
-[p x EBTRB=OFF ]
-[; ;Ap_ini.h: 40: void pic_ini13(void);
-[; ;Ap_ini.h: 41: void timer_ini13(void);
-[; ;Lemos.h: 15: void Send_Disp(unsigned char NroDisp,unsigned char Dato);
-[; ;Lemos.h: 16: void Send_4Disp(unsigned char Umil,unsigned char Cent,unsigned char Dec,unsigned char Uni);
-[; ;Lemos.h: 17: void leds(unsigned int velocidad);
-[; ;Lemos.h: 18: void tic_timer0(void);
-"21 Lemos.h
-[v _mux_tout `uc ~T0 @X0 1 e ]
-[v _bot_tout `uc ~T0 @X0 1 e ]
-[; ;Lemos.h: 21: unsigned char mux_tout,bot_tout;
-"22
-[v _led_tout `ui ~T0 @X0 1 e ]
-[; ;Lemos.h: 22: unsigned int led_tout;
 [; ;Robello.h: 15: void mux_display(void);
 "17 Robello.h
 [v _UMIL `uc ~T0 @X0 1 e ]
@@ -4944,242 +4862,109 @@ Version 3.2 HI-TECH Software Intermediate Code
 "18
 [v _MEMDIG `uc ~T0 @X0 1 e ]
 [; ;Robello.h: 18: unsigned char MEMDIG;
-"30 main.c
-[v _main `(v ~T0 @X0 1 ef ]
+[; ;Ap_ini.h: 40: void pic_ini13(void);
+[; ;Ap_ini.h: 41: void timer_ini13(void);
+"6 Robello.c
+[v _mux_display `(v ~T0 @X0 1 ef ]
+"7
 {
-[; ;main.c: 30: void main(void) {
-[e :U _main ]
+[; ;Robello.c: 6: void mux_display(void)
+[; ;Robello.c: 7: {static unsigned char contdisp=0;
+[e :U _mux_display ]
 [f ]
-"32
-[v _a `uc ~T0 @X0 1 a ]
-[; ;main.c: 32: unsigned char a=0,b=1;
-[e = _a -> -> 0 `i `uc ]
-[v _b `uc ~T0 @X0 1 a ]
-[e = _b -> -> 1 `i `uc ]
-"33
-[v _faon `uc ~T0 @X0 1 a ]
-[; ;main.c: 33: unsigned char faon=0,faoff=0;
-[e = _faon -> -> 0 `i `uc ]
-[v _faoff `uc ~T0 @X0 1 a ]
-[e = _faoff -> -> 0 `i `uc ]
-"34
-[v _fbon `uc ~T0 @X0 1 a ]
-[; ;main.c: 34: unsigned char fbon=0,fvel=0;
-[e = _fbon -> -> 0 `i `uc ]
-[v _fvel `uc ~T0 @X0 1 a ]
-[e = _fvel -> -> 0 `i `uc ]
-"35
-[v _velocidad `ui ~T0 @X0 1 a ]
-[; ;main.c: 35: unsigned int velocidad = 100;
-[e = _velocidad -> -> 100 `i `ui ]
-[; ;main.c: 37: pic_ini13();
-"37
-[e ( _pic_ini13 ..  ]
-[; ;main.c: 38: timer_ini13();
-"38
-[e ( _timer_ini13 ..  ]
-[; ;main.c: 44: INTCONbits.GIE = 1;
-"44
-[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
-[; ;main.c: 45: (INTCONbits.GIE = 1);
-"45
-[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
-[; ;main.c: 46: T0CONbits.TMR0ON = 1;
-"46
-[e = . . _T0CONbits 0 5 -> -> 1 `i `uc ]
-[; ;main.c: 49: while(1){
-"49
-[e :U 595 ]
+[v F5267 `uc ~T0 @X0 1 s contdisp ]
+[i F5267
+-> -> 0 `i `uc
+]
+"8
+[v _datoenv `uc ~T0 @X0 1 a ]
+[; ;Robello.c: 8: unsigned char datoenv;
+[; ;Robello.c: 9: if(contdisp==0)
+"9
+[e $ ! == -> F5267 `i -> 0 `i 594  ]
+[; ;Robello.c: 10: {
+"10
 {
-[; ;main.c: 60: Send_4Disp(a,b,3,4);
-"60
-[e ( _Send_4Disp (4 , , , _a _b -> -> 3 `i `uc -> -> 4 `i `uc ]
-[; ;main.c: 64: if(!PORTDbits.RD4 && a < 9 && faon ==0 && !bot_tout){
-"64
-[e $ ! && && && ! != -> . . _PORTDbits 0 4 `i -> -> -> 0 `i `Vuc `i < -> _a `i -> 9 `i == -> _faon `i -> 0 `i ! != -> _bot_tout `i -> -> -> 0 `i `uc `i 597  ]
-{
-[; ;main.c: 65: a++;
-"65
-[e ++ _a -> -> 1 `i `uc ]
-[; ;main.c: 66: faon = 1;
-"66
-[e = _faon -> -> 1 `i `uc ]
-[; ;main.c: 67: bot_tout = 100;;
-"67
-[e = _bot_tout -> -> 100 `i `uc ]
-"68
-}
-[e :U 597 ]
-[; ;main.c: 68: }
-[; ;main.c: 69: if(PORTDbits.RD4 && faon == 1 && !bot_tout){
-"69
-[e $ ! && && != -> . . _PORTDbits 0 4 `i -> -> -> 0 `i `Vuc `i == -> _faon `i -> 1 `i ! != -> _bot_tout `i -> -> -> 0 `i `uc `i 598  ]
-{
-[; ;main.c: 70: faon=0;
-"70
-[e = _faon -> -> 0 `i `uc ]
-[; ;main.c: 71: bot_tout = 100;;
-"71
-[e = _bot_tout -> -> 100 `i `uc ]
-"72
-}
-[e :U 598 ]
-[; ;main.c: 72: }
-[; ;main.c: 73: if(!PORTDbits.RD5 && a > 0 && faoff ==0 && !bot_tout){
-"73
-[e $ ! && && && ! != -> . . _PORTDbits 0 5 `i -> -> -> 0 `i `Vuc `i > -> _a `i -> 0 `i == -> _faoff `i -> 0 `i ! != -> _bot_tout `i -> -> -> 0 `i `uc `i 599  ]
-{
-[; ;main.c: 74: a--;
-"74
-[e -- _a -> -> 1 `i `uc ]
-[; ;main.c: 75: faoff = 1;
-"75
-[e = _faoff -> -> 1 `i `uc ]
-[; ;main.c: 76: bot_tout = 100;;
-"76
-[e = _bot_tout -> -> 100 `i `uc ]
-"77
-}
-[e :U 599 ]
-[; ;main.c: 77: }
-[; ;main.c: 78: if(PORTDbits.RD5 && faoff == 1 && !bot_tout){
-"78
-[e $ ! && && != -> . . _PORTDbits 0 5 `i -> -> -> 0 `i `Vuc `i == -> _faoff `i -> 1 `i ! != -> _bot_tout `i -> -> -> 0 `i `uc `i 600  ]
-{
-[; ;main.c: 79: faoff=0;
-"79
-[e = _faoff -> -> 0 `i `uc ]
-[; ;main.c: 80: bot_tout = 100;;
-"80
-[e = _bot_tout -> -> 100 `i `uc ]
-"81
-}
-[e :U 600 ]
-[; ;main.c: 81: }
-[; ;main.c: 83: if(!PORTDbits.RD6 && fbon ==0 && !bot_tout){
-"83
-[e $ ! && && ! != -> . . _PORTDbits 0 6 `i -> -> -> 0 `i `Vuc `i == -> _fbon `i -> 0 `i ! != -> _bot_tout `i -> -> -> 0 `i `uc `i 601  ]
-{
-[; ;main.c: 84: b = ~b&(0x01);
-"84
-[e = _b -> & ~ -> _b `i -> 1 `i `uc ]
-[; ;main.c: 85: fbon = 1;
-"85
-[e = _fbon -> -> 1 `i `uc ]
-[; ;main.c: 86: bot_tout = 100;;
-"86
-[e = _bot_tout -> -> 100 `i `uc ]
-"87
-}
-[e :U 601 ]
-[; ;main.c: 87: }
-[; ;main.c: 88: if(PORTDbits.RD6 && fbon == 1 && !bot_tout){
-"88
-[e $ ! && && != -> . . _PORTDbits 0 6 `i -> -> -> 0 `i `Vuc `i == -> _fbon `i -> 1 `i ! != -> _bot_tout `i -> -> -> 0 `i `uc `i 602  ]
-{
-[; ;main.c: 90: fbon=0;
-"90
-[e = _fbon -> -> 0 `i `uc ]
-[; ;main.c: 91: bot_tout = 100;;
-"91
-[e = _bot_tout -> -> 100 `i `uc ]
-"92
-}
-[e :U 602 ]
-[; ;main.c: 92: }
-[; ;main.c: 93: if(!PORTDbits.RD7 && fvel ==0 && !bot_tout){
-"93
-[e $ ! && && ! != -> . . _PORTDbits 0 7 `i -> -> -> 0 `i `Vuc `i == -> _fvel `i -> 0 `i ! != -> _bot_tout `i -> -> -> 0 `i `uc `i 603  ]
-{
-[; ;main.c: 94: velocidad = velocidad + 100;
-"94
-[e = _velocidad + _velocidad -> -> 100 `i `ui ]
-[; ;main.c: 95: fvel = 1;
-"95
-[e = _fvel -> -> 1 `i `uc ]
-[; ;main.c: 96: bot_tout = 100;;
-"96
-[e = _bot_tout -> -> 100 `i `uc ]
-"97
-}
-[e :U 603 ]
-[; ;main.c: 97: }
-[; ;main.c: 98: if(PORTDbits.RD7 && fvel == 1 && !bot_tout){
-"98
-[e $ ! && && != -> . . _PORTDbits 0 7 `i -> -> -> 0 `i `Vuc `i == -> _fvel `i -> 1 `i ! != -> _bot_tout `i -> -> -> 0 `i `uc `i 604  ]
-{
-[; ;main.c: 100: fvel=0;
-"100
-[e = _fvel -> -> 0 `i `uc ]
-[; ;main.c: 101: bot_tout = 100;;
-"101
-[e = _bot_tout -> -> 100 `i `uc ]
-"102
-}
-[e :U 604 ]
-[; ;main.c: 102: }
-[; ;main.c: 104: if(b == 0x01) leds(velocidad);
-"104
-[e $ ! == -> _b `i -> 1 `i 605  ]
-[e ( _leds (1 _velocidad ]
-[e :U 605 ]
-[; ;main.c: 106: if(PORTBbits.RB4 == 0) velocidad =100;
-"106
-[e $ ! == -> . . _PORTBbits 0 4 `i -> 0 `i 606  ]
-[e = _velocidad -> -> 100 `i `ui ]
-[e :U 606 ]
-"109
+[; ;Robello.c: 11: LATEbits.LATE1=0;
+"11
+[e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
+[; ;Robello.c: 12: LATAbits.LA4=1;
+"12
+[e = . . _LATAbits 5 1 -> -> 1 `i `uc ]
+[; ;Robello.c: 13: datoenv=UMIL;
+"13
+[e = _datoenv _UMIL ]
+"14
 }
 [e :U 594 ]
-"49
-[e $U 595  ]
+[; ;Robello.c: 14: }
+[; ;Robello.c: 15: if(contdisp==1)
+"15
+[e $ ! == -> F5267 `i -> 1 `i 595  ]
+[; ;Robello.c: 16: {
+"16
+{
+[; ;Robello.c: 17: LATAbits.LA4=0;
+"17
+[e = . . _LATAbits 5 1 -> -> 0 `i `uc ]
+[; ;Robello.c: 18: LATAbits.LA5=1;
+"18
+[e = . . _LATAbits 6 1 -> -> 1 `i `uc ]
+[; ;Robello.c: 19: datoenv=CENT;
+"19
+[e = _datoenv _CENT ]
+"20
+}
+[e :U 595 ]
+[; ;Robello.c: 20: }
+[; ;Robello.c: 22: if(contdisp==2)
+"22
+[e $ ! == -> F5267 `i -> 2 `i 596  ]
+[; ;Robello.c: 23: {
+"23
+{
+[; ;Robello.c: 24: LATAbits.LA5=0;
+"24
+[e = . . _LATAbits 6 1 -> -> 0 `i `uc ]
+[; ;Robello.c: 25: LATEbits.LATE0=1;
+"25
+[e = . . _LATEbits 0 0 -> -> 1 `i `uc ]
+[; ;Robello.c: 26: datoenv=DEC;
+"26
+[e = _datoenv _DEC ]
+"27
+}
 [e :U 596 ]
-[; ;main.c: 109: }
-[; ;main.c: 110: }
-"110
+[; ;Robello.c: 27: }
+[; ;Robello.c: 30: if(contdisp==3)
+"30
+[e $ ! == -> F5267 `i -> 3 `i 597  ]
+[; ;Robello.c: 31: {
+"31
+{
+[; ;Robello.c: 32: LATEbits.LATE0=0;
+"32
+[e = . . _LATEbits 0 0 -> -> 0 `i `uc ]
+[; ;Robello.c: 33: LATEbits.LATE1=1;
+"33
+[e = . . _LATEbits 0 1 -> -> 1 `i `uc ]
+[; ;Robello.c: 34: datoenv=UNI;
+"34
+[e = _datoenv _UNI ]
+"35
+}
+[e :U 597 ]
+[; ;Robello.c: 35: }
+[; ;Robello.c: 37: LATA = (LATA & 0xF0)|(datoenv & 0x0F);
+"37
+[e = _LATA -> | & -> _LATA `i -> 240 `i & -> _datoenv `i -> 15 `i `uc ]
+[; ;Robello.c: 40: contdisp++;
+"40
+[e ++ F5267 -> -> 1 `i `uc ]
+[; ;Robello.c: 43: contdisp=(contdisp & 3);
+"43
+[e = F5267 -> & -> F5267 `i -> 3 `i `uc ]
+[; ;Robello.c: 47: }
+"47
 [e :UE 593 ]
-}
-[v F5292 `(v ~T0 @X0 1 tf ]
-"112
-[v _myISR `IF5292 ~T0 @X0 1 e ]
-{
-[; ;main.c: 112: void __interrupt myISR(void){
-[e :U _myISR ]
-[f ]
-[; ;main.c: 121: if(TMR0IF){
-"121
-[e $ ! _TMR0IF 608  ]
-{
-[; ;main.c: 122: INTCONbits.TMR0IF = 0;
-"122
-[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 123: TMR0L = 209;
-"123
-[e = _TMR0L -> -> 209 `i `uc ]
-[; ;main.c: 124: TMR0H = 0xFF;
-"124
-[e = _TMR0H -> -> 255 `i `uc ]
-[; ;main.c: 126: tic_timer0();
-"126
-[e ( _tic_timer0 ..  ]
-"128
-}
-[e :U 608 ]
-[; ;main.c: 128: }
-[; ;main.c: 130: if(MEMDIG == 1)
-"130
-[e $ ! == -> _MEMDIG `i -> 1 `i 609  ]
-[; ;main.c: 131: mux_display();
-"131
-[e ( _mux_display ..  ]
-[e :U 609 ]
-[; ;main.c: 132: TMR0IF = 0;
-"132
-[e = _TMR0IF -> -> 0 `i `b ]
-[; ;main.c: 133: return;
-"133
-[e $UE 607  ]
-[; ;main.c: 137: }
-"137
-[e :UE 607 ]
 }

@@ -5,8 +5,8 @@
  * Created on 27 de abril de 2014, 16:04
  */
 
-#ifndef AP_PUERTOS_H
-#define	AP_PUERTOS_H
+#ifndef AP_INI_H
+#define	AP_INI_H
 
 #ifdef	__cplusplus
 extern "C" {

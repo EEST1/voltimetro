@@ -137,10 +137,12 @@
 [v _Send_4Disp Send_4Disp `(v  1 e 0 0 ]
 "117
 [v _tic_timer0 tic_timer0 `(v  1 e 0 0 ]
-"29 D:\GIT\Ap_template\probandoboot.X\main.c
+"30 D:\GIT\Ap_template\probandoboot.X\main.c
 [v _main main `(v  1 e 0 0 ]
-"111
+"112
 [v _myISR myISR `II(v  1 e 0 0 ]
+"6 D:\GIT\Ap_template\probandoboot.X\Robello.c
+[v _mux_display mux_display `(v  1 e 0 0 ]
 "2566 C:\Archivos de programa\Microchip\xc8\v1.30\include\pic18f4550.h
 [v _PORTA PORTA `VEuc  1 e 1 @3968 ]
 "2722
@@ -200,7 +202,7 @@
 [v _PORTE PORTE `VEuc  1 e 1 @3972 ]
 "3355
 [v _LATA LATA `VEuc  1 e 1 @3977 ]
-[s S582 . 1 `uc 1 LATA0 1 0 :1:0 
+[s S591 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
 `uc 1 LATA2 1 0 :1:2 
 `uc 1 LATA3 1 0 :1:3 
@@ -209,39 +211,39 @@
 `uc 1 LATA6 1 0 :1:6 
 ]
 "3406
-[s S590 . 1 `uc 1 LA0 1 0 :1:0 
+[s S599 . 1 `uc 1 LA0 1 0 :1:0 
 ]
-[s S592 . 1 `uc 1 . 1 0 :1:0 
+[s S601 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 LA1 1 0 :1:1 
 ]
-[s S595 . 1 `uc 1 . 1 0 :2:0 
+[s S604 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 LA2 1 0 :1:2 
 ]
-[s S598 . 1 `uc 1 . 1 0 :3:0 
+[s S607 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 LA3 1 0 :1:3 
 ]
-[s S601 . 1 `uc 1 . 1 0 :4:0 
+[s S610 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 LA4 1 0 :1:4 
 ]
-[s S604 . 1 `uc 1 . 1 0 :5:0 
+[s S613 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 LA5 1 0 :1:5 
 ]
-[s S607 . 1 `uc 1 . 1 0 :6:0 
+[s S616 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 LA6 1 0 :1:6 
 ]
-[s S610 . 1 `uc 1 . 1 0 :7:0 
+[s S619 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 LA7 1 0 :1:7 
 ]
-[s S613 . 1 `uc 1 . 1 0 :7:0 
+[s S622 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 LATA7 1 0 :1:7 
 ]
-[u S616 . 1 `S582 1 . 1 0 `S590 1 . 1 0 `S592 1 . 1 0 `S595 1 . 1 0 `S598 1 . 1 0 `S601 1 . 1 0 `S604 1 . 1 0 `S607 1 . 1 0 `S610 1 . 1 0 `S613 1 . 1 0 ]
-[v _LATAbits LATAbits `VES616  1 e 1 @3977 ]
+[u S625 . 1 `S591 1 . 1 0 `S599 1 . 1 0 `S601 1 . 1 0 `S604 1 . 1 0 `S607 1 . 1 0 `S610 1 . 1 0 `S613 1 . 1 0 `S616 1 . 1 0 `S619 1 . 1 0 `S622 1 . 1 0 ]
+[v _LATAbits LATAbits `VES625  1 e 1 @3977 ]
 "3490
 [v _LATB LATB `VEuc  1 e 1 @3978 ]
 "3622
 [v _LATC LATC `VEuc  1 e 1 @3979 ]
-[s S510 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S519 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
@@ -249,34 +251,34 @@
 `uc 1 LATC7 1 0 :1:7 
 ]
 "3668
-[s S517 . 1 `uc 1 LC0 1 0 :1:0 
+[s S526 . 1 `uc 1 LC0 1 0 :1:0 
 ]
-[s S519 . 1 `uc 1 . 1 0 :1:0 
+[s S528 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 LC1 1 0 :1:1 
 ]
-[s S522 . 1 `uc 1 . 1 0 :2:0 
+[s S531 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 LC2 1 0 :1:2 
 ]
-[s S525 . 1 `uc 1 . 1 0 :3:0 
+[s S534 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 LC3 1 0 :1:3 
 ]
-[s S528 . 1 `uc 1 . 1 0 :4:0 
+[s S537 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 LC4 1 0 :1:4 
 ]
-[s S531 . 1 `uc 1 . 1 0 :5:0 
+[s S540 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 LC5 1 0 :1:5 
 ]
-[s S534 . 1 `uc 1 . 1 0 :6:0 
+[s S543 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 LC6 1 0 :1:6 
 ]
-[s S537 . 1 `uc 1 . 1 0 :7:0 
+[s S546 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 LC7 1 0 :1:7 
 ]
-[u S540 . 1 `S510 1 . 1 0 `S517 1 . 1 0 `S519 1 . 1 0 `S522 1 . 1 0 `S525 1 . 1 0 `S528 1 . 1 0 `S531 1 . 1 0 `S534 1 . 1 0 `S537 1 . 1 0 ]
-[v _LATCbits LATCbits `VES540  1 e 1 @3979 ]
+[u S549 . 1 `S519 1 . 1 0 `S526 1 . 1 0 `S528 1 . 1 0 `S531 1 . 1 0 `S534 1 . 1 0 `S537 1 . 1 0 `S540 1 . 1 0 `S543 1 . 1 0 `S546 1 . 1 0 ]
+[v _LATCbits LATCbits `VES549  1 e 1 @3979 ]
 "3737
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
-[s S435 . 1 `uc 1 LATD0 1 0 :1:0 
+[s S444 . 1 `uc 1 LATD0 1 0 :1:0 
 `uc 1 LATD1 1 0 :1:1 
 `uc 1 LATD2 1 0 :1:2 
 `uc 1 LATD3 1 0 :1:3 
@@ -286,68 +288,68 @@
 `uc 1 LATD7 1 0 :1:7 
 ]
 "3785
-[s S444 . 1 `uc 1 LD0 1 0 :1:0 
+[s S453 . 1 `uc 1 LD0 1 0 :1:0 
 ]
-[s S446 . 1 `uc 1 . 1 0 :1:0 
+[s S455 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 LD1 1 0 :1:1 
 ]
-[s S449 . 1 `uc 1 . 1 0 :2:0 
+[s S458 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 LD2 1 0 :1:2 
 ]
-[s S452 . 1 `uc 1 . 1 0 :3:0 
+[s S461 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 LD3 1 0 :1:3 
 ]
-[s S455 . 1 `uc 1 . 1 0 :4:0 
+[s S464 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 LD4 1 0 :1:4 
 ]
-[s S458 . 1 `uc 1 . 1 0 :5:0 
+[s S467 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 LD5 1 0 :1:5 
 ]
-[s S461 . 1 `uc 1 . 1 0 :6:0 
+[s S470 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 LD6 1 0 :1:6 
 ]
-[s S464 . 1 `uc 1 . 1 0 :7:0 
+[s S473 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 LD7 1 0 :1:7 
 ]
-[u S467 . 1 `S435 1 . 1 0 `S444 1 . 1 0 `S446 1 . 1 0 `S449 1 . 1 0 `S452 1 . 1 0 `S455 1 . 1 0 `S458 1 . 1 0 `S461 1 . 1 0 `S464 1 . 1 0 ]
-[v _LATDbits LATDbits `VES467  1 e 1 @3980 ]
+[u S476 . 1 `S444 1 . 1 0 `S453 1 . 1 0 `S455 1 . 1 0 `S458 1 . 1 0 `S461 1 . 1 0 `S464 1 . 1 0 `S467 1 . 1 0 `S470 1 . 1 0 `S473 1 . 1 0 ]
+[v _LATDbits LATDbits `VES476  1 e 1 @3980 ]
 "3869
 [v _LATE LATE `VEuc  1 e 1 @3981 ]
-[s S662 . 1 `uc 1 LATE0 1 0 :1:0 
+[s S671 . 1 `uc 1 LATE0 1 0 :1:0 
 `uc 1 LATE1 1 0 :1:1 
 `uc 1 LATE2 1 0 :1:2 
 ]
 "3912
-[s S666 . 1 `uc 1 LE0 1 0 :1:0 
+[s S675 . 1 `uc 1 LE0 1 0 :1:0 
 ]
-[s S668 . 1 `uc 1 . 1 0 :1:0 
+[s S677 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 LE1 1 0 :1:1 
 ]
-[s S671 . 1 `uc 1 . 1 0 :2:0 
+[s S680 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 LE2 1 0 :1:2 
 ]
-[s S674 . 1 `uc 1 . 1 0 :3:0 
+[s S683 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 LE3 1 0 :1:3 
 ]
-[s S677 . 1 `uc 1 . 1 0 :4:0 
+[s S686 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 LE4 1 0 :1:4 
 ]
-[s S680 . 1 `uc 1 . 1 0 :5:0 
+[s S689 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 LE5 1 0 :1:5 
 ]
-[s S683 . 1 `uc 1 . 1 0 :6:0 
+[s S692 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 LE6 1 0 :1:6 
 ]
-[s S686 . 1 `uc 1 . 1 0 :7:0 
+[s S695 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 LE7 1 0 :1:7 
 ]
-[u S689 . 1 `S662 1 . 1 0 `S666 1 . 1 0 `S668 1 . 1 0 `S671 1 . 1 0 `S674 1 . 1 0 `S677 1 . 1 0 `S680 1 . 1 0 `S683 1 . 1 0 `S686 1 . 1 0 ]
-[v _LATEbits LATEbits `VES689  1 e 1 @3981 ]
+[u S698 . 1 `S671 1 . 1 0 `S675 1 . 1 0 `S677 1 . 1 0 `S680 1 . 1 0 `S683 1 . 1 0 `S686 1 . 1 0 `S689 1 . 1 0 `S692 1 . 1 0 `S695 1 . 1 0 ]
+[v _LATEbits LATEbits `VES698  1 e 1 @3981 ]
 "3971
 [v _TRISA TRISA `VEuc  1 e 1 @3986 ]
 "4168
 [v _TRISB TRISB `VEuc  1 e 1 @3987 ]
-[s S316 . 1 `uc 1 TRISC0 1 0 :1:0 
+[s S325 . 1 `uc 1 TRISC0 1 0 :1:0 
 `uc 1 TRISC1 1 0 :1:1 
 `uc 1 TRISC2 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
@@ -355,18 +357,18 @@
 `uc 1 TRISC7 1 0 :1:7 
 ]
 "4421
-[s S323 . 1 `uc 1 RC0 1 0 :1:0 
+[s S332 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 RC6 1 0 :1:6 
 `uc 1 RC7 1 0 :1:7 
 ]
-[s S330 . 1 `uc 1 . 1 0 :3:0 
+[s S339 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 TRISC3 1 0 :1:3 
 ]
-[u S333 . 1 `S316 1 . 1 0 `S323 1 . 1 0 `S330 1 . 1 0 ]
-[v _TRISCbits TRISCbits `VES333  1 e 1 @3988 ]
+[u S342 . 1 `S325 1 . 1 0 `S332 1 . 1 0 `S339 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES342  1 e 1 @3988 ]
 "4560
 [v _TRISD TRISD `VEuc  1 e 1 @3989 ]
 "4781
@@ -443,21 +445,28 @@
 [v _bot_tout bot_tout `uc  1 e 1 0 ]
 "22
 [v _led_tout led_tout `ui  1 e 2 0 ]
-"29 D:\GIT\Ap_template\probandoboot.X\main.c
+"17 D:\GIT\Ap_template\probandoboot.X\Robello.h
+[v _UMIL UMIL `uc  1 e 1 0 ]
+[v _CENT CENT `uc  1 e 1 0 ]
+[v _DEC DEC `uc  1 e 1 0 ]
+[v _UNI UNI `uc  1 e 1 0 ]
+"18
+[v _MEMDIG MEMDIG `uc  1 e 1 0 ]
+"30 D:\GIT\Ap_template\probandoboot.X\main.c
 [v _main main `(v  1 e 0 0 ]
 {
-"34
-[v main@velocidad velocidad `ui  1 a 2 23 ]
-"31
-[v main@a a `uc  1 a 1 30 ]
-[v main@b b `uc  1 a 1 29 ]
-"33
-[v main@fvel fvel `uc  1 a 1 28 ]
-[v main@fbon fbon `uc  1 a 1 27 ]
+"35
+[v main@velocidad velocidad `ui  1 a 2 25 ]
 "32
-[v main@faoff faoff `uc  1 a 1 26 ]
-[v main@faon faon `uc  1 a 1 25 ]
-"109
+[v main@a a `uc  1 a 1 32 ]
+[v main@b b `uc  1 a 1 31 ]
+"34
+[v main@fvel fvel `uc  1 a 1 30 ]
+[v main@fbon fbon `uc  1 a 1 29 ]
+"33
+[v main@faoff faoff `uc  1 a 1 28 ]
+[v main@faon faon `uc  1 a 1 27 ]
+"110
 } 0
 "43 D:\GIT\Ap_template\probandoboot.X\Ap_ini.c
 [v _timer_ini13 timer_ini13 `(v  1 e 0 0 ]
@@ -472,7 +481,7 @@
 "8 D:\GIT\Ap_template\probandoboot.X\Lemos.C
 [v _leds leds `(v  1 e 0 0 ]
 {
-[v leds@velocidad velocidad `ui  1 p 2 14 ]
+[v leds@velocidad velocidad `ui  1 p 2 16 ]
 "9
 [v leds@i i `uc  1 s 1 i ]
 "42
@@ -482,13 +491,13 @@
 {
 [v Send_4Disp@Umil Umil `uc  1 a 1 wreg ]
 [v Send_4Disp@Umil Umil `uc  1 a 1 wreg ]
-[v Send_4Disp@Cent Cent `uc  1 p 1 16 ]
-[v Send_4Disp@Dec Dec `uc  1 p 1 17 ]
-[v Send_4Disp@Uni Uni `uc  1 p 1 18 ]
+[v Send_4Disp@Cent Cent `uc  1 p 1 18 ]
+[v Send_4Disp@Dec Dec `uc  1 p 1 19 ]
+[v Send_4Disp@Uni Uni `uc  1 p 1 20 ]
 "76
 [v Send_4Disp@Nro_Disp Nro_Disp `uc  1 s 1 Nro_Disp ]
 "74
-[v Send_4Disp@Umil Umil `uc  1 a 1 20 ]
+[v Send_4Disp@Umil Umil `uc  1 a 1 22 ]
 "116
 } 0
 "43
@@ -496,18 +505,27 @@
 {
 [v Send_Disp@NroDisp NroDisp `uc  1 a 1 wreg ]
 [v Send_Disp@NroDisp NroDisp `uc  1 a 1 wreg ]
-[v Send_Disp@Dato Dato `uc  1 p 1 14 ]
+[v Send_Disp@Dato Dato `uc  1 p 1 16 ]
 "45
-[v Send_Disp@NroDisp NroDisp `uc  1 a 1 15 ]
+[v Send_Disp@NroDisp NroDisp `uc  1 a 1 17 ]
 "72
 } 0
-"111 D:\GIT\Ap_template\probandoboot.X\main.c
+"112 D:\GIT\Ap_template\probandoboot.X\main.c
 [v _myISR myISR `II(v  1 e 0 0 ]
 {
-"126
+"137
 } 0
 "117 D:\GIT\Ap_template\probandoboot.X\Lemos.C
 [v _tic_timer0 tic_timer0 `(v  1 e 0 0 ]
 {
 "121
+} 0
+"6 D:\GIT\Ap_template\probandoboot.X\Robello.c
+[v _mux_display mux_display `(v  1 e 0 0 ]
+{
+"8
+[v mux_display@datoenv datoenv `uc  1 a 1 1 ]
+"7
+[v mux_display@contdisp contdisp `uc  1 s 1 contdisp ]
+"47
 } 0

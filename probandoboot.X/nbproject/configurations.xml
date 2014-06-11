@@ -7,6 +7,7 @@
       <itemPath>confbits.h</itemPath>
       <itemPath>Ap_ini.h</itemPath>
       <itemPath>Lemos.h</itemPath>
+      <itemPath>Robello.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -18,6 +19,7 @@
       <itemPath>main.c</itemPath>
       <itemPath>Ap_ini.c</itemPath>
       <itemPath>Lemos.C</itemPath>
+      <itemPath>Robello.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

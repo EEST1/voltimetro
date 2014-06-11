@@ -20,7 +20,8 @@
                         //garantizar el funcionamiento del BOOTLOADER
 #include"Ap_ini.h"      //define nombres para la entradas salidas del
                         //shield
-#include"Lemos.h"
+#include"Lemos.h"       //funciones personalizadas Prof Lemos
+#include"Robello.h"     //funciones personalizadas prof Robello
 
 
 # define _XTAL_FREQ  20000000   //para ser usado con la macro __delayms()
@@ -116,13 +117,23 @@ void __interrupt myISR(void){
      *
      */
     //el siguiente código verifica que el flag de TIMER0 esté habilitado
-    if(TMR0IF){
-        INTCONbits.TMR0IF = 0;  //borra el flag de la interrupción de timer
-        TMR0L = 209;           //reinicia el time
-        TMR0H = 0xFF;
-        tic_timer0();           //llama a la función tic_timer
-    }
-    return;                     //termina el código de interrupción
+#ifdef AP_INI_H
+        if(TMR0IF){
+            INTCONbits.TMR0IF = 0;  //borra el flag de la interrupción de timer
+            TMR0L = 209;           //reinicia el time
+            TMR0H = 0xFF;
+        #ifdef  LEMOS_H
+            tic_timer0();           //llama a la función tic_timer
+        #endif
+        }
+        #ifdef ROBELLO_H
+            if(MEMDIG == 1)
+                mux_display();
+                TMR0IF = 0; //borra el flag de la interrupción de timer
+            return;                     //termina el código de interrupción
+        #endif
+
+#endif
 }
 /*
 
