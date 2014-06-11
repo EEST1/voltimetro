@@ -15,12 +15,6 @@ void pic_ini13(void){
     LATD = 0x00;
     LATE = 0x00;
 
-    PORTA = 0x00;
-    PORTB = 0x00;
-    PORTC = 0x00;
-    PORTD = 0x00;
-    PORTE = 0x00;
-
     //LEDS y pulsadores
 
     TRISD = 0xF0;       //RD0 a RD3 salidas RD4 a RD7 entradas

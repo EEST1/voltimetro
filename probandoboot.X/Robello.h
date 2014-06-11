@@ -15,7 +15,7 @@ extern "C" {
 void mux_display(void);
 
 unsigned char UMIL,CENT,DEC,UNI;
-unsigned char MEMDIG;
+unsigned char MEMDIG = 1;
 
 
 
