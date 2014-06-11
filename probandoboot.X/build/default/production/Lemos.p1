@@ -1,72 +1,96 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"3355 C:\Archivos de programa\Microchip\xc8\v1.30\include\pic18f4550.h
+[s S272 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S272 . LATD0 LATD1 LATD2 LATD3 LATD4 LATD5 LATD6 LATD7 ]
+[s S273 :1 `uc 1 ]
+[n S273 . LD0 ]
+[s S274 :1 `uc 1 :1 `uc 1 ]
+[n S274 . . LD1 ]
+[s S275 :2 `uc 1 :1 `uc 1 ]
+[n S275 . . LD2 ]
+[s S276 :3 `uc 1 :1 `uc 1 ]
+[n S276 . . LD3 ]
+[s S277 :4 `uc 1 :1 `uc 1 ]
+[n S277 . . LD4 ]
+[s S278 :5 `uc 1 :1 `uc 1 ]
+[n S278 . . LD5 ]
+[s S279 :6 `uc 1 :1 `uc 1 ]
+[n S279 . . LD6 ]
+[s S280 :7 `uc 1 :1 `uc 1 ]
+[n S280 . . LD7 ]
+[u S271 `S272 1 `S273 1 `S274 1 `S275 1 `S276 1 `S277 1 `S278 1 `S279 1 `S280 1 ]
+[n S271 . . . . . . . . . . ]
+"3785 C:\Archivos de programa\Microchip\xc8\v1.30\include\pic18f4550.h
+[v _LATDbits `VS271 ~T0 @X0 0 e@3980 ]
+[s S262 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S262 . LATC0 LATC1 LATC2 . LATC6 LATC7 ]
+[s S263 :1 `uc 1 ]
+[n S263 . LC0 ]
+[s S264 :1 `uc 1 :1 `uc 1 ]
+[n S264 . . LC1 ]
+[s S265 :2 `uc 1 :1 `uc 1 ]
+[n S265 . . LC2 ]
+[s S266 :3 `uc 1 :1 `uc 1 ]
+[n S266 . . LC3 ]
+[s S267 :4 `uc 1 :1 `uc 1 ]
+[n S267 . . LC4 ]
+[s S268 :5 `uc 1 :1 `uc 1 ]
+[n S268 . . LC5 ]
+[s S269 :6 `uc 1 :1 `uc 1 ]
+[n S269 . . LC6 ]
+[s S270 :7 `uc 1 :1 `uc 1 ]
+[n S270 . . LC7 ]
+[u S261 `S262 1 `S263 1 `S264 1 `S265 1 `S266 1 `S267 1 `S268 1 `S269 1 `S270 1 ]
+[n S261 . . . . . . . . . . ]
+"3668
+[v _LATCbits `VS261 ~T0 @X0 0 e@3979 ]
+"3355
 [v _LATA `Vuc ~T0 @X0 0 e@3977 ]
-"3490
-[v _LATB `Vuc ~T0 @X0 0 e@3978 ]
-"3622
-[v _LATC `Vuc ~T0 @X0 0 e@3979 ]
-"3737
-[v _LATD `Vuc ~T0 @X0 0 e@3980 ]
-"3869
-[v _LATE `Vuc ~T0 @X0 0 e@3981 ]
-"2566
-[v _PORTA `Vuc ~T0 @X0 0 e@3968 ]
-"2722
-[v _PORTB `Vuc ~T0 @X0 0 e@3969 ]
-"2831
-[v _PORTC `Vuc ~T0 @X0 0 e@3970 ]
-"2984
-[v _PORTD `Vuc ~T0 @X0 0 e@3971 ]
-"3104
-[v _PORTE `Vuc ~T0 @X0 0 e@3972 ]
-"4560
-[v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
-[s S304 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S304 . TRISC0 TRISC1 TRISC2 . TRISC6 TRISC7 ]
-[s S305 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S305 . RC0 RC1 RC2 . RC6 RC7 ]
-[s S306 :3 `uc 1 :1 `uc 1 ]
-[n S306 . . TRISC3 ]
-[u S303 `S304 1 `S305 1 `S306 1 ]
-[n S303 . . . . ]
-"4421
-[v _TRISCbits `VS303 ~T0 @X0 0 e@3988 ]
-"6182
-[v _CMCON `Vuc ~T0 @X0 0 e@4020 ]
-"7168
-[v _ADCON1 `Vuc ~T0 @X0 0 e@4033 ]
-"3971
-[v _TRISA `Vuc ~T0 @X0 0 e@3986 ]
-"4781
-[v _TRISE `Vuc ~T0 @X0 0 e@3990 ]
-"4168
-[v _TRISB `Vuc ~T0 @X0 0 e@3987 ]
-[s S532 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S532 . T0PS PSA T0SE T0CS T08BIT TMR0ON ]
-[s S533 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S533 . T0PS0 T0PS1 T0PS2 ]
-[u S531 `S532 1 `S533 1 ]
-[n S531 . . . ]
-"8686
-[v _T0CONbits `VS531 ~T0 @X0 0 e@4053 ]
-"8741
-[v _TMR0L `Vuc ~T0 @X0 0 e@4054 ]
-"8747
-[v _TMR0H `Vuc ~T0 @X0 0 e@4055 ]
-[s S548 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S548 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
-[s S549 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S549 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE GIE ]
-[s S550 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S550 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE GIEL GIEH ]
-[s S551 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S551 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
-[s S552 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S552 . . GIEL GIEH ]
-[u S547 `S548 1 `S549 1 `S550 1 `S551 1 `S552 1 ]
-[n S547 . . . . . . ]
-"9206
-[v _INTCONbits `VS547 ~T0 @X0 0 e@4082 ]
+[s S241 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S241 . LATA0 LATA1 LATA2 LATA3 LATA4 LATA5 LATA6 ]
+[s S242 :1 `uc 1 ]
+[n S242 . LA0 ]
+[s S243 :1 `uc 1 :1 `uc 1 ]
+[n S243 . . LA1 ]
+[s S244 :2 `uc 1 :1 `uc 1 ]
+[n S244 . . LA2 ]
+[s S245 :3 `uc 1 :1 `uc 1 ]
+[n S245 . . LA3 ]
+[s S246 :4 `uc 1 :1 `uc 1 ]
+[n S246 . . LA4 ]
+[s S247 :5 `uc 1 :1 `uc 1 ]
+[n S247 . . LA5 ]
+[s S248 :6 `uc 1 :1 `uc 1 ]
+[n S248 . . LA6 ]
+[s S249 :7 `uc 1 :1 `uc 1 ]
+[n S249 . . LA7 ]
+[s S250 :7 `uc 1 :1 `uc 1 ]
+[n S250 . . LATA7 ]
+[u S240 `S241 1 `S242 1 `S243 1 `S244 1 `S245 1 `S246 1 `S247 1 `S248 1 `S249 1 `S250 1 ]
+[n S240 . . . . . . . . . . . ]
+"3406
+[v _LATAbits `VS240 ~T0 @X0 0 e@3977 ]
+[s S282 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S282 . LATE0 LATE1 LATE2 ]
+[s S283 :1 `uc 1 ]
+[n S283 . LE0 ]
+[s S284 :1 `uc 1 :1 `uc 1 ]
+[n S284 . . LE1 ]
+[s S285 :2 `uc 1 :1 `uc 1 ]
+[n S285 . . LE2 ]
+[s S286 :3 `uc 1 :1 `uc 1 ]
+[n S286 . . LE3 ]
+[s S287 :4 `uc 1 :1 `uc 1 ]
+[n S287 . . LE4 ]
+[s S288 :5 `uc 1 :1 `uc 1 ]
+[n S288 . . LE5 ]
+[s S289 :6 `uc 1 :1 `uc 1 ]
+[n S289 . . LE6 ]
+[s S290 :7 `uc 1 :1 `uc 1 ]
+[n S290 . . LE7 ]
+[u S281 `S282 1 `S283 1 `S284 1 `S285 1 `S286 1 `S287 1 `S288 1 `S289 1 `S290 1 ]
+[n S281 . . . . . . . . . . ]
+"3912
+[v _LATEbits `VS281 ~T0 @X0 0 e@3981 ]
 [; ;htc.h: 22: extern void __builtin_software_breakpoint(void);
 [; ;pic18f4550.h: 44: extern volatile unsigned char SPPDATA @ 0xF62;
 "46 C:\Archivos de programa\Microchip\xc8\v1.30\include\pic18f4550.h
@@ -4874,107 +4898,436 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic18.h: 151: extern __nonreentrant void _delay3(unsigned char);
 [; ;Ap_ini.h: 40: void pic_ini13(void);
 [; ;Ap_ini.h: 41: void timer_ini13(void);
-"9 Ap_ini.c
-[v _pic_ini13 `(v ~T0 @X0 1 ef ]
-{
-[; ;Ap_ini.c: 9: void pic_ini13(void){
-[e :U _pic_ini13 ]
-[f ]
-[; ;Ap_ini.c: 12: LATA = 0x00;
-"12
-[e = _LATA -> -> 0 `i `uc ]
-[; ;Ap_ini.c: 13: LATB = 0x00;
-"13
-[e = _LATB -> -> 0 `i `uc ]
-[; ;Ap_ini.c: 14: LATC = 0x00;
-"14
-[e = _LATC -> -> 0 `i `uc ]
-[; ;Ap_ini.c: 15: LATD = 0x00;
-"15
-[e = _LATD -> -> 0 `i `uc ]
-[; ;Ap_ini.c: 16: LATE = 0x00;
-"16
-[e = _LATE -> -> 0 `i `uc ]
-[; ;Ap_ini.c: 18: PORTA = 0x00;
-"18
-[e = _PORTA -> -> 0 `i `uc ]
-[; ;Ap_ini.c: 19: PORTB = 0x00;
-"19
-[e = _PORTB -> -> 0 `i `uc ]
-[; ;Ap_ini.c: 20: PORTC = 0x00;
-"20
-[e = _PORTC -> -> 0 `i `uc ]
-[; ;Ap_ini.c: 21: PORTD = 0x00;
-"21
-[e = _PORTD -> -> 0 `i `uc ]
-[; ;Ap_ini.c: 22: PORTE = 0x00;
+[; ;Lemos.h: 15: void Send_Disp(unsigned char NroDisp,unsigned char Dato);
+[; ;Lemos.h: 16: void Send_4Disp(unsigned char Umil,unsigned char Cent,unsigned char Dec,unsigned char Uni);
+[; ;Lemos.h: 17: void leds(unsigned int velocidad);
+[; ;Lemos.h: 18: void tic_timer0(void);
+"21 Lemos.h
+[v _mux_tout `uc ~T0 @X0 1 e ]
+[v _bot_tout `uc ~T0 @X0 1 e ]
+[; ;Lemos.h: 21: unsigned char mux_tout,bot_tout;
 "22
-[e = _PORTE -> -> 0 `i `uc ]
-[; ;Ap_ini.c: 26: TRISD = 0xF0;
+[v _led_tout `ui ~T0 @X0 1 e ]
+[; ;Lemos.h: 22: unsigned int led_tout;
+"8 Lemos.C
+[v _leds `(v ~T0 @X0 1 ef1`ui ]
+{
+[; ;Lemos.C: 8: void leds(unsigned int velocidad){
+[e :U _leds ]
+[v _velocidad `ui ~T0 @X0 1 r1 ]
+[f ]
+"9
+[v F5275 `uc ~T0 @X0 1 s i ]
+[i F5275
+-> -> 1 `i `uc
+]
+[; ;Lemos.C: 9: static unsigned char i=1;
+[; ;Lemos.C: 12: switch(i){
+"12
+[e $U 595  ]
+{
+[; ;Lemos.C: 13: case 1:if(!led_tout){
+"13
+[e :U 596 ]
+[e $ ! ! != _led_tout -> -> 0 `i `ui 597  ]
+{
+[; ;Lemos.C: 14: LATDbits.LD2=~LATDbits.LD2;
+"14
+[e = . . _LATDbits 3 1 -> ~ -> . . _LATDbits 3 1 `i `uc ]
+[; ;Lemos.C: 15: led_tout = velocidad;
+"15
+[e = _led_tout _velocidad ]
+[; ;Lemos.C: 16: i++;
+"16
+[e ++ F5275 -> -> 1 `i `uc ]
+"17
+}
+[e :U 597 ]
+[; ;Lemos.C: 17: }
+[; ;Lemos.C: 18: break;
+"18
+[e $U 594  ]
+[; ;Lemos.C: 19: case 2:if(!led_tout){
+"19
+[e :U 598 ]
+[e $ ! ! != _led_tout -> -> 0 `i `ui 599  ]
+{
+[; ;Lemos.C: 20: LATDbits.LD3=~LATDbits.LD3;
+"20
+[e = . . _LATDbits 4 1 -> ~ -> . . _LATDbits 4 1 `i `uc ]
+[; ;Lemos.C: 21: led_tout = velocidad;
+"21
+[e = _led_tout _velocidad ]
+[; ;Lemos.C: 22: i++;
+"22
+[e ++ F5275 -> -> 1 `i `uc ]
+"23
+}
+[e :U 599 ]
+[; ;Lemos.C: 23: }
+[; ;Lemos.C: 24: break;
+"24
+[e $U 594  ]
+[; ;Lemos.C: 25: case 3:if(!led_tout){
+"25
+[e :U 600 ]
+[e $ ! ! != _led_tout -> -> 0 `i `ui 601  ]
+{
+[; ;Lemos.C: 26: LATCbits.LC6=~LATCbits.LC6;
 "26
-[e = _TRISD -> -> 240 `i `uc ]
-[; ;Ap_ini.c: 27: TRISCbits.RC6 = 0;
+[e = . . _LATCbits 7 1 -> ~ -> . . _LATCbits 7 1 `i `uc ]
+[; ;Lemos.C: 27: led_tout = velocidad;
 "27
-[e = . . _TRISCbits 1 4 -> -> 0 `i `uc ]
-[; ;Ap_ini.c: 28: TRISCbits.RC7 = 0;
+[e = _led_tout _velocidad ]
+[; ;Lemos.C: 28: i++;
 "28
-[e = . . _TRISCbits 1 5 -> -> 0 `i `uc ]
-[; ;Ap_ini.c: 32: CMCON = 0x07;
+[e ++ F5275 -> -> 1 `i `uc ]
+"29
+}
+[e :U 601 ]
+[; ;Lemos.C: 29: }
+[; ;Lemos.C: 30: break;
+"30
+[e $U 594  ]
+[; ;Lemos.C: 31: case 4:if(!led_tout){
+"31
+[e :U 602 ]
+[e $ ! ! != _led_tout -> -> 0 `i `ui 603  ]
+{
+[; ;Lemos.C: 32: LATCbits.LC7=~LATCbits.LC7;
 "32
-[e = _CMCON -> -> 7 `i `uc ]
-[; ;Ap_ini.c: 33: ADCON1 = 0x0F;
+[e = . . _LATCbits 8 1 -> ~ -> . . _LATCbits 8 1 `i `uc ]
+[; ;Lemos.C: 33: led_tout = velocidad;
 "33
-[e = _ADCON1 -> -> 15 `i `uc ]
-[; ;Ap_ini.c: 34: TRISA = 0xC0;
+[e = _led_tout _velocidad ]
+[; ;Lemos.C: 34: i=1;
 "34
-[e = _TRISA -> -> 192 `i `uc ]
-[; ;Ap_ini.c: 35: TRISE = 0x00;
+[e = F5275 -> -> 1 `i `uc ]
 "35
-[e = _TRISE -> -> 0 `i `uc ]
-[; ;Ap_ini.c: 39: TRISB = 0xFF;
+}
+[e :U 603 ]
+[; ;Lemos.C: 35: }
+[; ;Lemos.C: 36: break;
+"36
+[e $U 594  ]
+[; ;Lemos.C: 37: default : {
+"37
+[e :U 604 ]
+{
+[; ;Lemos.C: 38: led_tout = 1000;
+"38
+[e = _led_tout -> -> 1000 `i `ui ]
+[; ;Lemos.C: 39: i=1;
 "39
-[e = _TRISB -> -> 255 `i `uc ]
-[; ;Ap_ini.c: 41: }
+[e = F5275 -> -> 1 `i `uc ]
+"40
+}
 "41
+}
+[; ;Lemos.C: 40: }
+[; ;Lemos.C: 41: }
+[e $U 594  ]
+"12
+[e :U 595 ]
+[e [\ F5275 , $ -> -> 1 `i `uc 596
+ , $ -> -> 2 `i `uc 598
+ , $ -> -> 3 `i `uc 600
+ , $ -> -> 4 `i `uc 602
+ 604 ]
+"41
+[e :U 594 ]
+[; ;Lemos.C: 42: }
+"42
 [e :UE 593 ]
 }
 "43
-[v _timer_ini13 `(v ~T0 @X0 1 ef ]
+[v _Send_Disp `(v ~T0 @X0 1 ef2`uc`uc ]
 {
-[; ;Ap_ini.c: 43: void timer_ini13(){
-[e :U _timer_ini13 ]
+[; ;Lemos.C: 43: void Send_Disp(unsigned char NroDisp,unsigned char Dato){
+[e :U _Send_Disp ]
+[v _NroDisp `uc ~T0 @X0 1 r1 ]
+[v _Dato `uc ~T0 @X0 1 r2 ]
 [f ]
-[; ;Ap_ini.c: 44: T0CONbits.TMR0ON = 0;
-"44
-[e = . . _T0CONbits 0 5 -> -> 0 `i `uc ]
-[; ;Ap_ini.c: 45: T0CONbits.T08BIT = 1;
+[; ;Lemos.C: 45: LATA = 0;
 "45
-[e = . . _T0CONbits 0 4 -> -> 1 `i `uc ]
-[; ;Ap_ini.c: 46: T0CONbits.T0CS = 0;
-"46
-[e = . . _T0CONbits 0 3 -> -> 0 `i `uc ]
-[; ;Ap_ini.c: 47: T0CONbits.PSA = 0;
+[e = _LATA -> -> 0 `i `uc ]
+[; ;Lemos.C: 47: LATAbits.LA4 = 0;
 "47
-[e = . . _T0CONbits 0 1 -> -> 0 `i `uc ]
-[; ;Ap_ini.c: 48: T0CONbits.T0PS0 = 1;
+[e = . . _LATAbits 5 1 -> -> 0 `i `uc ]
+[; ;Lemos.C: 48: LATAbits.LA5 = 0;
 "48
-[e = . . _T0CONbits 1 0 -> -> 1 `i `uc ]
-[; ;Ap_ini.c: 49: T0CONbits.T0PS1 = 1;
+[e = . . _LATAbits 6 1 -> -> 0 `i `uc ]
+[; ;Lemos.C: 49: LATEbits.LATE0 = 0;
 "49
-[e = . . _T0CONbits 1 1 -> -> 1 `i `uc ]
-[; ;Ap_ini.c: 50: T0CONbits.T0PS2 = 1;
+[e = . . _LATEbits 0 0 -> -> 0 `i `uc ]
+[; ;Lemos.C: 50: LATEbits.LATE1 = 0;
 "50
-[e = . . _T0CONbits 1 2 -> -> 1 `i `uc ]
-[; ;Ap_ini.c: 51: TMR0L = 209;
-"51
-[e = _TMR0L -> -> 209 `i `uc ]
-[; ;Ap_ini.c: 52: TMR0H = 0xFF;
+[e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
+[; ;Lemos.C: 52: switch(NroDisp){
 "52
-[e = _TMR0H -> -> 255 `i `uc ]
-[; ;Ap_ini.c: 53: INTCONbits.TMR0IE = 1;
+[e $U 607  ]
+{
+[; ;Lemos.C: 53: case 1:{
 "53
-[e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
-[; ;Ap_ini.c: 54: }
+[e :U 608 ]
+{
+[; ;Lemos.C: 54: LATAbits.LA4 = 1;
 "54
-[e :UE 594 ]
+[e = . . _LATAbits 5 1 -> -> 1 `i `uc ]
+"55
+}
+[; ;Lemos.C: 55: }break;
+[e $U 606  ]
+[; ;Lemos.C: 56: case 2: {
+"56
+[e :U 609 ]
+{
+[; ;Lemos.C: 57: LATAbits.LA5 = 1;
+"57
+[e = . . _LATAbits 6 1 -> -> 1 `i `uc ]
+"58
+}
+[; ;Lemos.C: 58: }break;
+[e $U 606  ]
+[; ;Lemos.C: 59: case 3: {
+"59
+[e :U 610 ]
+{
+[; ;Lemos.C: 60: LATEbits.LATE0 = 1;
+"60
+[e = . . _LATEbits 0 0 -> -> 1 `i `uc ]
+"61
+}
+[; ;Lemos.C: 61: }break;
+[e $U 606  ]
+[; ;Lemos.C: 62: case 4: {
+"62
+[e :U 611 ]
+{
+[; ;Lemos.C: 63: LATEbits.LATE1 = 1;
+"63
+[e = . . _LATEbits 0 1 -> -> 1 `i `uc ]
+"64
+}
+[; ;Lemos.C: 64: }break;
+[e $U 606  ]
+[; ;Lemos.C: 65: default :{
+"65
+[e :U 612 ]
+{
+[; ;Lemos.C: 66: LATAbits.LA4 = 1;
+"66
+[e = . . _LATAbits 5 1 -> -> 1 `i `uc ]
+"67
+}
+[; ;Lemos.C: 67: }break;
+[e $U 606  ]
+"68
+}
+[; ;Lemos.C: 68: }
+[e $U 606  ]
+"52
+[e :U 607 ]
+[e [\ _NroDisp , $ -> -> 1 `i `uc 608
+ , $ -> -> 2 `i `uc 609
+ , $ -> -> 3 `i `uc 610
+ , $ -> -> 4 `i `uc 611
+ 612 ]
+"68
+[e :U 606 ]
+[; ;Lemos.C: 69: Dato = Dato & 0x0F;
+"69
+[e = _Dato -> & -> _Dato `i -> 15 `i `uc ]
+[; ;Lemos.C: 70: LATA = LATA & 0xF0;
+"70
+[e = _LATA -> & -> _LATA `i -> 240 `i `uc ]
+[; ;Lemos.C: 71: LATA = LATA | Dato;
+"71
+[e = _LATA -> | -> _LATA `i -> _Dato `i `uc ]
+[; ;Lemos.C: 72: }
+"72
+[e :UE 605 ]
+}
+"74
+[v _Send_4Disp `(v ~T0 @X0 1 ef4`uc`uc`uc`uc ]
+{
+[; ;Lemos.C: 74: void Send_4Disp(unsigned char Umil,unsigned char Cent,unsigned char Dec,unsigned char Uni){
+[e :U _Send_4Disp ]
+[v _Umil `uc ~T0 @X0 1 r1 ]
+[v _Cent `uc ~T0 @X0 1 r2 ]
+[v _Dec `uc ~T0 @X0 1 r3 ]
+[v _Uni `uc ~T0 @X0 1 r4 ]
+[f ]
+"76
+[v F5282 `uc ~T0 @X0 1 s Nro_Disp ]
+[i F5282
+-> -> 1 `i `uc
+]
+[; ;Lemos.C: 76: static unsigned char Nro_Disp=1;
+[; ;Lemos.C: 78: switch(Nro_Disp){
+"78
+[e $U 615  ]
+{
+[; ;Lemos.C: 79: case 1:{
+"79
+[e :U 616 ]
+{
+[; ;Lemos.C: 80: if(!mux_tout){
+"80
+[e $ ! ! != -> _mux_tout `i -> -> -> 0 `i `uc `i 617  ]
+{
+[; ;Lemos.C: 81: Send_Disp(1,Umil);
+"81
+[e ( _Send_Disp (2 , -> -> 1 `i `uc _Umil ]
+[; ;Lemos.C: 82: mux_tout = 4;;
+"82
+[e = _mux_tout -> -> 4 `i `uc ]
+[; ;Lemos.C: 83: Nro_Disp = 2;
+"83
+[e = F5282 -> -> 2 `i `uc ]
+"84
+}
+[e :U 617 ]
+"85
+}
+[; ;Lemos.C: 84: }
+[; ;Lemos.C: 85: }
+[; ;Lemos.C: 86: break;
+"86
+[e $U 614  ]
+[; ;Lemos.C: 87: case 2:{
+"87
+[e :U 618 ]
+{
+[; ;Lemos.C: 88: if(!mux_tout){
+"88
+[e $ ! ! != -> _mux_tout `i -> -> -> 0 `i `uc `i 619  ]
+{
+[; ;Lemos.C: 89: Send_Disp(2,Cent);
+"89
+[e ( _Send_Disp (2 , -> -> 2 `i `uc _Cent ]
+[; ;Lemos.C: 90: mux_tout = 4;;
+"90
+[e = _mux_tout -> -> 4 `i `uc ]
+[; ;Lemos.C: 91: Nro_Disp = 3;
+"91
+[e = F5282 -> -> 3 `i `uc ]
+"92
+}
+[e :U 619 ]
+"93
+}
+[; ;Lemos.C: 92: }
+[; ;Lemos.C: 93: }
+[; ;Lemos.C: 94: break;
+"94
+[e $U 614  ]
+[; ;Lemos.C: 95: case 3:{
+"95
+[e :U 620 ]
+{
+[; ;Lemos.C: 96: if(!mux_tout){
+"96
+[e $ ! ! != -> _mux_tout `i -> -> -> 0 `i `uc `i 621  ]
+{
+[; ;Lemos.C: 97: Send_Disp(3,Dec);
+"97
+[e ( _Send_Disp (2 , -> -> 3 `i `uc _Dec ]
+[; ;Lemos.C: 98: mux_tout = 4;;
+"98
+[e = _mux_tout -> -> 4 `i `uc ]
+[; ;Lemos.C: 99: Nro_Disp = 4;
+"99
+[e = F5282 -> -> 4 `i `uc ]
+"100
+}
+[e :U 621 ]
+"101
+}
+[; ;Lemos.C: 100: }
+[; ;Lemos.C: 101: }
+[; ;Lemos.C: 102: break;
+"102
+[e $U 614  ]
+[; ;Lemos.C: 103: case 4:{
+"103
+[e :U 622 ]
+{
+[; ;Lemos.C: 104: if(!mux_tout){
+"104
+[e $ ! ! != -> _mux_tout `i -> -> -> 0 `i `uc `i 623  ]
+{
+[; ;Lemos.C: 105: Send_Disp(4,Uni);
+"105
+[e ( _Send_Disp (2 , -> -> 4 `i `uc _Uni ]
+[; ;Lemos.C: 106: mux_tout = 4;;
+"106
+[e = _mux_tout -> -> 4 `i `uc ]
+[; ;Lemos.C: 107: Nro_Disp = 1;
+"107
+[e = F5282 -> -> 1 `i `uc ]
+"108
+}
+[e :U 623 ]
+"109
+}
+[; ;Lemos.C: 108: }
+[; ;Lemos.C: 109: }
+[; ;Lemos.C: 110: break;
+"110
+[e $U 614  ]
+[; ;Lemos.C: 111: default :{
+"111
+[e :U 624 ]
+{
+[; ;Lemos.C: 112: mux_tout = 4;;
+"112
+[e = _mux_tout -> -> 4 `i `uc ]
+[; ;Lemos.C: 113: Nro_Disp = 1;
+"113
+[e = F5282 -> -> 1 `i `uc ]
+"114
+}
+"115
+}
+[; ;Lemos.C: 114: }
+[; ;Lemos.C: 115: }
+[e $U 614  ]
+"78
+[e :U 615 ]
+[e [\ F5282 , $ -> -> 1 `i `uc 616
+ , $ -> -> 2 `i `uc 618
+ , $ -> -> 3 `i `uc 620
+ , $ -> -> 4 `i `uc 622
+ 624 ]
+"115
+[e :U 614 ]
+[; ;Lemos.C: 116: }
+"116
+[e :UE 613 ]
+}
+"117
+[v _tic_timer0 `(v ~T0 @X0 1 ef ]
+{
+[; ;Lemos.C: 117: void tic_timer0(void){
+[e :U _tic_timer0 ]
+[f ]
+[; ;Lemos.C: 118: if(mux_tout)mux_tout--;
+"118
+[e $ ! != -> _mux_tout `i -> -> -> 0 `i `uc `i 626  ]
+[e -- _mux_tout -> -> 1 `i `uc ]
+[e :U 626 ]
+[; ;Lemos.C: 119: if(bot_tout)bot_tout--;
+"119
+[e $ ! != -> _bot_tout `i -> -> -> 0 `i `uc `i 627  ]
+[e -- _bot_tout -> -> 1 `i `uc ]
+[e :U 627 ]
+[; ;Lemos.C: 120: if(led_tout)led_tout--;
+"120
+[e $ ! != _led_tout -> -> 0 `i `ui 628  ]
+[e -- _led_tout -> -> 1 `i `ui ]
+[e :U 628 ]
+[; ;Lemos.C: 121: }
+"121
+[e :UE 625 ]
 }

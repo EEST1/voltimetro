@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Windows\Temp\slo.obj
+$C:\Windows\Temp\s3is.obj
 end_init CODE 0 2014 2014 4 1
 reset_vec CODE 0 2000 2000 4 1
 idloc IDLOC 0 200000 200000 8 1
@@ -70,184 +70,184 @@ STACK 000060-0007FF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\probandoboot.X.production.obj
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":117 2008 intcode CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":112 2008 intcode CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":39 7BF2 text1 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":40 7BF2 text1 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":41 7BF4 text1 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":42 7BF6 text1 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":43 7BF8 text1 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":44 7BFA text1 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":45 7BFC text1 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":46 7BFE text1 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":47 7C00 text1 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":48 7C04 text1 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":49 7C06 text1 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":50 7C08 text1 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":162 7C0A text7 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":163 7C0A text7 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":164 7C10 text7 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":165 7C16 text7 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":166 7C24 text7 CODE
-"C:\Windows\Temp\slo.":971 7C26 cinit CODE
-"C:\Windows\Temp\slo.":973 7C26 cinit CODE
-"C:\Windows\Temp\slo.":976 7C26 cinit CODE
-"C:\Windows\Temp\slo.":1006 7C26 cinit CODE
-"C:\Windows\Temp\slo.":1007 7C28 cinit CODE
-"C:\Windows\Temp\slo.":1008 7C2A cinit CODE
-"C:\Windows\Temp\slo.":1009 7C2C cinit CODE
-"C:\Windows\Temp\slo.":1014 7C2E cinit CODE
-"C:\Windows\Temp\slo.":1015 7C30 cinit CODE
-"C:\Windows\Temp\slo.":1016 7C32 cinit CODE
-"C:\Windows\Temp\slo.":1017 7C34 cinit CODE
-"C:\Windows\Temp\slo.":1018 7C36 cinit CODE
-"C:\Windows\Temp\slo.":1019 7C38 cinit CODE
-"C:\Windows\Temp\slo.":1020 7C3A cinit CODE
-"C:\Windows\Temp\slo.":1021 7C3C cinit CODE
-"C:\Windows\Temp\slo.":1022 7C40 cinit CODE
-"C:\Windows\Temp\slo.":1023 7C42 cinit CODE
-"C:\Windows\Temp\slo.":1029 7C46 cinit CODE
-"C:\Windows\Temp\slo.":1030 7C46 cinit CODE
-"C:\Windows\Temp\slo.":1031 7C46 cinit CODE
-"C:\Windows\Temp\slo.":1032 7C48 cinit CODE
-"C:\Windows\Temp\slo.":1033 7C4A cinit CODE
-"C:\Windows\Temp\slo.":1034 7C4C cinit CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":5 7C50 text2 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":8 7C50 text2 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":9 7C54 text2 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":10 7C58 text2 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":11 7C5C text2 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":12 7C60 text2 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":14 7C64 text2 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":15 7C68 text2 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":16 7C6C text2 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":17 7C70 text2 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":18 7C74 text2 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":22 7C78 text2 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":23 7C7C text2 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":24 7C7E text2 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":28 7C80 text2 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":29 7C84 text2 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":30 7C88 text2 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":31 7C8C text2 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":35 7C90 text2 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":37 7C92 text2 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":88 7C94 text5 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":90 7C98 text5 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":92 7C9C text5 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":93 7C9E text5 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":94 7CA0 text5 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":95 7CA2 text5 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":97 7CA4 text5 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":101 7CA6 text5 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":102 7CA6 text5 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":103 7CA8 text5 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":104 7CAA text5 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":105 7CAA text5 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":106 7CAC text5 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":107 7CAE text5 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":108 7CAE text5 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":109 7CB0 text5 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":110 7CB2 text5 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":111 7CB2 text5 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":112 7CB4 text5 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":97 7CB6 text5 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":114 7CD2 text5 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":115 7CD8 text5 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":116 7CDE text5 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":117 7CE4 text5 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":51 7CE6 text3 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":55 7CE6 text3 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":56 7CE8 text3 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":57 7CF0 text3 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":62 7CF4 text3 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":63 7CFC text3 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":68 7D00 text3 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":69 7D08 text3 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":70 7D0A text3 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":71 7D12 text3 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":74 7D16 text3 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":75 7D1E text3 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":76 7D20 text3 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":81 7D2A text3 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":82 7D32 text3 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":85 7D3A text3 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":55 7D3C text3 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":87 7D58 text3 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":112 7D5A intcode_body CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":120 7D8C intcode_body CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":121 7D90 intcode_body CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":122 7D92 intcode_body CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":123 7D96 intcode_body CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":124 7D98 intcode_body CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":127 7D9C intcode_body CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":119 7DD6 text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":123 7DDA text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":124 7DDC text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":125 7DDC text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":126 7DE0 text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":127 7DEA text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":128 7DF2 text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":132 7DF8 text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":133 7DF8 text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":134 7DFC text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":135 7E06 text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":136 7E0E text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":140 7E14 text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":141 7E14 text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":142 7E18 text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":143 7E22 text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":144 7E2A text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":148 7E30 text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":149 7E30 text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":150 7E34 text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":152 7E40 text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":157 7E46 text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":158 7E4E text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":123 7E54 text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":161 7E70 text4 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":30 7E72 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":32 7E72 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":33 7E82 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":34 7E92 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":35 7EA2 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":72 2008 intcode CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":111 2008 intcode CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":43 7BF2 text1 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":44 7BF2 text1 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":45 7BF4 text1 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":46 7BF6 text1 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":47 7BF8 text1 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":48 7BFA text1 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":49 7BFC text1 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":50 7BFE text1 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":51 7C00 text1 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":52 7C04 text1 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":53 7C06 text1 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":54 7C08 text1 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":117 7C0A text7 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":118 7C0A text7 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":119 7C10 text7 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":120 7C16 text7 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":121 7C24 text7 CODE
+"C:\Windows\Temp\s3is.":1311 7C26 cinit CODE
+"C:\Windows\Temp\s3is.":1313 7C26 cinit CODE
+"C:\Windows\Temp\s3is.":1316 7C26 cinit CODE
+"C:\Windows\Temp\s3is.":1346 7C26 cinit CODE
+"C:\Windows\Temp\s3is.":1347 7C28 cinit CODE
+"C:\Windows\Temp\s3is.":1348 7C2A cinit CODE
+"C:\Windows\Temp\s3is.":1349 7C2C cinit CODE
+"C:\Windows\Temp\s3is.":1354 7C2E cinit CODE
+"C:\Windows\Temp\s3is.":1355 7C30 cinit CODE
+"C:\Windows\Temp\s3is.":1356 7C32 cinit CODE
+"C:\Windows\Temp\s3is.":1357 7C34 cinit CODE
+"C:\Windows\Temp\s3is.":1358 7C36 cinit CODE
+"C:\Windows\Temp\s3is.":1359 7C38 cinit CODE
+"C:\Windows\Temp\s3is.":1360 7C3A cinit CODE
+"C:\Windows\Temp\s3is.":1361 7C3C cinit CODE
+"C:\Windows\Temp\s3is.":1362 7C40 cinit CODE
+"C:\Windows\Temp\s3is.":1363 7C42 cinit CODE
+"C:\Windows\Temp\s3is.":1369 7C46 cinit CODE
+"C:\Windows\Temp\s3is.":1370 7C46 cinit CODE
+"C:\Windows\Temp\s3is.":1371 7C46 cinit CODE
+"C:\Windows\Temp\s3is.":1372 7C48 cinit CODE
+"C:\Windows\Temp\s3is.":1373 7C4A cinit CODE
+"C:\Windows\Temp\s3is.":1374 7C4C cinit CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":9 7C50 text2 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":12 7C50 text2 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":13 7C54 text2 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":14 7C58 text2 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":15 7C5C text2 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":16 7C60 text2 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":18 7C64 text2 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":19 7C68 text2 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":20 7C6C text2 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":21 7C70 text2 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":22 7C74 text2 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":26 7C78 text2 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":27 7C7C text2 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":28 7C7E text2 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":32 7C80 text2 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":33 7C84 text2 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":34 7C88 text2 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":35 7C8C text2 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":39 7C90 text2 CODE
+"D:\GIT\Ap_template\probandoboot.X\Ap_ini.c":41 7C92 text2 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":43 7C94 text5 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":45 7C98 text5 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":47 7C9C text5 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":48 7C9E text5 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":49 7CA0 text5 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":50 7CA2 text5 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":52 7CA4 text5 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":56 7CA6 text5 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":57 7CA6 text5 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":58 7CA8 text5 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":59 7CAA text5 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":60 7CAA text5 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":61 7CAC text5 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":62 7CAE text5 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":63 7CAE text5 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":64 7CB0 text5 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":65 7CB2 text5 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":66 7CB2 text5 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":67 7CB4 text5 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":52 7CB6 text5 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":69 7CD2 text5 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":70 7CD8 text5 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":71 7CDE text5 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":72 7CE4 text5 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":8 7CE6 text3 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":12 7CE6 text3 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":13 7CE8 text3 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":14 7CF0 text3 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":19 7CF4 text3 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":20 7CFC text3 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":25 7D00 text3 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":26 7D08 text3 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":27 7D0A text3 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":28 7D12 text3 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":31 7D16 text3 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":32 7D1E text3 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":33 7D20 text3 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":38 7D2A text3 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":39 7D32 text3 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":41 7D3A text3 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":12 7D3C text3 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":42 7D58 text3 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":111 7D5A intcode_body CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":119 7D8C intcode_body CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":120 7D90 intcode_body CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":121 7D92 intcode_body CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":122 7D96 intcode_body CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":123 7D98 intcode_body CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":126 7D9C intcode_body CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":74 7DD6 text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":78 7DDA text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":79 7DDC text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":80 7DDC text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":81 7DE0 text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":82 7DEA text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":83 7DF2 text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":87 7DF8 text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":88 7DF8 text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":89 7DFC text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":90 7E06 text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":91 7E0E text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":95 7E14 text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":96 7E14 text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":97 7E18 text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":98 7E22 text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":99 7E2A text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":103 7E30 text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":104 7E30 text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":105 7E34 text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":107 7E40 text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":112 7E46 text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":113 7E4E text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":78 7E54 text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\Lemos.C":116 7E70 text4 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":29 7E72 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":31 7E72 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":32 7E82 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":33 7E92 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":34 7EA2 text0 CODE
 "D:\GIT\Ap_template\probandoboot.X\main.c":36 7EAA text0 CODE
 "D:\GIT\Ap_template\probandoboot.X\main.c":37 7EAE text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":42 7EB2 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":43 7EB4 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":44 7EB6 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":56 7EB8 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":62 7ED2 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":63 7EE6 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":64 7EE8 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":65 7EF0 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":67 7EF8 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":68 7F06 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":69 7F0E text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":71 7F16 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":72 7F28 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":73 7F2A text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":74 7F32 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":76 7F3A text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":77 7F48 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":78 7F50 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":81 7F58 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":82 7F64 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":83 7F6C text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":84 7F74 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":86 7F7C text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":88 7F8A text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":89 7F92 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":91 7F9A text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":92 7FA6 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":93 7FB2 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":94 7FBA text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":96 7FC2 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":98 7FD0 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":99 7FD8 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":102 7FE0 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":104 7FF2 text0 CODE
-"D:\GIT\Ap_template\probandoboot.X\main.c":110 8000 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":43 7EB2 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":44 7EB4 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":45 7EB6 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":59 7EB8 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":63 7ED2 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":64 7EE6 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":65 7EE8 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":66 7EF0 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":68 7EF8 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":69 7F06 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":70 7F0E text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":72 7F16 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":73 7F28 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":74 7F2A text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":75 7F32 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":77 7F3A text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":78 7F48 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":79 7F50 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":82 7F58 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":83 7F64 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":84 7F6C text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":85 7F74 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":87 7F7C text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":89 7F8A text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":90 7F92 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":92 7F9A text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":93 7FA6 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":94 7FB2 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":95 7FBA text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":97 7FC2 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":99 7FD0 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":100 7FD8 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":103 7FE0 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":105 7FF2 text0 CODE
+"D:\GIT\Ap_template\probandoboot.X\main.c":109 8000 text0 CODE
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -277,8 +277,8 @@ Send_4Disp@Cent 11 0 COMRAM 1 cstackCOMRAM dist/default/production\probandoboot.
 __end_of_tic_timer0 7C26 0 CODE 0 text7 dist/default/production\probandoboot.X.production.obj
 _main 7E72 0 CODE 0 text0 dist/default/production\probandoboot.X.production.obj
 _leds 7CE6 0 CODE 0 text3 dist/default/production\probandoboot.X.production.obj
-___sp 0 0 STACK 2 stack C:\Windows\Temp\slo.obj
-start 2014 0 CODE 0 init C:\Windows\Temp\slo.obj
+___sp 0 0 STACK 2 stack C:\Windows\Temp\s3is.obj
+start 2014 0 CODE 0 init C:\Windows\Temp\s3is.obj
 _TMR0H FD7 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __end_of_pic_ini13 7C94 0 CODE 0 text2 dist/default/production\probandoboot.X.production.obj
 _TMR0L FD6 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
@@ -366,11 +366,11 @@ _mux_tout 23 0 COMRAM 1 bssCOMRAM dist/default/production\probandoboot.X.product
 __CFG_PBADEN$OFF 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __Hdata 0 0 ABS 0 data dist/default/production\probandoboot.X.production.obj
 __Ldata 0 0 ABS 0 data dist/default/production\probandoboot.X.production.obj
-stackhi 7FF 0 ABS 0 - C:\Windows\Temp\slo.obj
+stackhi 7FF 0 ABS 0 - C:\Windows\Temp\s3is.obj
 __CFG_CPUDIV$OSC1_PLL2 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __Htemp 0 0 COMRAM 1 temp dist/default/production\probandoboot.X.production.obj
 __Ltemp 0 0 COMRAM 1 temp dist/default/production\probandoboot.X.production.obj
-stacklo 60 0 ABS 0 - C:\Windows\Temp\slo.obj
+stacklo 60 0 ABS 0 - C:\Windows\Temp\s3is.obj
 __Hrbit 0 0 COMRAM 1 rbit dist/default/production\probandoboot.X.production.obj
 __Lrbit 0 0 COMRAM 1 rbit dist/default/production\probandoboot.X.production.obj
 __CFG_BOR$ON 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
@@ -478,8 +478,8 @@ _Send_4Disp 7DD6 0 CODE 0 text4 dist/default/production\probandoboot.X.productio
 __Lcinit 0 0 ABS 0 cinit dist/default/production\probandoboot.X.production.obj
 __pcinit 7C26 0 CODE 0 cinit dist/default/production\probandoboot.X.production.obj
 __CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
-__ramtop 800 0 RAM 0 ramtop C:\Windows\Temp\slo.obj
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Windows\Temp\slo.obj
+__ramtop 800 0 RAM 0 ramtop C:\Windows\Temp\s3is.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Windows\Temp\s3is.obj
 __size_of_main 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __Hconst 0 0 CODE 0 const dist/default/production\probandoboot.X.production.obj
 __Lconst 0 0 CODE 0 const dist/default/production\probandoboot.X.production.obj
@@ -487,9 +487,9 @@ __CFG_WRT0$OFF 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __CFG_WRT1$OFF 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __size_of_pic_ini13 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
-___inthi_sp 0 0 STACK 2 stack C:\Windows\Temp\slo.obj
+___inthi_sp 0 0 STACK 2 stack C:\Windows\Temp\s3is.obj
 __CFG_BORV$3 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
-___intlo_sp 0 0 STACK 2 stack C:\Windows\Temp\slo.obj
+___intlo_sp 0 0 STACK 2 stack C:\Windows\Temp\s3is.obj
 _INTCONbits FF2 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __Hend_init 2018 0 CODE 0 end_init dist/default/production\probandoboot.X.production.obj
 __Lend_init 2014 0 CODE 0 end_init dist/default/production\probandoboot.X.production.obj
@@ -497,21 +497,21 @@ __HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\probandoboot.X.prod
 __LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\probandoboot.X.production.obj
 __pidataCOMRAM 2004 0 CODE 0 idataCOMRAM dist/default/production\probandoboot.X.production.obj
 __CFG_CP0$OFF 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Windows\Temp\slo.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Windows\Temp\s3is.obj
 __CFG_FOSC$HSPLL_HS 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __CFG_CP1$OFF 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __Hreset_vec 2004 0 CODE 0 reset_vec dist/default/production\probandoboot.X.production.obj
 __Lreset_vec 2000 0 CODE 0 reset_vec dist/default/production\probandoboot.X.production.obj
-__accesstop 60 0 ABS 0 - C:\Windows\Temp\slo.obj
+__accesstop 60 0 ABS 0 - C:\Windows\Temp\s3is.obj
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\probandoboot.X.production.obj
 __Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\probandoboot.X.production.obj
 __pintcode_body 7D5A 0 CODE 0 intcode_body dist/default/production\probandoboot.X.production.obj
-intlevel0 0 0 CODE 0 text C:\Windows\Temp\slo.obj
-intlevel1 0 0 CODE 0 text C:\Windows\Temp\slo.obj
+intlevel0 0 0 CODE 0 text C:\Windows\Temp\s3is.obj
+intlevel1 0 0 CODE 0 text C:\Windows\Temp\s3is.obj
 __CFG_WRTB$OFF 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
-intlevel2 0 0 CODE 0 text C:\Windows\Temp\slo.obj
+intlevel2 0 0 CODE 0 text C:\Windows\Temp\s3is.obj
 Send_4Disp@Uni 13 0 COMRAM 1 cstackCOMRAM dist/default/production\probandoboot.X.production.obj
-intlevel3 0 0 CODE 0 text C:\Windows\Temp\slo.obj
+intlevel3 0 0 CODE 0 text C:\Windows\Temp\s3is.obj
 __CFG_WRTC$OFF 0 0 ABS 0 - dist/default/production\probandoboot.X.production.obj
 __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\probandoboot.X.production.obj
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\probandoboot.X.production.obj

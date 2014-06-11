@@ -6301,19 +6301,11 @@ extern __nonreentrant void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __nonreentrant void _delay3(unsigned char);
 
-# 41 "Ap_Puertos.h"
+# 40 "Ap_ini.h"
 void pic_ini13(void);
 void timer_ini13(void);
-void Send_Disp(unsigned char NroDisp,unsigned char Dato);
-void Send_4Disp(unsigned char Umil,unsigned char Cent,unsigned char Dec,unsigned char Uni);
-void leds(unsigned int velocidad);
-void tic_timer0(void);
 
-
-unsigned char mux_tout,bot_tout;
-unsigned int led_tout;
-
-# 5 "Ap_ini.c"
+# 9 "Ap_ini.c"
 void pic_ini13(void){
 
 
@@ -6360,119 +6352,4 @@ TMR0L = 209;
 TMR0H = 0xFF;
 INTCONbits.TMR0IE = 1;
 }
-void leds(unsigned int velocidad){
-static unsigned char i=1;
 
-
-switch(i){
-case 1:if(!led_tout){
-LATDbits.LD2=~LATDbits.LD2;
-led_tout = velocidad;
-i++;
-}
-break;
-case 2:if(!led_tout){
-LATDbits.LD3=~LATDbits.LD3;
-led_tout = velocidad;
-i++;
-}
-break;
-case 3:if(!led_tout){
-LATCbits.LC6=~LATCbits.LC6;
-led_tout = velocidad;
-i++;
-}
-break;
-case 4:if(!led_tout){
-LATCbits.LC7=~LATCbits.LC7;
-led_tout = velocidad;
-i=1;
-}
-break;
-default : {
-led_tout = 1000;
-i=1;
-}
-
-}
-
-}
-void Send_Disp(unsigned char NroDisp,unsigned char Dato){
-
-LATA = 0;
-
-LATAbits.LA4 = 0;
-LATAbits.LA5 = 0;
-LATEbits.LATE0 = 0;
-LATEbits.LATE1 = 0;
-
-switch(NroDisp){
-case 1:{
-LATAbits.LA4 = 1;
-}break;
-case 2: {
-LATAbits.LA5 = 1;
-}break;
-case 3: {
-LATEbits.LATE0 = 1;
-}break;
-case 4: {
-LATEbits.LATE1 = 1;
-}break;
-default :{
-LATAbits.LA4 = 1;
-}break;
-}
-Dato = Dato & 0x0F;
-LATA = LATA & 0xF0;
-LATA = LATA | Dato;
-}
-
-void Send_4Disp(unsigned char Umil,unsigned char Cent,unsigned char Dec,unsigned char Uni){
-
-static unsigned char Nro_Disp=1;
-
-switch(Nro_Disp){
-case 1:{
-if(!mux_tout){
-Send_Disp(1,Umil);
-mux_tout = 4;;
-Nro_Disp = 2;
-}
-}
-break;
-case 2:{
-if(!mux_tout){
-Send_Disp(2,Cent);
-mux_tout = 4;;
-Nro_Disp = 3;
-}
-}
-break;
-case 3:{
-if(!mux_tout){
-Send_Disp(3,Dec);
-mux_tout = 4;;
-Nro_Disp = 4;
-}
-}
-break;
-case 4:{
-if(!mux_tout){
-Send_Disp(4,Uni);
-mux_tout = 4;;
-Nro_Disp = 1;
-}
-}
-break;
-default :{
-mux_tout = 4;;
-Nro_Disp = 1;
-}
-}
-}
-void tic_timer0(void){
-if(mux_tout)mux_tout--;
-if(bot_tout)bot_tout--;
-if(led_tout)led_tout--;
-}

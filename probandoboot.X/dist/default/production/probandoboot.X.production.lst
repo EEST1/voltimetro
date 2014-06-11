@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC18 LITE Macro Assembler V1.30 build 55553 
-                                                                                               Thu May 22 20:57:02 2014
+                                                                                               Wed Jun 11 07:44:51 2014
 
 Microchip Technology Omniscient Code Generator (Lite mode) build 55553
      1                           	processor	18F4550
@@ -228,7 +228,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
    222 ;;
    223 ;; *************** function _main *****************
    224 ;; Defined at:
-   225 ;;		line 30 in file "main.c"
+   225 ;;		line 29 in file "main.c"
    226 ;; Parameters:    Size  Location     Type
    227 ;;		None
    228 ;; Auto vars:     Size  Location     Type
@@ -272,7 +272,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
    264  007E72                     _main:
    265                           	opt stack 27
    266                           
-   267                           ;main.c: 32: unsigned char a=0,b=1;
+   267                           ;main.c: 31: unsigned char a=0,b=1;
    268                           
    269                           ;incstack = 0
    270  007E72  6E16               	movwf	??_main& (0+255),c
@@ -284,7 +284,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
    276  007E7E  6E1E               	movwf	main@b,c
    277  007E80  5016               	movf	??_main& (0+255),w,c
    278                           
-   279                           ;main.c: 33: unsigned char faon=0,faoff=0;
+   279                           ;main.c: 32: unsigned char faon=0,faoff=0;
    280  007E82  6E16               	movwf	??_main& (0+255),c
    281  007E84  0E00               	movlw	0
    282  007E86  6E1A               	movwf	main@faon,c
@@ -294,7 +294,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
    286  007E8E  6E1B               	movwf	main@faoff,c
    287  007E90  5016               	movf	??_main& (0+255),w,c
    288                           
-   289                           ;main.c: 34: unsigned char fbon=0,fvel=0;
+   289                           ;main.c: 33: unsigned char fbon=0,fvel=0;
    290  007E92  6E16               	movwf	??_main& (0+255),c
    291  007E94  0E00               	movlw	0
    292  007E96  6E1C               	movwf	main@fbon,c
@@ -304,7 +304,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
    296  007E9E  6E1D               	movwf	main@fvel,c
    297  007EA0  5016               	movf	??_main& (0+255),w,c
    298                           
-   299                           ;main.c: 35: unsigned int velocidad = 100;
+   299                           ;main.c: 34: unsigned int velocidad = 100;
    300  007EA2  0E00               	movlw	0
    301  007EA4  6E19               	movwf	main@velocidad+1,c
    302  007EA6  0E64               	movlw	100
@@ -316,17 +316,17 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
    308                           ;main.c: 37: timer_ini13();
    309  007EAE  ECF9  F03D         	call	_timer_ini13	;wreg free
    310                           
-   311                           ;main.c: 42: INTCONbits.GIE = 1;
+   311                           ;main.c: 43: INTCONbits.GIE = 1;
    312  007EB2  8EF2               	bsf	intcon,7,c	;volatile
    313                           
-   314                           ;main.c: 43: (INTCONbits.GIE = 1);
+   314                           ;main.c: 44: (INTCONbits.GIE = 1);
    315  007EB4  8EF2               	bsf	intcon,7,c	;volatile
    316                           
-   317                           ;main.c: 44: T0CONbits.TMR0ON = 1;
+   317                           ;main.c: 45: T0CONbits.TMR0ON = 1;
    318  007EB6  8ED5               	bsf	4053,7,c	;volatile
-   319  007EB8                     l750:
+   319  007EB8                     l752:
    320                           
-   321                           ;main.c: 56: Send_4Disp(a,b,3,4);
+   321                           ;main.c: 59: Send_4Disp(a,b,3,4);
    322  007EB8  C01E  F011         	movff	main@b,Send_4Disp@Cent
    323  007EBC  6E16               	movwf	??_main& (0+255),c
    324  007EBE  0E03               	movlw	3
@@ -339,169 +339,169 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
    331  007ECC  501F               	movf	main@a,w,c
    332  007ECE  ECEB  F03E         	call	_Send_4Disp
    333                           
-   334                           ;main.c: 62: if(!PORTDbits.RD4 && a < 9 && faon ==0 && !bot_tout){
+   334                           ;main.c: 63: if(!PORTDbits.RD4 && a < 9 && faon ==0 && !bot_tout){
    335  007ED2  B883               	btfsc	3971,4,c	;volatile
-   336  007ED4  D011               	goto	l766
+   336  007ED4  D011               	goto	l768
    337  007ED6  0E09               	movlw	9
    338  007ED8  5C1F               	subwf	main@a,w,c
    339  007EDA  B0D8               	btfsc	status,0,c
-   340  007EDC  D00D               	goto	l766
+   340  007EDC  D00D               	goto	l768
    341  007EDE  661A               	tstfsz	main@faon,c
-   342  007EE0  D00B               	goto	l766
+   342  007EE0  D00B               	goto	l768
    343  007EE2  6622               	tstfsz	_bot_tout,c
-   344  007EE4  D009               	goto	l766
+   344  007EE4  D009               	goto	l768
    345                           
-   346                           ;main.c: 63: a++;
+   346                           ;main.c: 64: a++;
    347  007EE6  2A1F               	incf	main@a,f,c
    348                           
-   349                           ;main.c: 64: faon = 1;
+   349                           ;main.c: 65: faon = 1;
    350  007EE8  6E16               	movwf	??_main& (0+255),c
    351  007EEA  0E01               	movlw	1
    352  007EEC  6E1A               	movwf	main@faon,c
    353  007EEE  5016               	movf	??_main& (0+255),w,c
    354                           
-   355                           ;main.c: 65: bot_tout = 100;;
+   355                           ;main.c: 66: bot_tout = 100;;
    356  007EF0  6E16               	movwf	??_main& (0+255),c
    357  007EF2  0E64               	movlw	100
    358  007EF4  6E22               	movwf	_bot_tout,c
    359  007EF6  5016               	movf	??_main& (0+255),w,c
-   360  007EF8                     l766:
+   360  007EF8                     l768:
    361                           
-   362                           ;main.c: 66: }
-   363                           ;main.c: 67: if(PORTDbits.RD4 && faon == 1 && !bot_tout){
+   362                           ;main.c: 67: }
+   363                           ;main.c: 68: if(PORTDbits.RD4 && faon == 1 && !bot_tout){
    364  007EF8  A883               	btfss	3971,4,c	;volatile
-   365  007EFA  D00D               	goto	l774
+   365  007EFA  D00D               	goto	l776
    366  007EFC  041A               	decf	main@faon,w,c
    367  007EFE  A4D8               	btfss	status,2,c
-   368  007F00  D00A               	goto	l774
+   368  007F00  D00A               	goto	l776
    369  007F02  6622               	tstfsz	_bot_tout,c
-   370  007F04  D008               	goto	l774
+   370  007F04  D008               	goto	l776
    371                           
-   372                           ;main.c: 68: faon=0;
+   372                           ;main.c: 69: faon=0;
    373  007F06  6E16               	movwf	??_main& (0+255),c
    374  007F08  0E00               	movlw	0
    375  007F0A  6E1A               	movwf	main@faon,c
    376  007F0C  5016               	movf	??_main& (0+255),w,c
    377                           
-   378                           ;main.c: 69: bot_tout = 100;;
+   378                           ;main.c: 70: bot_tout = 100;;
    379  007F0E  6E16               	movwf	??_main& (0+255),c
    380  007F10  0E64               	movlw	100
    381  007F12  6E22               	movwf	_bot_tout,c
    382  007F14  5016               	movf	??_main& (0+255),w,c
-   383  007F16                     l774:
+   383  007F16                     l776:
    384                           
-   385                           ;main.c: 70: }
-   386                           ;main.c: 71: if(!PORTDbits.RD5 && a > 0 && faoff ==0 && !bot_tout){
+   385                           ;main.c: 71: }
+   386                           ;main.c: 72: if(!PORTDbits.RD5 && a > 0 && faoff ==0 && !bot_tout){
    387  007F16  BA83               	btfsc	3971,5,c	;volatile
-   388  007F18  D010               	goto	l788
+   388  007F18  D010               	goto	l790
    389  007F1A  501F               	movf	main@a,w,c
    390  007F1C  B4D8               	btfsc	status,2,c
-   391  007F1E  D00D               	goto	l788
+   391  007F1E  D00D               	goto	l790
    392  007F20  661B               	tstfsz	main@faoff,c
-   393  007F22  D00B               	goto	l788
+   393  007F22  D00B               	goto	l790
    394  007F24  6622               	tstfsz	_bot_tout,c
-   395  007F26  D009               	goto	l788
+   395  007F26  D009               	goto	l790
    396                           
-   397                           ;main.c: 72: a--;
+   397                           ;main.c: 73: a--;
    398  007F28  061F               	decf	main@a,f,c
    399                           
-   400                           ;main.c: 73: faoff = 1;
+   400                           ;main.c: 74: faoff = 1;
    401  007F2A  6E16               	movwf	??_main& (0+255),c
    402  007F2C  0E01               	movlw	1
    403  007F2E  6E1B               	movwf	main@faoff,c
    404  007F30  5016               	movf	??_main& (0+255),w,c
    405                           
-   406                           ;main.c: 74: bot_tout = 100;;
+   406                           ;main.c: 75: bot_tout = 100;;
    407  007F32  6E16               	movwf	??_main& (0+255),c
    408  007F34  0E64               	movlw	100
    409  007F36  6E22               	movwf	_bot_tout,c
    410  007F38  5016               	movf	??_main& (0+255),w,c
-   411  007F3A                     l788:
+   411  007F3A                     l790:
    412                           
-   413                           ;main.c: 75: }
-   414                           ;main.c: 76: if(PORTDbits.RD5 && faoff == 1 && !bot_tout){
+   413                           ;main.c: 76: }
+   414                           ;main.c: 77: if(PORTDbits.RD5 && faoff == 1 && !bot_tout){
    415  007F3A  AA83               	btfss	3971,5,c	;volatile
-   416  007F3C  D00D               	goto	l796
+   416  007F3C  D00D               	goto	l798
    417  007F3E  041B               	decf	main@faoff,w,c
    418  007F40  A4D8               	btfss	status,2,c
-   419  007F42  D00A               	goto	l796
+   419  007F42  D00A               	goto	l798
    420  007F44  6622               	tstfsz	_bot_tout,c
-   421  007F46  D008               	goto	l796
+   421  007F46  D008               	goto	l798
    422                           
-   423                           ;main.c: 77: faoff=0;
+   423                           ;main.c: 78: faoff=0;
    424  007F48  6E16               	movwf	??_main& (0+255),c
    425  007F4A  0E00               	movlw	0
    426  007F4C  6E1B               	movwf	main@faoff,c
    427  007F4E  5016               	movf	??_main& (0+255),w,c
    428                           
-   429                           ;main.c: 78: bot_tout = 100;;
+   429                           ;main.c: 79: bot_tout = 100;;
    430  007F50  6E16               	movwf	??_main& (0+255),c
    431  007F52  0E64               	movlw	100
    432  007F54  6E22               	movwf	_bot_tout,c
    433  007F56  5016               	movf	??_main& (0+255),w,c
-   434  007F58                     l796:
+   434  007F58                     l798:
    435                           
-   436                           ;main.c: 79: }
-   437                           ;main.c: 81: if(!PORTDbits.RD6 && fbon ==0 && !bot_tout){
+   436                           ;main.c: 80: }
+   437                           ;main.c: 82: if(!PORTDbits.RD6 && fbon ==0 && !bot_tout){
    438  007F58  BC83               	btfsc	3971,6,c	;volatile
-   439  007F5A  D010               	goto	l808
+   439  007F5A  D010               	goto	l810
    440  007F5C  661C               	tstfsz	main@fbon,c
-   441  007F5E  D00E               	goto	l808
+   441  007F5E  D00E               	goto	l810
    442  007F60  6622               	tstfsz	_bot_tout,c
-   443  007F62  D00C               	goto	l808
+   443  007F62  D00C               	goto	l810
    444                           
-   445                           ;main.c: 82: b = ~b&(0x01);
+   445                           ;main.c: 83: b = ~b&(0x01);
    446  007F64  501E               	movf	main@b,w,c
    447  007F66  0AFF               	xorlw	255
    448  007F68  0B01               	andlw	1
    449  007F6A  6E1E               	movwf	main@b,c
    450                           
-   451                           ;main.c: 83: fbon = 1;
+   451                           ;main.c: 84: fbon = 1;
    452  007F6C  6E16               	movwf	??_main& (0+255),c
    453  007F6E  0E01               	movlw	1
    454  007F70  6E1C               	movwf	main@fbon,c
    455  007F72  5016               	movf	??_main& (0+255),w,c
    456                           
-   457                           ;main.c: 84: bot_tout = 100;;
+   457                           ;main.c: 85: bot_tout = 100;;
    458  007F74  6E16               	movwf	??_main& (0+255),c
    459  007F76  0E64               	movlw	100
    460  007F78  6E22               	movwf	_bot_tout,c
    461  007F7A  5016               	movf	??_main& (0+255),w,c
-   462  007F7C                     l808:
+   462  007F7C                     l810:
    463                           
-   464                           ;main.c: 85: }
-   465                           ;main.c: 86: if(PORTDbits.RD6 && fbon == 1 && !bot_tout){
+   464                           ;main.c: 86: }
+   465                           ;main.c: 87: if(PORTDbits.RD6 && fbon == 1 && !bot_tout){
    466  007F7C  AC83               	btfss	3971,6,c	;volatile
-   467  007F7E  D00D               	goto	l816
+   467  007F7E  D00D               	goto	l818
    468  007F80  041C               	decf	main@fbon,w,c
    469  007F82  A4D8               	btfss	status,2,c
-   470  007F84  D00A               	goto	l816
+   470  007F84  D00A               	goto	l818
    471  007F86  6622               	tstfsz	_bot_tout,c
-   472  007F88  D008               	goto	l816
+   472  007F88  D008               	goto	l818
    473                           
-   474                           ;main.c: 88: fbon=0;
+   474                           ;main.c: 89: fbon=0;
    475  007F8A  6E16               	movwf	??_main& (0+255),c
    476  007F8C  0E00               	movlw	0
    477  007F8E  6E1C               	movwf	main@fbon,c
    478  007F90  5016               	movf	??_main& (0+255),w,c
    479                           
-   480                           ;main.c: 89: bot_tout = 100;;
+   480                           ;main.c: 90: bot_tout = 100;;
    481  007F92  6E16               	movwf	??_main& (0+255),c
    482  007F94  0E64               	movlw	100
    483  007F96  6E22               	movwf	_bot_tout,c
    484  007F98  5016               	movf	??_main& (0+255),w,c
-   485  007F9A                     l816:
+   485  007F9A                     l818:
    486                           
-   487                           ;main.c: 90: }
-   488                           ;main.c: 91: if(!PORTDbits.RD7 && fvel ==0 && !bot_tout){
+   487                           ;main.c: 91: }
+   488                           ;main.c: 92: if(!PORTDbits.RD7 && fvel ==0 && !bot_tout){
    489  007F9A  BE83               	btfsc	3971,7,c	;volatile
-   490  007F9C  D012               	goto	l828
+   490  007F9C  D012               	goto	l830
    491  007F9E  661D               	tstfsz	main@fvel,c
-   492  007FA0  D010               	goto	l828
+   492  007FA0  D010               	goto	l830
    493  007FA2  6622               	tstfsz	_bot_tout,c
-   494  007FA4  D00E               	goto	l828
+   494  007FA4  D00E               	goto	l830
    495                           
-   496                           ;main.c: 92: velocidad = velocidad + 100;
+   496                           ;main.c: 93: velocidad = velocidad + 100;
    497  007FA6  0E64               	movlw	100
    498  007FA8  2418               	addwf	main@velocidad,w,c
    499  007FAA  6E18               	movwf	main@velocidad,c
@@ -509,60 +509,60 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
    501  007FAE  2019               	addwfc	main@velocidad+1,w,c
    502  007FB0  6E19               	movwf	main@velocidad+1,c
    503                           
-   504                           ;main.c: 93: fvel = 1;
+   504                           ;main.c: 94: fvel = 1;
    505  007FB2  6E16               	movwf	??_main& (0+255),c
    506  007FB4  0E01               	movlw	1
    507  007FB6  6E1D               	movwf	main@fvel,c
    508  007FB8  5016               	movf	??_main& (0+255),w,c
    509                           
-   510                           ;main.c: 94: bot_tout = 100;;
+   510                           ;main.c: 95: bot_tout = 100;;
    511  007FBA  6E16               	movwf	??_main& (0+255),c
    512  007FBC  0E64               	movlw	100
    513  007FBE  6E22               	movwf	_bot_tout,c
    514  007FC0  5016               	movf	??_main& (0+255),w,c
-   515  007FC2                     l828:
+   515  007FC2                     l830:
    516                           
-   517                           ;main.c: 95: }
-   518                           ;main.c: 96: if(PORTDbits.RD7 && fvel == 1 && !bot_tout){
+   517                           ;main.c: 96: }
+   518                           ;main.c: 97: if(PORTDbits.RD7 && fvel == 1 && !bot_tout){
    519  007FC2  AE83               	btfss	3971,7,c	;volatile
-   520  007FC4  D00D               	goto	l836
+   520  007FC4  D00D               	goto	l838
    521  007FC6  041D               	decf	main@fvel,w,c
    522  007FC8  A4D8               	btfss	status,2,c
-   523  007FCA  D00A               	goto	l836
+   523  007FCA  D00A               	goto	l838
    524  007FCC  6622               	tstfsz	_bot_tout,c
-   525  007FCE  D008               	goto	l836
+   525  007FCE  D008               	goto	l838
    526                           
-   527                           ;main.c: 98: fvel=0;
+   527                           ;main.c: 99: fvel=0;
    528  007FD0  6E16               	movwf	??_main& (0+255),c
    529  007FD2  0E00               	movlw	0
    530  007FD4  6E1D               	movwf	main@fvel,c
    531  007FD6  5016               	movf	??_main& (0+255),w,c
    532                           
-   533                           ;main.c: 99: bot_tout = 100;;
+   533                           ;main.c: 100: bot_tout = 100;;
    534  007FD8  6E16               	movwf	??_main& (0+255),c
    535  007FDA  0E64               	movlw	100
    536  007FDC  6E22               	movwf	_bot_tout,c
    537  007FDE  5016               	movf	??_main& (0+255),w,c
-   538  007FE0                     l836:
+   538  007FE0                     l838:
    539                           
-   540                           ;main.c: 100: }
-   541                           ;main.c: 102: if(b == 0x01) leds(velocidad);
+   540                           ;main.c: 101: }
+   541                           ;main.c: 103: if(b == 0x01) leds(velocidad);
    542  007FE0  041E               	decf	main@b,w,c
    543  007FE2  A4D8               	btfss	status,2,c
-   544  007FE4  D006               	goto	l840
+   544  007FE4  D006               	goto	l842
    545  007FE6  C018  F00F         	movff	main@velocidad,leds@velocidad
    546  007FEA  C019  F010         	movff	main@velocidad+1,leds@velocidad+1
    547  007FEE  EC73  F03E         	call	_leds	;wreg free
-   548  007FF2                     l840:
+   548  007FF2                     l842:
    549                           
-   550                           ;main.c: 104: if(PORTBbits.RB4 == 0) velocidad =100;
+   550                           ;main.c: 105: if(PORTBbits.RB4 == 0) velocidad =100;
    551  007FF2  B881               	btfsc	3969,4,c	;volatile
-   552  007FF4  D761               	goto	l750
+   552  007FF4  D761               	goto	l752
    553  007FF6  0E00               	movlw	0
    554  007FF8  6E19               	movwf	main@velocidad+1,c
    555  007FFA  0E64               	movlw	100
    556  007FFC  6E18               	movwf	main@velocidad,c
-   557  007FFE  D75C               	goto	l750
+   557  007FFE  D75C               	goto	l752
    558  008000                     __end_of_main:
    559                           	opt stack 0
    560                           tblptru	equ	0xFF8
@@ -574,7 +574,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
    566                           
    567 ;; *************** function _timer_ini13 *****************
    568 ;; Defined at:
-   569 ;;		line 39 in file "Ap_ini.c"
+   569 ;;		line 43 in file "Ap_ini.c"
    570 ;; Parameters:    Size  Location     Type
    571 ;;		None
    572 ;; Auto vars:     Size  Location     Type
@@ -608,37 +608,37 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
    600  007BF2                     _timer_ini13:
    601                           	opt stack 28
    602                           
-   603                           ;Ap_ini.c: 40: T0CONbits.TMR0ON = 0;
+   603                           ;Ap_ini.c: 44: T0CONbits.TMR0ON = 0;
    604                           
    605                           ;incstack = 0
    606  007BF2  9ED5               	bcf	4053,7,c	;volatile
    607                           
-   608                           ;Ap_ini.c: 41: T0CONbits.T08BIT = 1;
+   608                           ;Ap_ini.c: 45: T0CONbits.T08BIT = 1;
    609  007BF4  8CD5               	bsf	4053,6,c	;volatile
    610                           
-   611                           ;Ap_ini.c: 42: T0CONbits.T0CS = 0;
+   611                           ;Ap_ini.c: 46: T0CONbits.T0CS = 0;
    612  007BF6  9AD5               	bcf	4053,5,c	;volatile
    613                           
-   614                           ;Ap_ini.c: 43: T0CONbits.PSA = 0;
+   614                           ;Ap_ini.c: 47: T0CONbits.PSA = 0;
    615  007BF8  96D5               	bcf	4053,3,c	;volatile
    616                           
-   617                           ;Ap_ini.c: 44: T0CONbits.T0PS0 = 1;
+   617                           ;Ap_ini.c: 48: T0CONbits.T0PS0 = 1;
    618  007BFA  80D5               	bsf	4053,0,c	;volatile
    619                           
-   620                           ;Ap_ini.c: 45: T0CONbits.T0PS1 = 1;
+   620                           ;Ap_ini.c: 49: T0CONbits.T0PS1 = 1;
    621  007BFC  82D5               	bsf	4053,1,c	;volatile
    622                           
-   623                           ;Ap_ini.c: 46: T0CONbits.T0PS2 = 1;
+   623                           ;Ap_ini.c: 50: T0CONbits.T0PS2 = 1;
    624  007BFE  84D5               	bsf	4053,2,c	;volatile
    625                           
-   626                           ;Ap_ini.c: 47: TMR0L = 209;
+   626                           ;Ap_ini.c: 51: TMR0L = 209;
    627  007C00  0ED1               	movlw	209
    628  007C02  6ED6               	movwf	4054,c	;volatile
    629                           
-   630                           ;Ap_ini.c: 48: TMR0H = 0xFF;
+   630                           ;Ap_ini.c: 52: TMR0H = 0xFF;
    631  007C04  68D7               	setf	4055,c	;volatile
    632                           
-   633                           ;Ap_ini.c: 49: INTCONbits.TMR0IE = 1;
+   633                           ;Ap_ini.c: 53: INTCONbits.TMR0IE = 1;
    634  007C06  8AF2               	bsf	intcon,5,c	;volatile
    635  007C08  0012               	return	
    636  007C0A                     __end_of_timer_ini13:
@@ -652,7 +652,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
    644                           
    645 ;; *************** function _pic_ini13 *****************
    646 ;; Defined at:
-   647 ;;		line 5 in file "Ap_ini.c"
+   647 ;;		line 9 in file "Ap_ini.c"
    648 ;; Parameters:    Size  Location     Type
    649 ;;		None
    650 ;; Auto vars:     Size  Location     Type
@@ -686,75 +686,75 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
    678  007C50                     _pic_ini13:
    679                           	opt stack 28
    680                           
-   681                           ;Ap_ini.c: 8: LATA = 0x00;
+   681                           ;Ap_ini.c: 12: LATA = 0x00;
    682                           
    683                           ;incstack = 0
    684  007C50  0E00               	movlw	0
    685  007C52  6E89               	movwf	3977,c	;volatile
    686                           
-   687                           ;Ap_ini.c: 9: LATB = 0x00;
+   687                           ;Ap_ini.c: 13: LATB = 0x00;
    688  007C54  0E00               	movlw	0
    689  007C56  6E8A               	movwf	3978,c	;volatile
    690                           
-   691                           ;Ap_ini.c: 10: LATC = 0x00;
+   691                           ;Ap_ini.c: 14: LATC = 0x00;
    692  007C58  0E00               	movlw	0
    693  007C5A  6E8B               	movwf	3979,c	;volatile
    694                           
-   695                           ;Ap_ini.c: 11: LATD = 0x00;
+   695                           ;Ap_ini.c: 15: LATD = 0x00;
    696  007C5C  0E00               	movlw	0
    697  007C5E  6E8C               	movwf	3980,c	;volatile
    698                           
-   699                           ;Ap_ini.c: 12: LATE = 0x00;
+   699                           ;Ap_ini.c: 16: LATE = 0x00;
    700  007C60  0E00               	movlw	0
    701  007C62  6E8D               	movwf	3981,c	;volatile
    702                           
-   703                           ;Ap_ini.c: 14: PORTA = 0x00;
+   703                           ;Ap_ini.c: 18: PORTA = 0x00;
    704  007C64  0E00               	movlw	0
    705  007C66  6E80               	movwf	3968,c	;volatile
    706                           
-   707                           ;Ap_ini.c: 15: PORTB = 0x00;
+   707                           ;Ap_ini.c: 19: PORTB = 0x00;
    708  007C68  0E00               	movlw	0
    709  007C6A  6E81               	movwf	3969,c	;volatile
    710                           
-   711                           ;Ap_ini.c: 16: PORTC = 0x00;
+   711                           ;Ap_ini.c: 20: PORTC = 0x00;
    712  007C6C  0E00               	movlw	0
    713  007C6E  6E82               	movwf	3970,c	;volatile
    714                           
-   715                           ;Ap_ini.c: 17: PORTD = 0x00;
+   715                           ;Ap_ini.c: 21: PORTD = 0x00;
    716  007C70  0E00               	movlw	0
    717  007C72  6E83               	movwf	3971,c	;volatile
    718                           
-   719                           ;Ap_ini.c: 18: PORTE = 0x00;
+   719                           ;Ap_ini.c: 22: PORTE = 0x00;
    720  007C74  0E00               	movlw	0
    721  007C76  6E84               	movwf	3972,c	;volatile
    722                           
-   723                           ;Ap_ini.c: 22: TRISD = 0xF0;
+   723                           ;Ap_ini.c: 26: TRISD = 0xF0;
    724  007C78  0EF0               	movlw	240
    725  007C7A  6E95               	movwf	3989,c	;volatile
    726                           
-   727                           ;Ap_ini.c: 23: TRISCbits.RC6 = 0;
+   727                           ;Ap_ini.c: 27: TRISCbits.RC6 = 0;
    728  007C7C  9C94               	bcf	3988,6,c	;volatile
    729                           
-   730                           ;Ap_ini.c: 24: TRISCbits.RC7 = 0;
+   730                           ;Ap_ini.c: 28: TRISCbits.RC7 = 0;
    731  007C7E  9E94               	bcf	3988,7,c	;volatile
    732                           
-   733                           ;Ap_ini.c: 28: CMCON = 0x07;
+   733                           ;Ap_ini.c: 32: CMCON = 0x07;
    734  007C80  0E07               	movlw	7
    735  007C82  6EB4               	movwf	4020,c	;volatile
    736                           
-   737                           ;Ap_ini.c: 29: ADCON1 = 0x0F;
+   737                           ;Ap_ini.c: 33: ADCON1 = 0x0F;
    738  007C84  0E0F               	movlw	15
    739  007C86  6EC1               	movwf	4033,c	;volatile
    740                           
-   741                           ;Ap_ini.c: 30: TRISA = 0xC0;
+   741                           ;Ap_ini.c: 34: TRISA = 0xC0;
    742  007C88  0EC0               	movlw	192
    743  007C8A  6E92               	movwf	3986,c	;volatile
    744                           
-   745                           ;Ap_ini.c: 31: TRISE = 0x00;
+   745                           ;Ap_ini.c: 35: TRISE = 0x00;
    746  007C8C  0E00               	movlw	0
    747  007C8E  6E96               	movwf	3990,c	;volatile
    748                           
-   749                           ;Ap_ini.c: 35: TRISB = 0xFF;
+   749                           ;Ap_ini.c: 39: TRISB = 0xFF;
    750  007C90  6893               	setf	3987,c	;volatile
    751  007C92  0012               	return	
    752  007C94                     __end_of_pic_ini13:
@@ -768,7 +768,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
    760                           
    761 ;; *************** function _leds *****************
    762 ;; Defined at:
-   763 ;;		line 51 in file "Ap_ini.c"
+   763 ;;		line 8 in file "Lemos.C"
    764 ;; Parameters:    Size  Location     Type
    765 ;;  velocidad       2   14[COMRAM] unsigned int 
    766 ;; Auto vars:     Size  Location     Type
@@ -802,78 +802,78 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
    794  007CE6                     _leds:
    795                           	opt stack 28
    796                           
-   797                           ;Ap_ini.c: 52: static unsigned char i=1;
-   798                           ;Ap_ini.c: 55: switch(i){
+   797                           ;Lemos.C: 9: static unsigned char i=1;
+   798                           ;Lemos.C: 12: switch(i){
    799                           
    800                           ;incstack = 0
-   801  007CE6  D02A               	goto	l920
-   802  007CE8                     l892:
+   801  007CE6  D02A               	goto	l922
+   802  007CE8                     l894:
    803  007CE8  5021               	movf	_led_tout+1,w,c
    804  007CEA  1020               	iorwf	_led_tout,w,c
    805  007CEC  A4D8               	btfss	status,2,c
-   806  007CEE  D034               	goto	l128
+   806  007CEE  D034               	goto	l130
    807                           
-   808                           ;Ap_ini.c: 57: LATDbits.LD2=~LATDbits.LD2;
+   808                           ;Lemos.C: 14: LATDbits.LD2=~LATDbits.LD2;
    809  007CF0  748C               	btg	3980,2,c	;volatile
    810  007CF2  D00B               	goto	L2
-   811  007CF4                     l898:
+   811  007CF4                     l900:
    812  007CF4  5021               	movf	_led_tout+1,w,c
    813  007CF6  1020               	iorwf	_led_tout,w,c
    814  007CF8  A4D8               	btfss	status,2,c
-   815  007CFA  D02E               	goto	l128
+   815  007CFA  D02E               	goto	l130
    816                           
-   817                           ;Ap_ini.c: 63: LATDbits.LD3=~LATDbits.LD3;
+   817                           ;Lemos.C: 20: LATDbits.LD3=~LATDbits.LD3;
    818  007CFC  768C               	btg	3980,3,c	;volatile
    819  007CFE  D005               	goto	L2
-   820  007D00                     l904:
+   820  007D00                     l906:
    821  007D00  5021               	movf	_led_tout+1,w,c
    822  007D02  1020               	iorwf	_led_tout,w,c
    823  007D04  A4D8               	btfss	status,2,c
-   824  007D06  D028               	goto	l128
+   824  007D06  D028               	goto	l130
    825                           
-   826                           ;Ap_ini.c: 69: LATCbits.LC6=~LATCbits.LC6;
+   826                           ;Lemos.C: 26: LATCbits.LC6=~LATCbits.LC6;
    827  007D08  7C8B               	btg	3979,6,c	;volatile
    828  007D0A                     L2:
    829                           
-   830                           ;Ap_ini.c: 70: led_tout = velocidad;
+   830                           ;Lemos.C: 27: led_tout = velocidad;
    831  007D0A  C00F  F020         	movff	leds@velocidad,_led_tout
    832  007D0E  C010  F021         	movff	leds@velocidad+1,_led_tout+1
    833                           
-   834                           ;Ap_ini.c: 71: i++;
+   834                           ;Lemos.C: 28: i++;
    835  007D12  2A25               	incf	leds@i,f,c
-   836  007D14  D021               	goto	l128
-   837  007D16                     l910:
+   836  007D14  D021               	goto	l130
+   837  007D16                     l912:
    838  007D16  5021               	movf	_led_tout+1,w,c
    839  007D18  1020               	iorwf	_led_tout,w,c
    840  007D1A  A4D8               	btfss	status,2,c
-   841  007D1C  D01D               	goto	l128
+   841  007D1C  D01D               	goto	l130
    842                           
-   843                           ;Ap_ini.c: 75: LATCbits.LC7=~LATCbits.LC7;
+   843                           ;Lemos.C: 32: LATCbits.LC7=~LATCbits.LC7;
    844  007D1E  7E8B               	btg	3979,7,c	;volatile
    845                           
-   846                           ;Ap_ini.c: 76: led_tout = velocidad;
+   846                           ;Lemos.C: 33: led_tout = velocidad;
    847  007D20  C00F  F020         	movff	leds@velocidad,_led_tout
    848  007D24  C010  F021         	movff	leds@velocidad+1,_led_tout+1
    849  007D28  D004               	goto	L3
-   850  007D2A                     l916:
+   850  007D2A                     l918:
    851                           
-   852                           ;Ap_ini.c: 81: led_tout = 1000;
+   852                           ;Lemos.C: 38: led_tout = 1000;
    853  007D2A  0E03               	movlw	3
    854  007D2C  6E21               	movwf	_led_tout+1,c
    855  007D2E  0EE8               	movlw	232
    856  007D30  6E20               	movwf	_led_tout,c
    857  007D32                     L3:
    858                           
-   859                           ;Ap_ini.c: 82: i=1;
+   859                           ;Lemos.C: 39: i=1;
    860  007D32  6E11               	movwf	??_leds& (0+255),c
    861  007D34  0E01               	movlw	1
    862  007D36  6E25               	movwf	leds@i,c
    863  007D38  5011               	movf	??_leds& (0+255),w,c
    864                           
-   865                           ;Ap_ini.c: 83: }
-   866                           ;Ap_ini.c: 85: }
-   867  007D3A  D00E               	goto	l128
-   868  007D3C                     l920:
+   865                           ;Lemos.C: 40: }
+   866                           ;Lemos.C: 41: }
+   867  007D3A  D00E               	goto	l130
+   868  007D3C                     l922:
    869  007D3C  5025               	movf	leds@i,w,c
    870                           
    871                           ; Switch size 1, requested type "space"
@@ -884,18 +884,18 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
    876                           ;	Chosen strategy is simple_byte
    877  007D3E  0A01               	xorlw	1	; case 1
    878  007D40  B4D8               	btfsc	status,2,c
-   879  007D42  D7D2               	goto	l892
+   879  007D42  D7D2               	goto	l894
    880  007D44  0A03               	xorlw	3	; case 2
    881  007D46  B4D8               	btfsc	status,2,c
-   882  007D48  D7D5               	goto	l898
+   882  007D48  D7D5               	goto	l900
    883  007D4A  0A01               	xorlw	1	; case 3
    884  007D4C  B4D8               	btfsc	status,2,c
-   885  007D4E  D7D8               	goto	l904
+   885  007D4E  D7D8               	goto	l906
    886  007D50  0A07               	xorlw	7	; case 4
    887  007D52  B4D8               	btfsc	status,2,c
-   888  007D54  D7E0               	goto	l910
-   889  007D56  D7E9               	goto	l916
-   890  007D58                     l128:
+   888  007D54  D7E0               	goto	l912
+   889  007D56  D7E9               	goto	l918
+   890  007D58                     l130:
    891  007D58  0012               	return	
    892  007D5A                     __end_of_leds:
    893                           	opt stack 0
@@ -908,7 +908,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
    900                           
    901 ;; *************** function _Send_4Disp *****************
    902 ;; Defined at:
-   903 ;;		line 119 in file "Ap_ini.c"
+   903 ;;		line 74 in file "Lemos.C"
    904 ;; Parameters:    Size  Location     Type
    905 ;;  Umil            1    wreg     unsigned char 
    906 ;;  Cent            1   16[COMRAM] unsigned char 
@@ -951,100 +951,100 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
    941                           ;Send_4Disp@Umil stored from wreg
    942  007DD6  CFE8 F015          	movff	wreg,Send_4Disp@Umil
    943                           
-   944                           ;Ap_ini.c: 121: static unsigned char Nro_Disp=1;
-   945                           ;Ap_ini.c: 123: switch(Nro_Disp){
-   946  007DDA  D03C               	goto	l888
-   947  007DDC                     l144:
+   944                           ;Lemos.C: 76: static unsigned char Nro_Disp=1;
+   945                           ;Lemos.C: 78: switch(Nro_Disp){
+   946  007DDA  D03C               	goto	l890
+   947  007DDC                     l146:
    948                           
-   949                           ;Ap_ini.c: 125: if(!mux_tout){
+   949                           ;Lemos.C: 80: if(!mux_tout){
    950  007DDC  6623               	tstfsz	_mux_tout,c
-   951  007DDE  D048               	goto	l154
+   951  007DDE  D048               	goto	l156
    952                           
-   953                           ;Ap_ini.c: 126: Send_Disp(1,Umil);
+   953                           ;Lemos.C: 81: Send_Disp(1,Umil);
    954  007DE0  C015  F00F         	movff	Send_4Disp@Umil,Send_Disp@Dato
    955  007DE4  0E01               	movlw	1
    956  007DE6  EC4A  F03E         	call	_Send_Disp
    957                           
-   958                           ;Ap_ini.c: 127: mux_tout = 4;;
+   958                           ;Lemos.C: 82: mux_tout = 4;;
    959  007DEA  6E14               	movwf	??_Send_4Disp& (0+255),c
    960  007DEC  0E04               	movlw	4
    961  007DEE  6E23               	movwf	_mux_tout,c
    962  007DF0  5014               	movf	??_Send_4Disp& (0+255),w,c
    963                           
-   964                           ;Ap_ini.c: 128: Nro_Disp = 2;
+   964                           ;Lemos.C: 83: Nro_Disp = 2;
    965  007DF2  6E14               	movwf	??_Send_4Disp& (0+255),c
    966  007DF4  0E02               	movlw	2
    967  007DF6  D024               	goto	L6
-   968  007DF8                     l147:
+   968  007DF8                     l149:
    969                           
-   970                           ;Ap_ini.c: 133: if(!mux_tout){
+   970                           ;Lemos.C: 88: if(!mux_tout){
    971  007DF8  6623               	tstfsz	_mux_tout,c
-   972  007DFA  D03A               	goto	l154
+   972  007DFA  D03A               	goto	l156
    973                           
-   974                           ;Ap_ini.c: 134: Send_Disp(2,Cent);
+   974                           ;Lemos.C: 89: Send_Disp(2,Cent);
    975  007DFC  C011  F00F         	movff	Send_4Disp@Cent,Send_Disp@Dato
    976  007E00  0E02               	movlw	2
    977  007E02  EC4A  F03E         	call	_Send_Disp
    978                           
-   979                           ;Ap_ini.c: 135: mux_tout = 4;;
+   979                           ;Lemos.C: 90: mux_tout = 4;;
    980  007E06  6E14               	movwf	??_Send_4Disp& (0+255),c
    981  007E08  0E04               	movlw	4
    982  007E0A  6E23               	movwf	_mux_tout,c
    983  007E0C  5014               	movf	??_Send_4Disp& (0+255),w,c
    984                           
-   985                           ;Ap_ini.c: 136: Nro_Disp = 3;
+   985                           ;Lemos.C: 91: Nro_Disp = 3;
    986  007E0E  6E14               	movwf	??_Send_4Disp& (0+255),c
    987  007E10  0E03               	movlw	3
    988  007E12  D016               	goto	L6
-   989  007E14                     l149:
+   989  007E14                     l151:
    990                           
-   991                           ;Ap_ini.c: 141: if(!mux_tout){
+   991                           ;Lemos.C: 96: if(!mux_tout){
    992  007E14  6623               	tstfsz	_mux_tout,c
-   993  007E16  D02C               	goto	l154
+   993  007E16  D02C               	goto	l156
    994                           
-   995                           ;Ap_ini.c: 142: Send_Disp(3,Dec);
+   995                           ;Lemos.C: 97: Send_Disp(3,Dec);
    996  007E18  C012  F00F         	movff	Send_4Disp@Dec,Send_Disp@Dato
    997  007E1C  0E03               	movlw	3
    998  007E1E  EC4A  F03E         	call	_Send_Disp
    999                           
-  1000                           ;Ap_ini.c: 143: mux_tout = 4;;
+  1000                           ;Lemos.C: 98: mux_tout = 4;;
   1001  007E22  6E14               	movwf	??_Send_4Disp& (0+255),c
   1002  007E24  0E04               	movlw	4
   1003  007E26  6E23               	movwf	_mux_tout,c
   1004  007E28  5014               	movf	??_Send_4Disp& (0+255),w,c
   1005                           
-  1006                           ;Ap_ini.c: 144: Nro_Disp = 4;
+  1006                           ;Lemos.C: 99: Nro_Disp = 4;
   1007  007E2A  6E14               	movwf	??_Send_4Disp& (0+255),c
   1008  007E2C  0E04               	movlw	4
   1009  007E2E  D008               	goto	L6
-  1010  007E30                     l151:
+  1010  007E30                     l153:
   1011                           
-  1012                           ;Ap_ini.c: 149: if(!mux_tout){
+  1012                           ;Lemos.C: 104: if(!mux_tout){
   1013  007E30  6623               	tstfsz	_mux_tout,c
-  1014  007E32  D01E               	goto	l154
+  1014  007E32  D01E               	goto	l156
   1015                           
-  1016                           ;Ap_ini.c: 150: Send_Disp(4,Uni);
+  1016                           ;Lemos.C: 105: Send_Disp(4,Uni);
   1017  007E34  C013  F00F         	movff	Send_4Disp@Uni,Send_Disp@Dato
   1018  007E38  0E04               	movlw	4
   1019  007E3A  EC4A  F03E         	call	_Send_Disp
-  1020  007E3E  D003               	goto	l886
+  1020  007E3E  D003               	goto	l888
   1021  007E40                     L6:
   1022  007E40  6E24               	movwf	Send_4Disp@Nro_Disp,c
   1023  007E42  5014               	movf	??_Send_4Disp& (0+255),w,c
-  1024  007E44  D015               	goto	l154
-  1025  007E46                     l886:
+  1024  007E44  D015               	goto	l156
+  1025  007E46                     l888:
   1026                           
-  1027                           ;Ap_ini.c: 157: mux_tout = 4;;
+  1027                           ;Lemos.C: 112: mux_tout = 4;;
   1028  007E46  6E14               	movwf	??_Send_4Disp& (0+255),c
   1029  007E48  0E04               	movlw	4
   1030  007E4A  6E23               	movwf	_mux_tout,c
   1031  007E4C  5014               	movf	??_Send_4Disp& (0+255),w,c
   1032                           
-  1033                           ;Ap_ini.c: 158: Nro_Disp = 1;
+  1033                           ;Lemos.C: 113: Nro_Disp = 1;
   1034  007E4E  6E14               	movwf	??_Send_4Disp& (0+255),c
   1035  007E50  0E01               	movlw	1
   1036  007E52  D7F6               	goto	L6
-  1037  007E54                     l888:
+  1037  007E54                     l890:
   1038  007E54  5024               	movf	Send_4Disp@Nro_Disp,w,c
   1039                           
   1040                           ; Switch size 1, requested type "space"
@@ -1055,18 +1055,18 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
   1045                           ;	Chosen strategy is simple_byte
   1046  007E56  0A01               	xorlw	1	; case 1
   1047  007E58  B4D8               	btfsc	status,2,c
-  1048  007E5A  D7C0               	goto	l144
+  1048  007E5A  D7C0               	goto	l146
   1049  007E5C  0A03               	xorlw	3	; case 2
   1050  007E5E  B4D8               	btfsc	status,2,c
-  1051  007E60  D7CB               	goto	l147
+  1051  007E60  D7CB               	goto	l149
   1052  007E62  0A01               	xorlw	1	; case 3
   1053  007E64  B4D8               	btfsc	status,2,c
-  1054  007E66  D7D6               	goto	l149
+  1054  007E66  D7D6               	goto	l151
   1055  007E68  0A07               	xorlw	7	; case 4
   1056  007E6A  B4D8               	btfsc	status,2,c
-  1057  007E6C  D7E1               	goto	l151
-  1058  007E6E  D7EB               	goto	l886
-  1059  007E70                     l154:
+  1057  007E6C  D7E1               	goto	l153
+  1058  007E6E  D7EB               	goto	l888
+  1059  007E70                     l156:
   1060  007E70  0012               	return	
   1061  007E72                     __end_of_Send_4Disp:
   1062                           	opt stack 0
@@ -1080,7 +1080,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
   1070                           
   1071 ;; *************** function _Send_Disp *****************
   1072 ;; Defined at:
-  1073 ;;		line 88 in file "Ap_ini.c"
+  1073 ;;		line 43 in file "Lemos.C"
   1074 ;; Parameters:    Size  Location     Type
   1075 ;;  NroDisp         1    wreg     unsigned char 
   1076 ;;  Dato            1   14[COMRAM] unsigned char 
@@ -1119,53 +1119,53 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
   1109                           ;Send_Disp@NroDisp stored from wreg
   1110  007C94  CFE8 F010          	movff	wreg,Send_Disp@NroDisp
   1111                           
-  1112                           ;Ap_ini.c: 90: LATA = 0;
+  1112                           ;Lemos.C: 45: LATA = 0;
   1113  007C98  0E00               	movlw	0
   1114  007C9A  6E89               	movwf	3977,c	;volatile
   1115                           
-  1116                           ;Ap_ini.c: 92: LATAbits.LA4 = 0;
+  1116                           ;Lemos.C: 47: LATAbits.LA4 = 0;
   1117  007C9C  9889               	bcf	3977,4,c	;volatile
   1118                           
-  1119                           ;Ap_ini.c: 93: LATAbits.LA5 = 0;
+  1119                           ;Lemos.C: 48: LATAbits.LA5 = 0;
   1120  007C9E  9A89               	bcf	3977,5,c	;volatile
   1121                           
-  1122                           ;Ap_ini.c: 94: LATEbits.LATE0 = 0;
+  1122                           ;Lemos.C: 49: LATEbits.LATE0 = 0;
   1123  007CA0  908D               	bcf	3981,0,c	;volatile
   1124                           
-  1125                           ;Ap_ini.c: 95: LATEbits.LATE1 = 0;
+  1125                           ;Lemos.C: 50: LATEbits.LATE1 = 0;
   1126  007CA2  928D               	bcf	3981,1,c	;volatile
   1127                           
-  1128                           ;Ap_ini.c: 97: switch(NroDisp){
-  1129  007CA4  D008               	goto	l946
-  1130  007CA6                     l134:
+  1128                           ;Lemos.C: 52: switch(NroDisp){
+  1129  007CA4  D008               	goto	l948
+  1130  007CA6                     l136:
   1131                           
-  1132                           ;Ap_ini.c: 102: LATAbits.LA5 = 1;
+  1132                           ;Lemos.C: 57: LATAbits.LA5 = 1;
   1133  007CA6  8A89               	bsf	3977,5,c	;volatile
   1134                           
-  1135                           ;Ap_ini.c: 103: }break;
-  1136  007CA8  D014               	goto	l948
-  1137  007CAA                     l135:
+  1135                           ;Lemos.C: 58: }break;
+  1136  007CA8  D014               	goto	l950
+  1137  007CAA                     l137:
   1138                           
-  1139                           ;Ap_ini.c: 105: LATEbits.LATE0 = 1;
+  1139                           ;Lemos.C: 60: LATEbits.LATE0 = 1;
   1140  007CAA  808D               	bsf	3981,0,c	;volatile
   1141                           
-  1142                           ;Ap_ini.c: 106: }break;
-  1143  007CAC  D012               	goto	l948
-  1144  007CAE                     l136:
+  1142                           ;Lemos.C: 61: }break;
+  1143  007CAC  D012               	goto	l950
+  1144  007CAE                     l138:
   1145                           
-  1146                           ;Ap_ini.c: 108: LATEbits.LATE1 = 1;
+  1146                           ;Lemos.C: 63: LATEbits.LATE1 = 1;
   1147  007CAE  828D               	bsf	3981,1,c	;volatile
   1148                           
-  1149                           ;Ap_ini.c: 109: }break;
-  1150  007CB0  D010               	goto	l948
-  1151  007CB2                     l137:
+  1149                           ;Lemos.C: 64: }break;
+  1150  007CB0  D010               	goto	l950
+  1151  007CB2                     l139:
   1152                           
-  1153                           ;Ap_ini.c: 111: LATAbits.LA4 = 1;
+  1153                           ;Lemos.C: 66: LATAbits.LA4 = 1;
   1154  007CB2  8889               	bsf	3977,4,c	;volatile
   1155                           
-  1156                           ;Ap_ini.c: 112: }break;
-  1157  007CB4  D00E               	goto	l948
-  1158  007CB6                     l946:
+  1156                           ;Lemos.C: 67: }break;
+  1157  007CB4  D00E               	goto	l950
+  1158  007CB6                     l948:
   1159  007CB6  5010               	movf	Send_Disp@NroDisp,w,c
   1160                           
   1161                           ; Switch size 1, requested type "space"
@@ -1176,30 +1176,30 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
   1166                           ;	Chosen strategy is simple_byte
   1167  007CB8  0A01               	xorlw	1	; case 1
   1168  007CBA  B4D8               	btfsc	status,2,c
-  1169  007CBC  D7FA               	goto	l137
+  1169  007CBC  D7FA               	goto	l139
   1170  007CBE  0A03               	xorlw	3	; case 2
   1171  007CC0  B4D8               	btfsc	status,2,c
-  1172  007CC2  D7F1               	goto	l134
+  1172  007CC2  D7F1               	goto	l136
   1173  007CC4  0A01               	xorlw	1	; case 3
   1174  007CC6  B4D8               	btfsc	status,2,c
-  1175  007CC8  D7F0               	goto	l135
+  1175  007CC8  D7F0               	goto	l137
   1176  007CCA  0A07               	xorlw	7	; case 4
   1177  007CCC  B4D8               	btfsc	status,2,c
-  1178  007CCE  D7EF               	goto	l136
-  1179  007CD0  D7F0               	goto	l137
-  1180  007CD2                     l948:
+  1178  007CCE  D7EF               	goto	l138
+  1179  007CD0  D7F0               	goto	l139
+  1180  007CD2                     l950:
   1181                           
-  1182                           ;Ap_ini.c: 114: Dato = Dato & 0x0F;
+  1182                           ;Lemos.C: 69: Dato = Dato & 0x0F;
   1183  007CD2  500F               	movf	Send_Disp@Dato,w,c
   1184  007CD4  0B0F               	andlw	15
   1185  007CD6  6E0F               	movwf	Send_Disp@Dato,c
   1186                           
-  1187                           ;Ap_ini.c: 115: LATA = LATA & 0xF0;
+  1187                           ;Lemos.C: 70: LATA = LATA & 0xF0;
   1188  007CD8  5089               	movf	3977,w,c	;volatile
   1189  007CDA  0BF0               	andlw	240
   1190  007CDC  6E89               	movwf	3977,c	;volatile
   1191                           
-  1192                           ;Ap_ini.c: 116: LATA = LATA | Dato;
+  1192                           ;Lemos.C: 71: LATA = LATA | Dato;
   1193  007CDE  5089               	movf	3977,w,c	;volatile
   1194  007CE0  100F               	iorwf	Send_Disp@Dato,w,c
   1195  007CE2  6E89               	movwf	3977,c	;volatile
@@ -1216,7 +1216,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
   1206                           
   1207 ;; *************** function _myISR *****************
   1208 ;; Defined at:
-  1209 ;;		line 112 in file "main.c"
+  1209 ;;		line 111 in file "main.c"
   1210 ;; Parameters:    Size  Location     Type
   1211 ;;		None
   1212 ;; Auto vars:     Size  Location     Type
@@ -1283,21 +1283,21 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
   1273  007D84  CFF8 F00D          	movff	tblptru,??_myISR+12
   1274  007D88  CFF5 F00E          	movff	tablat,??_myISR+13
   1275                           
-  1276                           ;main.c: 120: if(TMR0IF){
+  1276                           ;main.c: 119: if(TMR0IF){
   1277  007D8C  A4F2               	btfss	intcon,2,c	;volatile
   1278  007D8E  D006               	goto	i2l50
   1279                           
-  1280                           ;main.c: 121: INTCONbits.TMR0IF = 0;
+  1280                           ;main.c: 120: INTCONbits.TMR0IF = 0;
   1281  007D90  94F2               	bcf	intcon,2,c	;volatile
   1282                           
-  1283                           ;main.c: 122: TMR0L = 209;
+  1283                           ;main.c: 121: TMR0L = 209;
   1284  007D92  0ED1               	movlw	209
   1285  007D94  6ED6               	movwf	4054,c	;volatile
   1286                           
-  1287                           ;main.c: 123: TMR0H = 0xFF;
+  1287                           ;main.c: 122: TMR0H = 0xFF;
   1288  007D96  68D7               	setf	4055,c	;volatile
   1289                           
-  1290                           ;main.c: 124: tic_timer0();
+  1290                           ;main.c: 123: tic_timer0();
   1291  007D98  EC05  F03E         	call	_tic_timer0	;wreg free
   1292  007D9C                     i2l50:
   1293  007D9C  C00E  FFF5         	movff	??_myISR+13,tablat
@@ -1337,7 +1337,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
   1327                           
   1328 ;; *************** function _tic_timer0 *****************
   1329 ;; Defined at:
-  1330 ;;		line 162 in file "Ap_ini.c"
+  1330 ;;		line 117 in file "Lemos.C"
   1331 ;; Parameters:    Size  Location     Type
   1332 ;;		None
   1333 ;; Auto vars:     Size  Location     Type
@@ -1370,27 +1370,27 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 55553
   1360  007C0A                     _tic_timer0:
   1361                           	opt stack 27
   1362                           
-  1363                           ;Ap_ini.c: 163: if(mux_tout)mux_tout--;
+  1363                           ;Lemos.C: 118: if(mux_tout)mux_tout--;
   1364                           
   1365                           ;incstack = 0
   1366  007C0A  5023               	movf	_mux_tout,w,c
   1367  007C0C  A4D8               	btfss	status,2,c
   1368  007C0E  0623               	decf	_mux_tout,f,c
   1369                           
-  1370                           ;Ap_ini.c: 164: if(bot_tout)bot_tout--;
+  1370                           ;Lemos.C: 119: if(bot_tout)bot_tout--;
   1371  007C10  5022               	movf	_bot_tout,w,c
   1372  007C12  A4D8               	btfss	status,2,c
   1373  007C14  0622               	decf	_bot_tout,f,c
   1374                           
-  1375                           ;Ap_ini.c: 165: if(led_tout)led_tout--;
+  1375                           ;Lemos.C: 120: if(led_tout)led_tout--;
   1376  007C16  5021               	movf	_led_tout+1,w,c
   1377  007C18  1020               	iorwf	_led_tout,w,c
   1378  007C1A  B4D8               	btfsc	status,2,c
-  1379  007C1C  D003               	goto	i2l160
+  1379  007C1C  D003               	goto	i2l162
   1380  007C1E  0620               	decf	_led_tout,f,c
   1381  007C20  A0D8               	btfss	status,0,c
   1382  007C22  0621               	decf	_led_tout+1,f,c
-  1383  007C24                     i2l160:
+  1383  007C24                     i2l162:
   1384  007C24  0012               	return	
   1385  007C26                     __end_of_tic_timer0:
   1386                           	opt stack 0
@@ -1629,20 +1629,20 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V1.30 build 55553 
-Symbol Table                                                                                   Thu May 22 20:57:02 2014
+Symbol Table                                                                                   Wed Jun 11 07:44:51 2014
 
             __CFG_BOR$ON 000000              __CFG_BORV$3 000000             __CFG_CP0$OFF 000000  
-           __CFG_CP1$OFF 000000                      l134 7CA6                      l135 7CAA  
-                    l151 7E30                      l136 7CAE                      l144 7DDC  
-                    l128 7D58                      l137 7CB2                      l154 7E70  
-                    l147 7DF8                      l149 7E14                      l910 7D16  
-                    l750 7EB8                      l904 7D00                      l920 7D3C  
-                    l840 7FF2                      l816 7F9A                      l808 7F7C  
-                    l916 7D2A                      l836 7FE0                      l828 7FC2  
-                    l774 7F16                      l766 7EF8                      l946 7CB6  
-                    l948 7CD2                      l892 7CE8                      l796 7F58  
-                    l788 7F3A                      l886 7E46                      l888 7E54  
-                    l898 7CF4             __CFG_CPB$OFF 000000                      wreg 000FE8  
+           __CFG_CP1$OFF 000000                      l130 7D58                      l151 7E14  
+                    l136 7CA6                      l137 7CAA                      l153 7E30  
+                    l138 7CAE                      l146 7DDC                      l139 7CB2  
+                    l156 7E70                      l149 7DF8                      l810 7F7C  
+                    l900 7CF4                      l830 7FC2                      l912 7D16  
+                    l752 7EB8                      l906 7D00                      l922 7D3C  
+                    l842 7FF2                      l818 7F9A                      l950 7CD2  
+                    l918 7D2A                      l838 7FE0                      l790 7F3A  
+                    l776 7F16                      l768 7EF8                      l890 7E54  
+                    l948 7CB6                      l894 7CE8                      l798 7F58  
+                    l888 7E46             __CFG_CPB$OFF 000000                      wreg 000FE8  
           Send_Disp@Dato 000F             __CFG_LVP$OFF 000000             __CFG_WDT$OFF 000000  
                    _LATA 000F89                     _LATB 000F8A                     _LATC 000F8B  
                    _LATD 000F8C                     _LATE 000F8D                     i2l50 7D9C  
@@ -1652,7 +1652,7 @@ Symbol Table                                                                    
                    prodh 000FF4                     prodl 000FF3                     start 2014  
           __CFG_IESO$OFF 000000            __CFG_MCLRE$ON 000000            __CFG_PLLDIV$5 000000  
                   ?_main 0001                    ?_leds 000F                    _CMCON 000FB4  
-                  i2l160 7C24                    _TMR0H 000FD7                    _TMR0L 000FD6  
+                  i2l162 7C24                    _TMR0H 000FD7                    _TMR0L 000FD6  
                   _PORTA 000F80                    _PORTB 000F81                    _PORTC 000F82  
                   _PORTD 000F83                    _PORTE 000F84            __CFG_USBDIV$2 000000  
                   _TRISA 000F92                    _TRISB 000F93                    _TRISD 000F95  

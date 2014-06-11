@@ -5,7 +5,7 @@ Linker command line:
 --edf=C:\Archivos de programa\Microchip\xc8\v1.30\dat\en_msgs.txt -cs \
   -h+dist/default/production\probandoboot.X.production.sym \
   --cmf=dist/default/production\probandoboot.X.production.cmf -z -Q18F4550 \
-  -oC:\Windows\Temp\slo.6 \
+  -oC:\Windows\Temp\s3is.6 \
   -Mdist/default/production/probandoboot.X.production.map -E1 -ver=XC8 \
   -ASTACK=060h-07ffh -pstack=STACK \
   -ACODE=02000h-02005h,02008h-02015h,02018h-07FFFh \
@@ -25,7 +25,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE \
-  C:\Windows\Temp\slo.obj \
+  C:\Windows\Temp\s3is.obj \
   dist/default/production\probandoboot.X.production.obj 
 
 Object code version is 3.11
@@ -38,7 +38,7 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Windows\Temp\slo.obj
+C:\Windows\Temp\s3is.obj
                 end_init                           2014     2014        4     1004       0
                 reset_vec                          2000     2000        4     1000       0
                 idloc                            200000   200000        8   200000       0
@@ -441,7 +441,7 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 30 in file "main.c"
+		line 29 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -479,7 +479,7 @@ Total ram usage:       10 bytes
 
  *************** function _timer_ini13 *****************
  Defined at:
-		line 39 in file "Ap_ini.c"
+		line 43 in file "Ap_ini.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -509,7 +509,7 @@ Total ram usage:        0 bytes
 
  *************** function _pic_ini13 *****************
  Defined at:
-		line 5 in file "Ap_ini.c"
+		line 9 in file "Ap_ini.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -539,7 +539,7 @@ Total ram usage:        0 bytes
 
  *************** function _leds *****************
  Defined at:
-		line 51 in file "Ap_ini.c"
+		line 8 in file "Lemos.C"
  Parameters:    Size  Location     Type
   velocidad       2   14[COMRAM] unsigned int 
  Auto vars:     Size  Location     Type
@@ -569,7 +569,7 @@ Total ram usage:        3 bytes
 
  *************** function _Send_4Disp *****************
  Defined at:
-		line 119 in file "Ap_ini.c"
+		line 74 in file "Lemos.C"
  Parameters:    Size  Location     Type
   Umil            1    wreg     unsigned char 
   Cent            1   16[COMRAM] unsigned char 
@@ -602,7 +602,7 @@ Total ram usage:        5 bytes
 
  *************** function _Send_Disp *****************
  Defined at:
-		line 88 in file "Ap_ini.c"
+		line 43 in file "Lemos.C"
  Parameters:    Size  Location     Type
   NroDisp         1    wreg     unsigned char 
   Dato            1   14[COMRAM] unsigned char 
@@ -633,7 +633,7 @@ Total ram usage:        2 bytes
 
  *************** function _myISR *****************
  Defined at:
-		line 112 in file "main.c"
+		line 111 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -663,7 +663,7 @@ Total ram usage:       14 bytes
 
  *************** function _tic_timer0 *****************
  Defined at:
-		line 162 in file "Ap_ini.c"
+		line 117 in file "Lemos.C"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -705,13 +705,17 @@ main.c
 
 main.c estimated size: 24412
 
-Ap_ini.c
+Lemos.C
 		_tic_timer0    		CODE           	7C0A	0000	28
-		_pic_ini13     		CODE           	7C50	0000	68
 		_Send_Disp     		CODE           	7C94	0000	82
 		_Send_4Disp    		CODE           	7DD6	0000	156
-		_timer_ini13   		CODE           	7BF2	0000	24
 		_leds          		CODE           	7CE6	0000	116
 
-Ap_ini.c estimated size: 474
+Lemos.C estimated size: 382
+
+Ap_ini.c
+		_pic_ini13     		CODE           	7C50	0000	68
+		_timer_ini13   		CODE           	7BF2	0000	24
+
+Ap_ini.c estimated size: 92
 
