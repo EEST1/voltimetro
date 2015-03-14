@@ -21,7 +21,7 @@
 #include"Ap_ini.h"      //define nombres para la entradas salidas del
                         //shield
 #include"Lemos.h"       //funciones personalizadas Prof Lemos
-#include"Robello.h"     //funciones personalizadas prof Robello
+//#include"Robello.h"     //funciones personalizadas prof Robello
 
 
 # define _XTAL_FREQ  20000000   //para ser usado con la macro __delayms()
