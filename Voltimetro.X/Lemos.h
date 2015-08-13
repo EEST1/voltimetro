@@ -16,6 +16,7 @@ void Send_Disp(unsigned char NroDisp,unsigned char Dato);
 void Send_4Disp(unsigned char Umil,unsigned char Cent,unsigned char Dec,unsigned char Uni);
 void leds(unsigned int velocidad);
 void tic_timer0(void);
+unsigned char obtener_ADC8(void);
 
 
 unsigned char mux_tout,bot_tout;

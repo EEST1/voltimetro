@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=probandoboot.X
+PROJECTNAME=Voltimetro.X
 
 # Active Configuration
 DEFAULTCONF=default

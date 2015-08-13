@@ -3,7 +3,28 @@
 #include "Lemos.h"
 
 //algunas funciones para tomar de ejemplo
-
+unsigned char obtener_ADC8(void){
+    unsigned char   guardo_porta,guardo_trisa;
+    
+    guardo_porta = PORTA;
+    guardo_trisa = TRISA;
+    
+    TRISAbits.RA0=1;        //RA0 se transforma en AN0
+    ADCON1 = 0x0E;          //selección de entradas analógicas
+                            //canal 0 por defecto
+    ADCON2 = 0x2D;
+    ADCON0bits.ADON=1;
+    ADCON0bits.GO=1;        //inicia la conversión
+    
+    while(ADCON0bits.GO);
+    
+    ADCON0bits.ADON=1;
+    ADCON1 = 0x0F;
+    LATA = guardo_porta;
+    TRISA = guardo_trisa;
+                    
+    return ADRESH;
+}
 
 void leds(unsigned int velocidad){
     static unsigned char i=1;

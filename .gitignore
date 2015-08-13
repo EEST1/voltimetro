@@ -16,3 +16,6 @@
 *.exe
 *.out
 *.app
+/Voltimetro.X/nbproject/private/
+/Voltimetro.X/build/default/
+/Voltimetro.X/dist/default/
